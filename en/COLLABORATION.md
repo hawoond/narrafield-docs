@@ -38,3 +38,7 @@ Remote LFS availability, blocking exports with missing assets, an LFS locking UI
 ## Verification scope
 
 Automated checks use a temporary bare remote and two local clones. They cover Korean and space-containing paths, Fetch, changes to JSON on both sides, three-way reads, manual resolution, explicit commit and push, abort backups after conflict resolution, protection for uncommitted changes, rejection of path/option injection, suppression of credential output, and shared repository locks.
+
+## Planned workspace location
+
+The new design groups GitHub connections, branches, commits, and merges under **Project settings → Version control**. The [workspace concept](DESIGN.md) is a planned layout; the demo still uses **Merge & conflicts / Tools & extensions**.

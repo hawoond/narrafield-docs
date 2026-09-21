@@ -2,48 +2,69 @@
 title: Online sessions
 ---
 
-# Online session persistence and access
+# Online sessions and access
 
-The self-hosted server remains a **shared-party development alpha**. Every player controls the same party character. Individual credentials do not add multiple character ownership, private player notes, chat, owner/operator role separation, or the full seven-person multiplayer specification.
+The demo is an **online development alpha with personal invitations and character assignments**. Participants control only their assigned character; unassigned participants spectate. GMs manage assignments, private visibility, and NPC control. Complete personal-party, lobby, chat, and split-scene workflows remain [planned](PARTY_PLAY.md).
 
-## Starting and restarting
+## Start and restart the server
 
-The `.exe` names in this guide are examples from the current development build. Check your build's executable names and supported environments. The engine is being developed toward multi-platform support.
+`server.exe -project <project-folder> -operations` starts the server with optional operations features. The executable names here are examples for the current demo; follow the package's launch instructions.
 
-`server.exe -project <project-folder> -operations` loads or creates a session under the operating system's user configuration directory: `Narrafield/server/<hash-of-project-ID>/session.dat`. Use `-state <absolute-private-file>` to select a different session. State files must be outside the project directory. A second process cannot open the same session until the first releases its lock. Normal exit releases the lock; the OS also releases it after process termination.
+By default, state lives under the operating system's user configuration folder at `Narrafield/server/<project-ID-hash>/session.dat`. Use `-state <absolute-private-file>` for another location. **State must be outside the project folder.** Only one process can open the same session at a time.
 
-The session contains game state, the command journal, reconnect credentials, individual credential expirations/revocations, announcements, restrictions and audit history. Successful commands and operations are acknowledged only after a replacement snapshot has been written and synchronized. Write failures return HTTP 503 and leave the in-memory state and committed file unchanged. Restart restores the last committed state, including random state and processed command IDs. Reusing a command ID with a different payload or actor returns HTTP 409; exact retries return the current authoritative projection without applying the action again.
+Game state, confirmed roll records, processed command IDs, invitation expiry/revocation, announcements, restrictions, and audit records persist. Successful commands are acknowledged after the replacement state file is written and synchronized. A failed write returns HTTP 503 and preserves committed state. Reusing a command ID with different content or an actor returns HTTP 409; an exact retry does not execute again.
 
-Snapshots are tied to project ID, full content hash, engine version and storage schema. Changed content or corrupt state prevents startup and preserves the original file. Make a backup before changing content; use a new state path for a new session. No automatic migration or content hot reload is provided.
+## Change content or start a new session
 
-This implementation uses an atomic whole-file snapshot rather than the plan's proposed SQLite database. It targets one local server process and a local filesystem. It does not claim database scaling, network-filesystem locking, automatic backups, or power-loss guarantees beyond OS file synchronization and replacement semantics.
+State is tied to project ID, content hash, runtime, and storage schema. Changed content or damaged state prevents startup and preserves the original file. Back up before changes and use a new state path for a new session. General automatic migration and live content replacement are not provided.
 
-## Protecting server data
+The server writes whole-file snapshots for one server process on a local filesystem. Automatic backups, database scaling, and network-filesystem locking are not provided.
 
-Builds using DPAPI encrypt and authenticate the complete snapshot with an account-bound key. Run and restore it in the same account environment; copying the file to a different account or machine is not a portable backup. On Unix, snapshots are owner-readable/writable (0600), and existing files with group/other access are rejected. Symlink state files/parents are rejected. Keep the state directory private and back up its contents separately from distributable game packages. Use an encrypted volume if Unix encryption at rest is required.
+## Protect state and credentials
 
-The initial GM and legacy shared-player credentials are displayed in the server console, including after a restart; protect the terminal and its logs. They are never included in player state, public packages, participant listings or operation audits. Future random state and internal processed command data are omitted from **both** GM and player HTTP responses. Persistent sessions draw fresh cryptographic entropy before each new command; individual rolls still use the engine's deterministic stream within that command. A fully pluggable cryptographic per-roll provider remains future work.
+DPAPI builds encrypt state for the account running the server. Copying it to a different account or machine is not a portable backup. Other builds can apply owner-only file permissions; check that build's protection requirements. Keep state and backups private and separate from player packages.
 
-Serve remote connections through a TLS reverse proxy. The default listener is localhost. This version uses authenticated HTTP snapshots/commands, not the planned WebSocket incremental protocol.
+The initial GM and legacy shared-player tokens appear in the protected server console, including after restart. Protect its logs. Tokens are excluded from player state, public packages, and participant listings.
 
-## Individual expiring credentials
+Persistent online sessions draw cryptographic randomness for each die and record confirmed results. Future random state and internal command/roll records are not exposed in participant views. Retried commands do not roll again. Offline reproducible random streams are separate.
 
-Open the maker's GM operations window, or run `operator.exe -server <HTTPS-URL>`. Enter the GM token from the protected server console. The native console keeps it in memory only and provides participant refresh, invitation creation, revocation, announcements, party restrictions and audit history. Invitation tokens appear only in their creation result dialog; copy and share them deliberately with the intended recipient. Close that dialog to clear its token field. The console rejects remote plaintext HTTP and redirects, and applies request deadlines and response size limits.
+## External connections and synchronization
 
-All endpoints require `Authorization: Bearer <credential>`. Only the GM may manage participants, independently of whether the optional operations module is enabled.
+Expose external connections through a **TLS-enabled HTTPS reverse proxy**. The default listener is localhost. Commands and state queries use authenticated HTTP. `/events` uses WebSocket to send a complete snapshot filtered for the participant, rather than individual field deltas. The client reconnects after a disconnect; expired and revoked credentials are rejected.
 
-| Endpoint | Request / response |
+## Create and revoke invitations
+
+Open **Server operations** in the editor or run `operator.exe -server <HTTPS-URL>`, then enter the GM token. The console retains it in memory and rejects remote plaintext HTTP and redirects.
+
+1. In **Participants**, set the participant ID and an expiry within the next 30 days.
+2. Set **Actor ID** for an existing instance, or **Character definition to create** for a new one. Choose one assignment route. New characters are created between combats.
+3. Select **Create invitation** and deliver the one-time token to the intended player. An invitation with no assignment grants spectator access.
+4. Use **Assign character ownership** to change an existing participant's character. Their previous character returns to GM control.
+5. Use **Revoke participant token** when access should end. IDs cannot be reused; a replacement invitation needs a new ID.
+
+There are at most six active personal credentials. The legacy shared-player token cannot be individually revoked and only controls the original character while its legacy assignment remains. Reassigning that character removes this control. Party access restrictions apply to all player credentials.
+
+All endpoints require a Bearer credential. Participant management remains GM-only even without optional operations features.
+
+| Endpoint | Purpose |
 | --- | --- |
-| `POST /participants/invite` | JSON `{"id":"alice","expires":"2030-01-01T00:00:00Z"}`; choose a real expiry after now and within 30 days. HTTP 201 returns the credential once. |
-| `GET /participants` | IDs, expiration times and revoked flags; no credentials. |
-| `POST /participants/revoke` | JSON `{"id":"alice"}`; HTTP 204. Further requests with that credential return HTTP 401, including after restart. |
+| `POST /participants/invite` | Set `id`, `expires`, and optional `actorId` or `characterId`; return the token once |
+| `GET /participants` | List assignment, expiry, and revocation without tokens |
+| `POST /participants/assign` | Assign a character to an existing participant |
+| `POST /participants/revoke` | Revoke an ID; later use is rejected, including after restart |
 
-There can be up to six active individual credentials. IDs cannot be reused; use a new ID for a replacement invitation. These credentials can be passed directly to the existing player's token field. An expired credential is rejected on every request. The legacy shared-player token remains available for backward compatibility and is not individually revocable; do not distribute it when individual revocation is needed. Party restrictions apply to all player credentials. Identity management records persist even when optional operations endpoints are disabled.
+## Private notes and GM control
+
+Players use **My private note**; the GM uses **Edit participant private view** for notes and personal lore visibility. Notes are visible to their participant and the GM. Character inventories, resources, and permitted private lore are projected for the relevant participant.
+
+In **GM actors & AI**, use **Refresh actors & definitions**, select an actor, then **GM manual control**, **Return control to AI**, **Pause AI / Resume AI**, or the selected actor's GM play view. The server still checks control and the current turn. General delegation and absence automation are not complete.
 
 ## Runtime images
 
-`GET /media?path=<URL-encoded-managed-image-path>` serves previously verified project image bytes after normal authentication/restriction checks. Players can request only the current scene's background and portrait; future-scene images return HTTP 404. GM access is limited to loaded referenced project images. Responses disable caching and MIME sniffing. Scene state carries the current background and portrait references.
+`GET /media?path=<encoded-managed-image-path>` serves verified, referenced images after authentication. Players can request only their current scene's background and portrait; later-scene images return HTTP 404. GM requests remain limited to referenced project images.
 
-## Verification
+## Verification and limits
 
-`go test ./internal/networking ./internal/operations ./cmd/server` covers restart equivalence, credential continuity, replay and payload conflicts, exclusive opening, content mismatch/corrupt-state preservation, persistence rollback for commands/operations/invitations, revocation after restart, persisted bans and audit history, GM/player authorization and secret filtering. Network latency/load, certificate deployment, per-character ownership and disconnect grace handling remain separate acceptance work.
+Local automated tests cover ownership, private views, persistence, duplicate commands, WebSocket reconnect, and credential revocation. These checks do not certify external multi-player networks or production operation. External connectivity, latency, load, accessibility, integrated lobbies, multiple personal parties, split exploration, identity recovery, and server transfer require further work.
+
+[Play and export](PLAY_AND_EXPORT.md) · [Troubleshooting](TROUBLESHOOTING.md) · [Planned parties and campaigns](PARTY_PLAY.md)

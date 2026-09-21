@@ -31,6 +31,8 @@ For a quick start, choose a narrative, d20, or combat component in **Components*
 
 If the project already has a starting scene, added scenes are not connected automatically. Connect them in **Scenes and actions**. See [Component templates](TEMPLATES.md) for details and limitations.
 
+For a story-only game, start with the **Story** component. Add d20 checks or combat only if needed. See [Optional rule packs](RULE_PACKS.md) for the planned basic-story workflow.
+
 ## Apply and save
 
 **Apply** updates the project currently being edited. Choose **Save** as well to write changes to files. Use **↶ / ↷** to undo or redo edits.

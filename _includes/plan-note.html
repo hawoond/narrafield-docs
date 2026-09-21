@@ -1,0 +1,10 @@
+{% assign language = page.lang | default: 'ko' %}
+<aside class="plan-note" role="note">
+  {% if language == 'en' %}
+  <strong>In development · Design preview</strong>
+  <p>This page describes planned workflows and concept screens, reviewed on {{ site.data.review.date }}. These complete workflows are not included in demo {{ site.data.review.demo_version }}. <a href="{{ '/en/DEVELOPMENT.html' | relative_url }}">Compare with current capabilities</a>.</p>
+  {% else %}
+  <strong>개발 중 · 기획과 화면 시안</strong>
+  <p>{{ site.data.review.date }}에 검토한 제작 흐름과 화면 구상입니다. 현재 데모 {{ site.data.review.demo_version }}에 아래 흐름 전체가 포함된 것은 아닙니다. <a href="{{ '/DEVELOPMENT.html' | relative_url }}">현재 지원 범위와 비교하기</a>.</p>
+  {% endif %}
+</aside>

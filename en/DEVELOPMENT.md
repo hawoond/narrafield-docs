@@ -1,51 +1,57 @@
 ---
-title: Current capabilities
-description: Features, online limitations, compatibility, and store availability for the Narrafield Studio development alpha.
+title: Current capabilities and development plans
+description: Compare the public 0.6 demo with the latest plans, concept screens, and remaining release work.
 ---
 
-# Current capabilities
+# Current capabilities and development plans
 
-Narrafield Studio is a **TRPG engine developed by sortie**. It is currently a development alpha. Samples and guides help you build worlds, scenes, and choices step by step.
-
-This website provides product information and complete Korean and English guides. Try the current development alpha from [Download the demo](DEMO.md). Purchases and installation of the full product will be handled through official stores.
-
-{% include stores.html %}
+Narrafield Studio is a TRPG engine developed by **sortie**. Start with a sample, connect worlds, scenes, and rules, and export your own game.
 
 ## Guide baseline
 
-The detailed guides follow the **runtime 0.4 development-alpha** menu structure. Older builds may differ in Game data, Factions, and individual forms. Find the relevant task in the [editor menu guide](EDITOR.md).
+The guides were reviewed on **{{ site.data.review.date }}** against the source and capabilities of **public demo {{ site.data.review.demo_version }}**. Pages marked **Planned features and designs** describe plan **{{ site.data.review.plan_version }}**. A feature appearing in a document or concept does not mean it is included in the demo.
 
-## Available features
+[Download demo](DEMO.md) · [Current editor menus](EDITOR.md) · [Latest workspace concept](DESIGN.md)
 
-| Area | Features | Guide |
+## Available in the demo
+
+| Area | Current scope | Guide |
 | --- | --- | --- |
-| World building | Places, characters, relations, map pins, chronology, scene connections | [Worlds and scenes](WORLD_BUILDING.md) |
-| Stories and rules | Choices, conditions, effects, dice checks, items, quests, attributes | [Rules and catalogs](RULES.md) |
-| Game data | Resources, abilities, spells, statuses, characters, combat definitions and assignments | [Game data](GAME_DATA.md) |
-| Factions | Organization, members, diplomacy, places, reputation, goals and scene connections | [Factions](FACTION_GUIDE.md) |
-| Components | Add narrative, d20 checks, and combat to a project | [Component templates](TEMPLATES.md) |
-| Play and export | Preview, local save slots, standalone game export | [Play and export](PLAY_AND_EXPORT.md) |
-| Team creation | Git cloning, branches, merges, conflict resolution, LFS | [Git collaboration](COLLABORATION.md) |
-| Translation | Korean/English editing for supported content, JSON exchange, review tracking | [Translation workspace](LOCALIZATION.md) |
+| World | Documents, relations, map pins, timelines, visibility, and scene references | [World](WORLD_BUILDING.md) |
+| Story and rules | Scenes, choices, conditions, effects, optional dice, branches, and endings | [Rules](RULES.md) |
+| Game data | Characters, enemies, abilities, spells, statuses, equipment, resources, compound costs, optional proficiency, growth, and encounters | [Game data](GAME_DATA.md) |
+| Factions | Organizations, members, diplomacy, bases, personal reputation, goals, and rewards | [Factions](FACTION_GUIDE.md) |
+| Play and export | Preview, save slots, backgrounds/portraits, standalone ZIPs, separate online client/server packages | [Play and export](PLAY_AND_EXPORT.md) |
+| Online | Personal invitations, character assignments, private notes, GM NPC control, WebSocket synchronization, reconnect, and persisted sessions | [Online](ONLINE.md) |
+| Collaboration | Git changes, merge/conflict tools, LFS integration, and optional scoped LLM proposals | [Tools](TOOLS.md) |
+| Extensions | Restricted WASM, pinned versions, permissions, runtime bindings, content packs, and configured hub access | [Plugins](TOOLS.md) |
+| Translation | Paired Korean/English fields, JSON exchange, source-change tracking, review, and glossary | [Translation](LOCALIZATION.md) |
 
-## Online and translation scope
+Automated checks do not certify production quality or every possible rule. Online play requires a separate server and external connection setup. Connecting to a configured hub does not imply that an official public catalog is operating.
 
-Online features are a development alpha that requires a separate server. Individual invitations, revocation, and session persistence are supported. A player’s control depends on the server’s character assignments and permissions. External connections require a separate HTTPS server setup.
+## Experiences in the latest plan
 
-The translation workspace handles Korean source and English translations for world names and bodies, scene titles and bodies, and action labels. It does not cover every content type or language.
+| Goal | Beyond the current demo | Details |
+| --- | --- | --- |
+| New workspace | Separate creative navigation, project settings, and personal app settings | [Workspace](DESIGN.md) |
+| Game-specific screens | Scene-led play with templates, layouts, themes, and data binding | [Game screens](GAME_SCREENS.md) |
+| Starting and creation | Title, New game, Load, and creator-defined character creation | [Starting a game](PLAYER_START.md) |
+| Parties and campaigns | Personal/shared parties, delegation, action order, split exploration, lobbies, and recovery | [Online parties](PARTY_PLAY.md) |
+| Independent publishing | Public creator identity, credits, and general/Steam/STOVE/Epic game profiles | [Publishing](PUBLISHING_GAME.md) |
+| Optional rule packs | No default d20 activation, source-identified packs, and notice collection/export | [Rule packs](RULE_PACKS.md) |
 
-## Release and compatibility
+Broader engine goals include richer outcomes and reactions, GM improvisation, campaign continuity, optional spatial/economy rules, reusable stories, extension APIs, rule tracing, and save migration. Existing foundations are distinct from complete workflows. Release dates are not announced.
 
-Multi-platform support remains a development goal. Supported operating systems and installation requirements will be listed on official store product pages at release. A store release date has not been announced. Development features and test results are not a guarantee of final release quality. Display scaling, input, networking, and other real-world environments need further validation.
+## Remaining release checks
 
-The current demo uses runtime compatibility version **{{ site.data.demo.version }}**. Game packages, saves, and server sessions from earlier runtimes are incompatible. Export again from the source project using the new runtime. See [Troubleshooting](TROUBLESHOOTING.md).
+Real devices and networks, long projects and campaigns, input/scaling/accessibility, official code signing, actual store SDKs and achievements, Workshop integration, and an external creator's publication journey still need verification. Builds and interactive concepts alone do not complete those checks.
 
-The harbor image is conceptual world art. The editor image is an actual development-alpha screenshot; its layout may differ from the current build.
+The current demo runtime is **{{ site.data.demo.version }}**. Source projects, play saves, and server sessions are separate. Keep copies before changes and review [Compatibility](TROUBLESHOOTING.md).
 
-## Where should I start?
+## Store availability
 
-- Explore the [creation workflow](EXPERIENCE.md) for the overall product experience.
-- Use the [editor menu guide](EDITOR.md) to find a specific editor task.
-- Read [Troubleshooting](TROUBLESHOOTING.md) for launch, save, and compatibility issues.
+The full Narrafield Studio product will be offered through official stores. The [download page](DEMO.md) provides the demo. Follow each distribution's environment requirements.
 
-Official store links will be added to the store section when available.
+{% include stores.html %}
+
+The homepage harbor is conceptual art. New workspace and play images are labeled **concept screens**; older application captures are labeled **earlier development-alpha screens**.

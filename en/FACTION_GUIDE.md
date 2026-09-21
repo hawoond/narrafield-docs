@@ -5,7 +5,7 @@ description: Author nations and guilds with organizations, members, diplomacy, p
 
 # Factions
 
-**Factions** describes nations, guilds, and secret societies. Extend their world names and descriptions with organizational structure and reputation or goals that change during play. This guide follows the runtime 0.4 development alpha.
+**Factions** describes nations, guilds, and secret societies. Extend their world names and descriptions with organizational structure and reputation or goals that change during play. This guide follows the runtime {{ site.data.review.demo_version }} development alpha.
 
 ## Create a first faction
 

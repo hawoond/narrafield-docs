@@ -37,11 +37,21 @@ Your prompt and selected entries are sent to the provider. The response is not a
 
 ## Plugins and stores
 
-The current screen can verify the hash and permissions of a local extension package, install it, and run a test. Check the archive path, designated SHA-256, and allowed capabilities, then choose **Verify package**.
+Demo 0.6 includes **Project extensions**, **Common hub**, **Dependencies / transfer / trust**, **Save migration**, and **Create content pack** tabs. Extensions are optional; ordinary authoring does not require them.
 
-Review the result and permissions before installing and pinning the project version. Running a test function does not automatically integrate it into every game rule. This area is under development and is not required to start authoring.
+1. Choose a local archive in **Project extensions** and use **Inspect package / permissions / activate**.
+2. Review the source, hash, exact version, dependencies, and requested permissions, then activate only the permissions you approve.
+3. Open **Components** to inspect available templates, editor commands, settings, or validators. Review proposed edits before applying them.
+4. For a supported runtime extension, configure **Runtime binding** and check where the scene or rule invokes it. Installation alone does not wire every action into a game.
+5. Validate and preview, save the project, then inspect the exported game with the same pinned modules and required notices.
 
-Store authentication, achievement synchronization, and workshop integration are not complete. Official purchase and installation links will appear in [Development](DEVELOPMENT.md#stores); **store pages are coming soon**.
+The runtime executes restricted WASM extensions. Supported declared effects and state use the shared engine; this is not unrestricted native code or a complete arbitrary-widget editor. Changes, dependency updates, removal, and save migration require review. Available migration tools write a separate copy under their exact compatibility requirements, not a universal engine-version conversion.
+
+Content packs can select supported definitions and managed images with license information. The **Common hub** interface uses a configured service. A runnable self-hosted hub is separate from an officially operated public catalog. Real Steam Workshop subscription and Steam/STOVE/Epic service integration are not verified as complete. Official store pages remain [coming soon](DEVELOPMENT.md#stores).
+
+## Planned workspace location
+
+Project plugin policy and Git will move into [Project settings](DESIGN.md); creative content and optional LLM assistance remain close to the item being edited. This is a planned reorganization of the current menus.
 
 ## Check after working
 

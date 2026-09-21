@@ -6,6 +6,10 @@ title: Rules and expressions
 
 See [Game data](GAME_DATA.md) for item, quest, and ability authoring. This page covers **scene-action conditions, checks, and effect expressions**, followed by advanced data-format details.
 
+## Start without dice
+
+A condition can check for a key, and an effect can open a door or move to another scene without a roll. The d20 example below is optional. See the [rule-pack and attribution design](RULE_PACKS.md).
+
 ## Make a first check
 
 1. Define the attribute in Game data. Basic d20 checks use attributes as modifiers.
@@ -55,6 +59,6 @@ Example: a `2d6 + insight` check.
 
 One expression can have a maximum depth of 24, 256 nodes, and 100 dice in total. Each die supports 2–100,000 sides. Conditions must return a boolean and cannot contain dice, so repeatedly checking whether a choice is visible changes neither randomness nor game state. Use check expressions for random branches.
 
-The entire tree is validated for types and size before evaluation. `and` and `or` short-circuit during execution. Checks and effects within game commands use stored random state, allowing reproduction after loading a save. If a later effect or scene transition fails, all state changes and random consumption for that command are rolled back. Resubmitting the same command ID does not roll again.
+The complete AST is checked for types and size before evaluation; `and` and `or` short-circuit. Offline play uses a reproducible random stream. Persistent online sessions use cryptographic randomness for each die and record confirmed results. Failed commands roll back state, and retrying a processed online command with the same ID does not roll again.
 
-The current expression system works with integers and a single player state. String operations, arbitrary function calls, multiplication, division, and user code are not supported.
+The expression system uses integers from its supported execution context. String operations, arbitrary function calls, multiplication, division, and user code are not supported.

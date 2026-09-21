@@ -1,15 +1,15 @@
 ---
-title: User wiki
+title: Creator guide
 description: Learn how to start, build worlds, define rules, export games, and collaborate in Narrafield Studio.
 ---
 
-# Narrafield Studio user wiki
+# Narrafield Studio creator guide
 
 Narrafield Studio is a TRPG engine developed by **sortie**. Start with a sample, change one scene and its choices, and add rules step by step to build your own game. Use this wiki to find the guide you need.
 
 **Start with [Quick start](QUICKSTART.md) and open The Dark Lighthouse sample.** If you received someone else's game, see [Play and save a game](PLAY_AND_EXPORT.md).
 
-These guides describe the **runtime 0.4 development alpha**. This is not a final store release; available features may vary with your build.
+These guides describe the **runtime {{ site.data.review.demo_version }} development alpha**. This is not a final store release; available features may vary with your build.
 
 **Looking for a menu? Open the [editor menu guide](EDITOR.md).** For the whole product workflow, explore [the creation experience](EXPERIENCE.md).
 
@@ -56,3 +56,9 @@ See [Troubleshooting](TROUBLESHOOTING.md) for launch and export errors, disconne
 [Quick start](QUICKSTART.md) → [Worlds and scenes](WORLD_BUILDING.md) → [Rules and catalogs](RULES.md) → [Play and export](PLAY_AND_EXPORT.md)
 
 Use the sidebar to change topics. On smaller screens, expand **Wiki contents**. Every guide is available in Korean and English; the **한국어 / English** tabs switch the current page's language. See [Current capabilities](DEVELOPMENT.md) for alpha features, limitations, and store availability.
+
+## Planned features and screen designs
+
+[New creation workspace](DESIGN.md) · [Game screens](GAME_SCREENS.md) · [Starting a game and character creation](PLAYER_START.md) · [Online parties and campaigns](PARTY_PLAY.md) · [Publishing your game](PUBLISHING_GAME.md) · [Optional rule packs](RULE_PACKS.md)
+
+These pages cover plan 1.22 and reviewed concepts. Their **In development** labels distinguish planned workflows from features available in the demo.

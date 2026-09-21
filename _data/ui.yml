@@ -4,7 +4,8 @@ ko:
   description: sortie가 만드는 TRPG 엔진 Narrafield Studio. 예제로 쉽게 시작하고, 장면과 선택지를 연결해 나만의 이야기를 게임으로 완성하세요. 공식 제품 소개와 사용 가이드.
   on_this_page: 이 페이지에서
   enlarge_image: 원본 크게 보기 (새 탭)
-  screenshot_note: 개발 알파의 실제 렌더링 화면이며, 메뉴명과 배치는 현재 빌드와 다를 수 있습니다.
+  screenshot_note: 이전 개발 알파의 실제 화면입니다. 현재 데모와 메뉴·배치가 다를 수 있습니다.
+  concept_note: 개발 중인 화면 시안입니다. 현재 데모의 실제 화면이 아닙니다.
   skip: 본문으로 바로가기
   home_label: Narrafield Studio 소개 홈
   site_nav: 사이트 탐색
@@ -14,7 +15,7 @@ ko:
   open_wiki: 위키 열기
   demo: 데모 다운로드
   language: 언어 선택
-  wiki: 사용자 위키
+  wiki: 제작 가이드
   wiki_nav: 위키 목차
   mobile_nav: 모바일 위키 목차
   location: 현재 위치
@@ -33,7 +34,8 @@ en:
   description: Narrafield Studio is a TRPG engine developed by sortie. Start with a sample, connect scenes and choices, and build your own playable story step by step. Official product website and user guide.
   on_this_page: On this page
   enlarge_image: Open full-size image (new tab)
-  screenshot_note: Actual development-alpha rendering in Korean; menu labels and layout may differ from your build.
+  screenshot_note: Earlier development-alpha rendering in Korean; menus and layout may differ from the current demo.
+  concept_note: Concept screen in Korean, showing planned design rather than the current demo.
   skip: Skip to content
   home_label: Narrafield Studio home
   site_nav: Site navigation
@@ -43,7 +45,7 @@ en:
   open_wiki: Open wiki
   demo: Download demo
   language: Choose language
-  wiki: User wiki
+  wiki: Creator guide
   wiki_nav: Wiki contents
   mobile_nav: Mobile wiki contents
   location: You are here

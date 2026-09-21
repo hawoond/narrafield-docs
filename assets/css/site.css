@@ -206,3 +206,17 @@ body:has(.hero) { overflow-x: clip; }
 .demo-integrity { margin-top: 20px; border-top: 1px solid var(--line); padding-top: 16px; }
 .demo-integrity summary { cursor: pointer; }
 .demo-checksum { display: block; overflow-wrap: anywhere; white-space: normal; }
+.guide-basis { margin: 18px 0 0; font-size: 12px; color: var(--muted); }
+.plan-note { margin: 22px 0 0; padding: 18px 22px; border-left: 3px solid var(--ochre); background: #eeeade; font-size: 14px; }
+.plan-note p { margin: 6px 0 0; }
+.design-preview { padding-top: 80px; }
+.design-preview h2 { font-size: clamp(30px, 3.2vw, 44px); line-height: 1.55; margin: 8px 0 20px; }
+.design-intro { max-width: 750px; color: var(--muted); }
+.preview-label { font-size: 13px; color: var(--muted); margin: 0; }
+.preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: 32px 0 24px; }
+.preview-figure { margin: 0; min-width: 0; }
+.preview-figure img { width: 100%; aspect-ratio: 1.98; object-fit: contain; background: var(--sage); border: 1px solid var(--line); border-radius: 4px; }
+.preview-figure figcaption { margin-top: 16px; font-size: 14px; }
+.preview-figure strong { display: block; font-size: 20px; margin-bottom: 5px; }
+.preview-links { display: flex; flex-wrap: wrap; gap: 12px 26px; margin-top: 24px; }
+@media (max-width: 760px) { .preview-grid { grid-template-columns: 1fr; gap: 32px; } .design-preview { padding-top: 54px; } .plan-note { padding: 16px; } }

@@ -1,4 +1,4 @@
-# Narrafield Studio · 소개와 사용자 위키
+# Narrafield Studio · 소개와 제작 가이드
 
 제품 **Narrafield Studio** · **sortie**
 
@@ -6,11 +6,12 @@
 
 - [제품 소개](https://narrafield.com/)
 - [제작기 메뉴별 안내](https://narrafield.com/EDITOR.html)
-- [한국어 사용자 위키](https://narrafield.com/WIKI.html)
-- [English user wiki](https://narrafield.com/en/WIKI.html)
+- [한국어 제작 가이드](https://narrafield.com/WIKI.html)
+- [English creator guide](https://narrafield.com/en/WIKI.html)
+- [새 기획과 화면 시안](https://narrafield.com/DESIGN.html)
 - [현재 지원 범위](DEVELOPMENT.md)
 
-현재 문서는 개발용 알파를 기준으로 합니다. 모든 가이드는 한국어와 영어로 제공하며 상단의 언어 탭에서 같은 문서의 언어를 바꿀 수 있습니다. 운영체제별 지원 범위는 출시 시 공식 스토어 제품 정보에서 안내합니다.
+사용법은 검토한 공개 데모를 기준으로 하며, `content_status: planned` 문서는 개발 목표와 시안을 설명합니다. `_data/review.yml`에 검토일·기획 버전·검증한 데모 버전을 기록합니다. 모든 가이드는 한국어와 영어로 제공하고 언어 탭으로 같은 문서를 전환합니다.
 
 [데모 다운로드](https://narrafield.com/DEMO.html)에서 현재 개발용 알파를 제공합니다. 데모 ZIP은 공개 릴리스의 첨부 파일로 게시하고 `_data/demo.yml`에서 버전·다운로드 주소·파일 크기·SHA-256을 관리합니다. 정식 제품은 **스토어 공개 예정**이며, 공식 제품 페이지가 공개되면 `_data/stores.yml`에 이름과 HTTPS 주소를 추가합니다.
 
@@ -24,4 +25,4 @@
 
 이 저장소에서 받은 문서 수정 제안은 원본에도 반영해 다음 업데이트에서 유지하세요. 애플리케이션 소스, 개발 기획, 바이너리와 프로젝트 데이터는 이 저장소의 관리 대상에 포함되지 않습니다.
 
-항구 일러스트는 제품 세계관을 표현하기 위해 생성한 콘셉트 아트이며, 실제 게임 화면이 아닙니다. 제작기 이미지는 실제 개발 알파의 화면입니다.
+항구 일러스트는 콘셉트 아트입니다. 이전 개발 알파의 실제 앱 화면과 최신 제작기·플레이 화면 시안을 캡션으로 구분합니다. 시안은 데모 기능의 구현 완료를 의미하지 않습니다.

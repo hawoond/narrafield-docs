@@ -5,7 +5,7 @@ description: Find each Narrafield Studio editor menu, its purpose, and the detai
 
 # Editor menu guide
 
-Find the right menu for your task. This guide follows the **runtime 0.4 development-alpha menu structure**. Older builds may show some Game data features separately as **Items & quests** or **Rules & character**.
+Find the right menu for your task. This guide follows the **runtime {{ site.data.review.demo_version }} development-alpha menu structure**. Older builds may show some Game data features separately as **Items & quests** or **Rules & character**.
 
 {% include screenshot.html file="422400efb855c8236a05.png" alt="Editor with toolbar, menu tabs, world entries and an editing area" caption="The world editor illustrates the shared screen structure." %}
 
@@ -61,3 +61,7 @@ Find the right menu for your task. This guide follows the **runtime 0.4 developm
 [Project](PROJECT.md) → [World](WORLD_BUILDING.md) → [Scenes & actions](SCENES.md) → [Game data](GAME_DATA.md) → [Validate, play and export](PLAY_AND_EXPORT.md)
 
 Add relations, maps, timelines, and factions when you need them. You do not have to fill every menu before starting.
+
+## Where can I see the new workspace?
+
+[New creation workspace](DESIGN.md) shows the planned sidebar and separate project/app settings. The current demo uses the menus above; planned menu locations are not current instructions. **App settings** is already available in the toolbar.

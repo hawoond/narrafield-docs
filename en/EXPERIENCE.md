@@ -50,3 +50,7 @@ Use **Validate** to find invalid references and **Play** to test success, failur
 The product is currently a development alpha. See [Development](DEVELOPMENT.md) for current capabilities and limits. Purchases and installation will use official stores; **store pages are coming soon**.
 
 **Next:** [Start with the sample](QUICKSTART.md) or explore the [editor menu guide](EDITOR.md).
+
+## Preview the next creation experience
+
+Explore the [new workspace](DESIGN.md) that separates creative work from project management, and [game screens](GAME_SCREENS.md) focused on scenes and choices. Compare planned title flows, character creation, online parties, and publishing with the demo in [Current capabilities](DEVELOPMENT.md).

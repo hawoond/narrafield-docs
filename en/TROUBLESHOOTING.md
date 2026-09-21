@@ -24,7 +24,7 @@ Deletion is rejected while scene conditions, effects, expressions, or characters
 
 ## An older game or save will not open
 
-The current demo uses runtime compatibility version **{{ site.data.demo.version }}**. Game packages, saves, and server session snapshots from earlier runtimes are incompatible. Schema 1 source projects can still be opened; export them again with the new player. Play progress is not migrated automatically.
+The current demo uses runtime **{{ site.data.demo.version }}**. Packages, saves, and server snapshots are checked against their runtime and content. Keep source projects and original saves, then export with the matching player. There is no general automatic migration to 0.6. Use an explicit migration tool only when its exact source-runtime, content, and plugin requirements are satisfied, and retain the original file.
 
 When changing online content or runtime versions, preserve the existing state file and give `--state` a new path outside the project. See [Online sessions](ONLINE.md) for restart and state-file restrictions.
 
@@ -35,3 +35,11 @@ Individual invitations and character assignment are separate. Player control dep
 ## A translation cannot be applied
 
 Save the project first. JSON import validates project, locale, string keys, source changes, placeholders, and locked terms. Any error rejects the whole import. Correct the reported issues and import again. See [Translation workspace](LOCALIZATION.md).
+
+## The concept menus are missing
+
+Pages marked **In development** show planned workflows, including the new workspace, screen composer, character creation, and party rules. The downloadable demo still uses the [current editor menus](EDITOR.md).
+
+## I can join but cannot act
+
+An invitation without a character assignment joins as a spectator. Ask the GM to review the participant assignment and current turn. See [Online sessions](ONLINE.md).

@@ -44,6 +44,20 @@
       url: /COLLABORATION.html
     - title: { ko: 번역 작업실, en: Translation workspace }
       url: /LOCALIZATION.html
+- title: { ko: 새 기획과 화면 시안, en: Planned features and designs }
+  pages:
+    - title: { ko: 새 제작 작업 공간, en: New creation workspace }
+      url: /DESIGN.html
+    - title: { ko: 게임 화면과 커스터마이징, en: Game screens }
+      url: /GAME_SCREENS.html
+    - title: { ko: 플레이 시작·캐릭터 생성, en: Starting a game }
+      url: /PLAYER_START.html
+    - title: { ko: 온라인 파티와 캠페인, en: Parties and campaigns }
+      url: /PARTY_PLAY.html
+    - title: { ko: 내 작품의 이름으로 배포, en: Publishing your game }
+      url: /PUBLISHING_GAME.html
+    - title: { ko: 필요한 규칙만 선택하기, en: Optional rule packs }
+      url: /RULE_PACKS.html
 - title: { ko: 도움말, en: Help }
   pages:
     - title: { ko: 문제 해결과 호환성, en: Troubleshooting }

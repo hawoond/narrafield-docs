@@ -5,7 +5,7 @@ description: Define and assign items, quests, attributes, resources, skills, spe
 
 # Game data
 
-**Game data** holds shared definitions and character assignments. This guide follows the **runtime 0.4 development alpha**; older builds have different menus and capabilities.
+**Game data** holds shared definitions and character assignments. This guide follows the **runtime {{ site.data.review.demo_version }} development alpha**; older builds have different menus and capabilities.
 
 Defining an item does not give it to a character. Abilities also need the appropriate assignment and usage conditions before appearing in play.
 
@@ -68,3 +68,7 @@ For statuses, equipment, and passives, check triggers, maintenance conditions, a
 Check sufficient and insufficient resources, success and failure, and unavailable targets. Save the project and preview the complete scene flow afterward.
 
 **Related:** [Rules and expressions](RULES.md) · [Scenes and actions](SCENES.md) · [Current capabilities](DEVELOPMENT.md)
+
+## Planned player creation and party rules
+
+Shared character definitions are distinct from runtime character instances. Two instances can have separate equipment, resources, and progress. See [Online sessions](ONLINE.md) for current GM assignment, and [Starting a game](PLAYER_START.md) and [Online parties](PARTY_PLAY.md) for planned creation steps and personal parties.

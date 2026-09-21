@@ -4,9 +4,9 @@ title: Play and export
 
 # Play and export
 
-This guide explains how creators validate and export their own games. Purchases and installation of Narrafield Studio will be handled through [official stores](DEVELOPMENT.md#stores). This website does not distribute executable files.
+This guide explains how creators validate and export their own games. Try the editor from [Download the demo](DEMO.md); the full product will be offered through [official stores](DEVELOPMENT.md#stores).
 
-The `.exe` names below are examples from the current development build. The engine is being developed toward multi-platform support. Check the instructions for your build or game for supported environments and launch methods.
+The `.exe` names below are examples from the current development build. Check the instructions for your build or game for supported environments and launch methods.
 
 ## Run a game you received
 
@@ -42,10 +42,14 @@ Online export creates separate `client` and `server` folders. **Give players onl
 
 Packages with the optional operations module include the operator console (`operator.exe`). Use **Server operations** in the editor or the console with the GM token to manage invitations, revocation, announcements, and restrictions.
 
-The current online model shares one party character. Server sessions and credentials are stored in a private file outside the project. See [Online sessions](ONLINE.md) for startup, restart, invitations, and backup limitations.
+The online demo assigns characters to personal invitations and checks control on the server. Unassigned participants join as spectators. Keep server state and credentials outside the project; see [Online sessions](ONLINE.md) for startup, restart, assignment, and backup limitations.
 
 ## Related guides
 
 - [Quick start](QUICKSTART.md): learn the flow with the sample.
 - [Online sessions](ONLINE.md): manage servers and access credentials.
 - [Troubleshooting](TROUBLESHOOTING.md): resolve launch, export, and save problems.
+
+## Planned game screens and publishing
+
+[Scene-focused screens and customization](GAME_SCREENS.md), [Title, New game, and character creation](PLAYER_START.md), and [Creator identity, credits, and store profiles](PUBLISHING_GAME.md) are planned beyond the current player interface. Their complete workflows are not included in the demo.

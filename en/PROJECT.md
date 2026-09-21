@@ -48,3 +48,7 @@ Content or runtime changes can invalidate old saves. Online sessions are also ti
 - **Must I edit JSON?** Use the forms for ordinary work. Full project JSON editing is an advanced option for users who understand the structure.
 
 **Next:** [Scenes and actions](SCENES.md) · [Play and export](PLAY_AND_EXPORT.md)
+
+## Planned identity and publishing settings
+
+[Publish under your game’s identity](PUBLISHING_GAME.md) describes planned creator information, credits, and per-game store profiles. See the [workspace concept](DESIGN.md) for the new settings structure.
