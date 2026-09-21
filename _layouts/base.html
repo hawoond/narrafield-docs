@@ -1,16 +1,24 @@
+{% assign language = page.lang | default: 'ko' %}
+{% assign ui = site.data.ui[language] %}
+{% assign korean_url = page.url %}
+{% if language == 'en' %}{% assign korean_url = page.url | remove_first: '/en' %}{% endif %}
+{% assign english_url = '/en' | append: korean_url %}
 <!doctype html>
-<html lang="ko">
+<html lang="{{ language }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | escape }} · Narrafield Studio</title>
-    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="description" content="{{ page.description | default: ui.description | escape }}">
     <meta name="theme-color" content="#f6f4ef">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="ko" href="{{ korean_url | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ english_url | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ korean_url | absolute_url }}">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale" content="{{ ui.locale }}">
     <meta property="og:title" content="{{ page.title | escape }} · Narrafield Studio">
-    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:description" content="{{ page.description | default: ui.description | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ '/assets/images/harbor.png' | absolute_url }}">
     <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +30,7 @@
     {% if page.layout == 'landing' %}<link rel="preload" as="image" href="{{ '/assets/images/harbor.png' | relative_url }}">{% endif %}
   </head>
   <body>
-    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <a class="skip-link" href="#main">{{ ui.skip }}</a>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

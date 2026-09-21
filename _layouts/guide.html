@@ -1,12 +1,15 @@
 ---
 layout: base
 ---
+{% assign language = page.lang | default: 'ko' %}
+{% assign ui = site.data.ui[language] %}
+{% assign wiki_url = ui.prefix | append: '/WIKI.html' %}
 <main id="main" class="wiki-layout wrap">
-  <aside class="wiki-sidebar"><nav aria-label="위키 목차">{% include wiki-nav.html %}</nav></aside>
+  <aside class="wiki-sidebar"><nav aria-label="{{ ui.wiki_nav }}">{% include wiki-nav.html %}</nav></aside>
   <div class="wiki-main">
-    <details class="wiki-mobile-nav"><summary>위키 목차</summary><nav aria-label="모바일 위키 목차">{% include wiki-nav.html %}</nav></details>
-    <nav class="breadcrumbs" aria-label="현재 위치"><a href="{{ '/' | relative_url }}">소개</a><span aria-hidden="true">/</span><a href="{{ '/WIKI.html' | relative_url }}">사용자 위키</a>{% unless page.url == '/WIKI.html' %}<span aria-hidden="true">/</span><span>{{ page.title | escape }}</span>{% endunless %}</nav>
+    <details class="wiki-mobile-nav"><summary>{{ ui.wiki_nav }}</summary><nav aria-label="{{ ui.mobile_nav }}">{% include wiki-nav.html %}</nav></details>
+    <nav class="breadcrumbs" aria-label="{{ ui.location }}"><a href="{{ ui.prefix | append: '/' | relative_url }}">{{ ui.introduction }}</a><span aria-hidden="true">/</span><a href="{{ wiki_url | relative_url }}">{{ ui.wiki }}</a>{% unless page.url == wiki_url %}<span aria-hidden="true">/</span><span>{{ page.title | escape }}</span>{% endunless %}</nav>
     <article class="wiki-article">{{ content }}</article>
-    <p class="wiki-return"><a href="{{ '/WIKI.html' | relative_url }}">← 위키 전체 목차</a><a href="{{ '/' | relative_url }}">Narrafield 소개 →</a></p>
+    <p class="wiki-return"><a href="{{ wiki_url | relative_url }}">← {{ ui.all_guides }}</a><a href="{{ ui.prefix | append: '/' | relative_url }}">{{ ui.about }} →</a></p>
   </div>
 </main>

@@ -1,10 +1,15 @@
-<a class="wiki-home" href="{{ '/WIKI.html' | relative_url }}"{% if page.url == '/WIKI.html' %} aria-current="page"{% endif %}>사용자 위키</a>
+{% assign language = page.lang | default: 'ko' %}
+{% assign ui = site.data.ui[language] %}
+{% assign wiki_url = ui.prefix | append: '/WIKI.html' %}
+<a class="wiki-home" href="{{ wiki_url | relative_url }}"{% if page.url == wiki_url %} aria-current="page"{% endif %}>{{ ui.wiki }}</a>
 {% for group in site.data.navigation %}
-<p class="nav-group">{{ group.title | escape }}</p>
+<p class="nav-group">{{ group.title[language] | escape }}</p>
 <ul>
   {% for item in group.pages %}
-  <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a></li>
+  {% assign item_url = ui.prefix | append: item.url %}
+  <li><a href="{{ item_url | relative_url }}"{% if page.url == item_url %} aria-current="page"{% endif %}>{{ item.title[language] | escape }}</a></li>
   {% endfor %}
 </ul>
 {% endfor %}
-<a class="wiki-support" href="{{ '/DEVELOPMENT.html' | relative_url }}">현재 지원 범위</a>
+{% assign support_url = ui.prefix | append: '/DEVELOPMENT.html' %}
+<a class="wiki-support" href="{{ support_url | relative_url }}"{% if page.url == support_url %} aria-current="page"{% endif %}>{{ ui.support }}</a>

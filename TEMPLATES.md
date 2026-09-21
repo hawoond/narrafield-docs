@@ -1,15 +1,47 @@
-# Optional component templates
+---
+title: 구성 요소
+---
 
-The editor's component templates add content to either a new blank project or an existing project. The sample project remains a separate complete example. Adding a component never replaces the current project, existing scenes, start scene, world records or player statistics.
+# 구성 요소로 프로젝트 만들기
 
-Available built-ins:
+**구성 요소**는 이야기·판정·전투에 필요한 내용을 새 프로젝트나 기존 프로젝트에 추가하는 기능입니다. 완성된 예제 프로젝트와는 별도로 사용할 수 있습니다. 구성 요소를 추가해도 현재 프로젝트, 기존 장면, 시작 장면, 세계관 설정과 플레이어 능력치를 통째로 교체하지 않습니다.
 
-- **Narrative**: a village, guide, arrival event, relation, map pin, chronology entry and two connected scenes.
-- **d20**: an independent insight attribute, a quest, a d20 check and success/failure endings.
-- **Combat**: a sparring enemy, healing item definition and victory/defeat/escape endings. A blank player receives combat statistics and one healing item. Existing characters retain statistics and inventory; invalid combat statistics must be corrected explicitly before adding this component.
+## 사용할 수 있는 구성 요소
 
-Choose **Preview addition** and inspect counts, generated ID namespace and behavior notices before confirming. The addition is one Undo operation. A preview is rejected if the project changes before confirmation. If a project already has a starting scene, the added scenes are deliberately unconnected: connect them using scene actions, or explicitly select the new start scene in project settings.
+| 구성 요소 | 추가되는 내용 |
+| --- | --- |
+| 이야기 | 마을, 안내인, 도착 사건, 관계, 지도 핀, 연표 항목, 서로 연결된 장면 두 개 |
+| d20 판정 | 독립적인 통찰 능력치, 퀘스트, d20 판정, 성공·실패 결말 |
+| 전투 | 연습용 적, 회복 아이템 정의, 승리·패배·도주 결말 |
 
-Every instance uses a deterministic unused `tpl_<component>_<number>_` namespace. All component IDs and internal references are rewritten together, including entities, relations, map pins, chronology entries, scenes, actions, checks, quest/item effects, nested conditions, characters, attributes and inventory. Repeated additions create independent instances. The merged candidate passes project validation before it can be applied; validation errors do not partially change the project.
+전투 구성 요소를 빈 플레이어에 추가하면 전투 능력치와 회복 아이템 한 개를 함께 설정합니다. 기존 캐릭터의 능력치와 인벤토리는 유지합니다. 기존 전투 능력치가 유효하지 않으면 먼저 직접 수정한 뒤 구성 요소를 추가하세요.
 
-Scope: these are bundled components, not an arbitrary third-party template importer. They have no external assets or scripts. Template updates do not modify previously added content. The current editor supports additive composition; it does not synchronize edited instances back to a shared template definition.
+## 추가하는 순서
+
+1. **구성 요소** 탭에서 원하는 항목을 선택합니다.
+2. **추가 미리보기**에서 추가 항목 수, 새 ID의 접두어와 동작 안내를 확인합니다.
+3. 내용을 확인하고 추가를 확정합니다.
+4. 기존 시작 장면이 있다면 **장면과 행동**에서 새 장면으로 이어지는 선택지를 만듭니다. 새 장면부터 시작하려면 **프로젝트** 탭에서 시작 장면을 직접 바꿉니다.
+5. **검사**와 **미리보기**로 연결을 확인하고 **저장**합니다.
+
+추가 전체는 한 번의 **실행 취소**로 되돌릴 수 있습니다. 미리보기를 연 뒤 프로젝트가 변경되면 이전 미리보기의 확정은 거부됩니다. 새 미리보기를 확인한 뒤 다시 적용하세요.
+
+## 기존 프로젝트에 추가할 때
+
+기존 시작 장면이 있으면 새 장면은 자동으로 연결되지 않습니다. 기존 이야기를 유지하면서 필요한 위치에 직접 연결하는 방식입니다.
+
+각 추가 작업은 아직 사용하지 않은 `tpl_<구성 요소>_<번호>_` 형태의 ID 접두어를 사용합니다. 세계관 항목, 관계, 지도 핀, 연표, 장면, 행동, 판정, 퀘스트·아이템 효과, 중첩 조건, 캐릭터, 능력치와 인벤토리의 ID 및 내부 참조를 함께 바꿉니다. 같은 구성 요소를 여러 번 추가해도 각각 독립적인 묶음이 됩니다.
+
+추가 결과가 프로젝트 검사를 통과해야 적용됩니다. 오류가 있으면 프로젝트의 일부만 변경되는 일 없이 추가 전체를 거부합니다.
+
+## 제공 범위
+
+현재 구성 요소는 제작기에 기본으로 포함된 항목입니다. 임의의 외부 템플릿을 가져오는 기능은 제공하지 않으며, 기본 구성 요소에 외부 에셋이나 스크립트는 포함되지 않습니다.
+
+구성 요소가 업데이트되어도 이미 프로젝트에 추가한 내용은 자동으로 바뀌지 않습니다. 추가한 내용을 편집할 수 있지만, 편집 결과를 공용 템플릿과 동기화하는 기능은 없습니다.
+
+## 관련 문서
+
+- [시작하기](QUICKSTART.md): 예제와 빈 프로젝트에서 시작합니다.
+- [세계관과 장면](WORLD_BUILDING.md): 새 장면을 기존 이야기와 연결합니다.
+- [규칙과 카탈로그](RULES.md): 판정·아이템·능력치를 수정합니다.

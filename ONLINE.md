@@ -1,43 +1,78 @@
-# Online session persistence and access
+---
+title: 온라인 세션
+---
 
-The self-hosted server remains a **shared-party development alpha**. Every player controls the same party character. Individual credentials do not add multiple character ownership, private player notes, chat, owner/operator role separation, or the full seven-person multiplayer specification.
+# 온라인 세션과 접속 관리
 
-## Starting and restarting
+직접 운영하는 서버는 현재 **공동 파티 방식의 개발 알파**입니다. 접속한 플레이어가 하나의 파티 캐릭터를 함께 조작합니다. 개인별 접속 자격 증명을 발급해도 개인별 캐릭터 소유권, 비공개 메모, 채팅, 소유자·운영자 역할 분리나 전체 7인 멀티플레이 기능을 제공하는 것은 아닙니다.
 
-`server.exe -project <project-folder> -operations` loads or creates a session under the operating system's user configuration directory: `Narrafield/server/<hash-of-project-ID>/session.dat`. Use `-state <absolute-private-file>` to select a different session. State files must be outside the project directory. A second process cannot open the same session until the first releases its lock. Normal exit releases the lock; the OS also releases it after process termination.
+이 문서의 `.exe` 이름은 현재 개발 빌드의 실행 예시입니다. 사용하는 빌드의 실행 파일과 지원 환경을 확인하세요. 엔진은 멀티플랫폼 지원을 목표로 개발 중입니다.
 
-The session contains game state, the command journal, reconnect credentials, individual credential expirations/revocations, announcements, restrictions and audit history. Successful commands and operations are acknowledged only after a replacement snapshot has been written and synchronized. Write failures return HTTP 503 and leave the in-memory state and committed file unchanged. Restart restores the last committed state, including random state and processed command IDs. Reusing a command ID with a different payload or actor returns HTTP 409; exact retries return the current authoritative projection without applying the action again.
+## 서버 시작과 재시작
 
-Snapshots are tied to project ID, full content hash, engine version and storage schema. Changed content or corrupt state prevents startup and preserves the original file. Make a backup before changing content; use a new state path for a new session. No automatic migration or content hot reload is provided.
+`server.exe -project <프로젝트 폴더> -operations`로 시작하면 운영체제의 사용자 설정 폴더 아래 `Narrafield/server/<프로젝트 ID 해시>/session.dat`에서 세션을 불러오거나 새로 만듭니다.
 
-This implementation uses an atomic whole-file snapshot rather than the plan's proposed SQLite database. It targets one local server process and a local filesystem. It does not claim database scaling, network-filesystem locking, automatic backups, or power-loss guarantees beyond OS file synchronization and replacement semantics.
+다른 세션 파일을 사용하려면 `-state <비공개 파일의 절대 경로>`를 지정하세요. **상태 파일은 프로젝트 폴더 밖에 있어야 합니다.** 첫 서버가 파일 잠금을 해제할 때까지 두 번째 서버는 같은 세션을 열 수 없습니다. 정상 종료 시 잠금이 풀리며, 프로세스가 종료되어도 운영체제가 잠금을 해제합니다.
 
-## Protecting server data
+세션에는 게임 상태, 명령 기록, 재접속 자격 증명, 개인 자격 증명의 만료·철회, 공지, 접속 제한과 감사 기록이 포함됩니다. 서버는 새 상태 파일의 기록과 동기화를 완료한 뒤에만 명령이나 운영 작업의 성공을 응답합니다. 저장에 실패하면 HTTP 503을 반환하고 메모리 상태와 기존 저장 파일을 유지합니다.
 
-On Windows the complete snapshot is encrypted and authenticated with user-bound DPAPI. Run and restore it as the same Windows account; copying the file to a different account or machine is not a portable backup. On Unix, snapshots are owner-readable/writable (0600), and existing files with group/other access are rejected. Symlink state files/parents are rejected. Keep the state directory private and back up its contents separately from distributable game packages. Use an encrypted volume if Unix encryption at rest is required.
+재시작하면 난수 상태와 처리한 명령 ID를 포함해 마지막으로 저장된 상태가 복원됩니다. 같은 명령 ID에 다른 내용이나 실행 주체를 보내면 HTTP 409가 발생합니다. 동일한 요청을 재전송하면 동작을 다시 적용하지 않고 현재 서버 상태를 반환합니다.
 
-The initial GM and legacy shared-player credentials are displayed in the server console, including after a restart; protect the terminal and its logs. They are never included in player state, public packages, participant listings or operation audits. Future random state and internal processed command data are omitted from **both** GM and player HTTP responses. Persistent sessions draw fresh cryptographic entropy before each new command; individual rolls still use the engine's deterministic stream within that command. A fully pluggable cryptographic per-roll provider remains future work.
+## 콘텐츠를 바꾸거나 새 세션을 시작할 때
 
-Serve remote connections through a TLS reverse proxy. The default listener is localhost. This version uses authenticated HTTP snapshots/commands, not the planned WebSocket incremental protocol.
+상태 파일은 프로젝트 ID, 전체 콘텐츠 해시, 엔진 버전과 저장 스키마에 연결됩니다. 콘텐츠가 바뀌었거나 상태 파일이 손상되면 서버는 시작을 거부하고 원래 파일을 보존합니다.
 
-## Individual expiring credentials
+콘텐츠 변경 전 상태 파일을 백업하세요. 새 콘텐츠로 새 세션을 시작하려면 별도의 상태 파일 경로를 사용합니다. 자동 변환이나 실행 중 콘텐츠 다시 불러오기는 제공하지 않습니다.
 
-Open the maker's GM operations window, or run `operator.exe -server <HTTPS-URL>`. Enter the GM token from the protected server console. The native console keeps it in memory only and provides participant refresh, invitation creation, revocation, announcements, party restrictions and audit history. Invitation tokens appear only in their creation result dialog; copy and share them deliberately with the intended recipient. Close that dialog to clear its token field. The console rejects remote plaintext HTTP and redirects, and applies request deadlines and response size limits.
+현재 세션은 데이터베이스 대신 전체 파일을 교체하는 방식으로 저장합니다. 단일 서버 프로세스와 로컬 파일시스템을 대상으로 하며, 데이터베이스 수준의 확장, 네트워크 파일시스템 잠금이나 자동 백업은 제공하지 않습니다. 정전 시 보존 범위는 운영체제의 파일 동기화·교체 동작에 따릅니다.
 
-All endpoints require `Authorization: Bearer <credential>`. Only the GM may manage participants, independently of whether the optional operations module is enabled.
+## 서버 데이터 보호와 백업
 
-| Endpoint | Request / response |
+DPAPI를 사용하는 빌드는 전체 상태 파일을 실행 계정에 묶어 암호화하고 인증합니다. 복원할 때 같은 계정 환경이 필요하며, 파일을 다른 계정이나 기기로 복사하는 것만으로는 복원 가능한 백업이 되지 않습니다.
+
+Unix 계열 빌드는 상태 파일에 소유자만 읽고 쓸 수 있는 권한 `0600`을 적용합니다. 다른 사용자나 그룹에 권한이 있는 기존 파일은 거부합니다. 상태 파일이나 상위 경로가 심볼릭 링크여도 거부합니다. 저장 상태의 암호화가 필요하면 암호화된 볼륨을 사용하세요.
+
+상태 폴더는 비공개로 관리하고 배포 게임 패키지와 별도로 백업합니다. 초기 GM 토큰과 이전 방식의 공용 플레이어 토큰은 재시작 후에도 서버 콘솔에 표시되므로 콘솔과 로그도 보호하세요. 해당 토큰은 플레이어 상태, 공개 패키지, 참가자 목록이나 운영 감사 기록에 포함되지 않습니다.
+
+이후 난수 상태와 내부 명령 처리 데이터는 GM과 플레이어의 HTTP 응답 모두에서 제외됩니다. 새 명령마다 암호학적으로 안전한 무작위 값을 추가로 확보하며, 명령 내부의 개별 주사위는 엔진의 재현 가능한 난수 흐름을 사용합니다. 주사위마다 교체 가능한 암호학적 난수 공급자는 아직 제공하지 않습니다.
+
+## 외부 접속 준비
+
+외부 접속은 **TLS를 적용한 HTTPS 역방향 프록시**를 통해 제공하세요. 기본 서버는 로컬호스트에서 수신합니다. 현재 통신은 인증된 HTTP 상태 조회와 명령 방식이며, WebSocket 기반 증분 전송은 아직 제공하지 않습니다.
+
+## 개인 초대와 만료·철회
+
+제작기의 **서버 운영** 창을 열거나 `operator.exe -server <HTTPS 주소>`로 운영 콘솔을 실행합니다. 보호된 서버 콘솔에서 확인한 GM 토큰을 입력하세요.
+
+운영 콘솔에서는 참가자 새로고침, 초대 생성, 철회, 공지, 파티 접속 제한과 감사 기록을 사용할 수 있습니다. GM 토큰은 메모리에만 보관합니다. 초대 토큰은 생성 결과 창에서만 표시되므로 초대할 사람에게 전달할 때 복사하세요. 결과 창을 닫으면 토큰 입력란도 비워집니다.
+
+운영 콘솔은 외부의 암호화되지 않은 HTTP 연결과 리다이렉트를 거부하고, 요청 제한 시간과 응답 크기 제한을 적용합니다.
+
+모든 API 요청에는 `Authorization: Bearer <자격 증명>` 헤더가 필요합니다. 운영 모듈 사용 여부와 관계없이 참가자 관리는 GM만 할 수 있습니다.
+
+| API | 요청과 결과 |
 | --- | --- |
-| `POST /participants/invite` | JSON `{"id":"alice","expires":"2030-01-01T00:00:00Z"}`; choose a real expiry after now and within 30 days. HTTP 201 returns the credential once. |
-| `GET /participants` | IDs, expiration times and revoked flags; no credentials. |
-| `POST /participants/revoke` | JSON `{"id":"alice"}`; HTTP 204. Further requests with that credential return HTTP 401, including after restart. |
+| `POST /participants/invite` | `{"id":"alice","expires":"2030-01-01T00:00:00Z"}` 형식의 JSON을 보냅니다. 예시 날짜를 그대로 쓰지 말고 현재 이후 30일 이내의 실제 만료 시각을 지정하세요. HTTP 201 응답에서 토큰을 한 번 반환합니다. |
+| `GET /participants` | ID, 만료 시각과 철회 여부를 조회합니다. 토큰은 포함되지 않습니다. |
+| `POST /participants/revoke` | `{"id":"alice"}`를 보내면 HTTP 204를 반환합니다. 이후 해당 토큰의 요청은 재시작 후에도 HTTP 401로 거부됩니다. |
 
-There can be up to six active individual credentials. IDs cannot be reused; use a new ID for a replacement invitation. These credentials can be passed directly to the existing player's token field. An expired credential is rejected on every request. The legacy shared-player token remains available for backward compatibility and is not individually revocable; do not distribute it when individual revocation is needed. Party restrictions apply to all player credentials. Identity management records persist even when optional operations endpoints are disabled.
+활성 개인 자격 증명은 최대 **6개**입니다. ID는 재사용할 수 없으므로 재초대할 때 새 ID를 사용하세요. 발급한 토큰을 플레이어의 토큰 입력란에 넣으면 접속할 수 있습니다. 만료된 토큰은 모든 요청에서 거부됩니다.
 
-## Runtime images
+이전 방식의 공용 플레이어 토큰은 호환성을 위해 남아 있으며 개인별로 철회할 수 없습니다. 개인별 철회가 필요한 세션에서는 공용 토큰을 배포하지 마세요. 파티 접속 제한은 모든 플레이어 토큰에 적용됩니다. 개인 접속 관리 기록은 선택적 운영 기능을 꺼도 보존됩니다.
 
-`GET /media?path=<URL-encoded-managed-image-path>` serves previously verified project image bytes after normal authentication/restriction checks. Players can request only the current scene's background and portrait; future-scene images return HTTP 404. GM access is limited to loaded referenced project images. Responses disable caching and MIME sniffing. Scene state carries the current background and portrait references.
+## 플레이 중 이미지 접근
 
-## Verification
+`GET /media?path=<URL로 인코딩한 관리 이미지 경로>`는 인증과 접속 제한을 확인한 뒤 검증된 프로젝트 이미지를 제공합니다.
 
-`go test ./internal/networking ./internal/operations ./cmd/server` covers restart equivalence, credential continuity, replay and payload conflicts, exclusive opening, content mismatch/corrupt-state preservation, persistence rollback for commands/operations/invitations, revocation after restart, persisted bans and audit history, GM/player authorization and secret filtering. Network latency/load, certificate deployment, per-character ownership and disconnect grace handling remain separate acceptance work.
+플레이어는 현재 장면의 배경·초상만 요청할 수 있으며, 이후 장면의 이미지를 요청하면 HTTP 404를 반환합니다. GM도 불러온 프로젝트에서 참조하는 이미지에만 접근할 수 있습니다. 응답에서는 캐시와 MIME 유형 추측을 비활성화합니다. 장면 상태에는 현재 배경과 초상 참조가 포함됩니다.
+
+## 검증 범위
+
+`go test ./internal/networking ./internal/operations ./cmd/server`는 재시작 결과 일치, 자격 증명 유지, 명령 재전송과 내용 충돌, 독점 접근, 콘텐츠 불일치·손상 파일 보존, 저장 실패 시 명령·운영·초대의 되돌림, 재시작 후 철회·차단·감사 기록 유지, GM·플레이어 권한과 비밀 정보 제외를 검사합니다.
+
+네트워크 지연·부하, 인증서 배포, 개인별 캐릭터 소유권과 연결 종료 유예 처리는 별도의 검증·개발 항목입니다.
+
+## 관련 문서
+
+- [플레이와 게임 배포](PLAY_AND_EXPORT.md): 클라이언트·서버 패키지를 구분합니다.
+- [문제 해결과 호환성](TROUBLESHOOTING.md): 이전 세션과 콘텐츠 변경 문제를 확인합니다.

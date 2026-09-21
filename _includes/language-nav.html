@@ -1,0 +1,9 @@
+{% assign language = page.lang | default: 'ko' %}
+{% assign ui = site.data.ui[language] %}
+{% assign korean_url = page.url %}
+{% if language == 'en' %}{% assign korean_url = page.url | remove_first: '/en' %}{% endif %}
+{% assign english_url = '/en' | append: korean_url %}
+<nav class="language-nav" aria-label="{{ ui.language }}">
+  <a href="{{ korean_url | relative_url }}" lang="ko" hreflang="ko"{% if language == 'ko' %} aria-current="page"{% endif %}>한국어</a>
+  <a href="{{ english_url | relative_url }}" lang="en" hreflang="en"{% if language == 'en' %} aria-current="page"{% endif %}>English</a>
+</nav>

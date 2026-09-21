@@ -1,0 +1,11 @@
+{% assign language = page.lang | default: 'ko' %}
+{% assign ui = site.data.ui[language] %}
+<div class="store-entry" id="stores">
+  {% if site.data.stores.size > 0 %}
+  <p class="store-title">{{ ui.stores }}</p>
+  <div class="store-links">{% for store in site.data.stores %}<a class="button button-outline" href="{{ store.url | escape }}">{{ store.name | escape }} <span aria-hidden="true">↗</span></a>{% endfor %}</div>
+  {% else %}
+  <p class="store-title">{{ ui.store_pending }}</p>
+  {% endif %}
+  <p class="store-note">{{ ui.store_note }}</p>
+</div>

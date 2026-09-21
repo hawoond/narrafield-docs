@@ -1,5 +1,6 @@
 """Check the actual Jekyll output before GitHub Pages deployment (stdlib only)."""
 import argparse
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -11,10 +12,17 @@ class Page(HTMLParser):
         self.ids = set()
         self.links = []
         self.headings = 0
+        self.language = None
+        self.anchors = []
+        self.source = source
         self.feed(source)
 
     def handle_starttag(self, tag, pairs):
         attrs = dict(pairs)
+        if tag == "html":
+            self.language = attrs.get("lang")
+        if tag == "a":
+            self.anchors.append(attrs)
         if attrs.get("id"):
             self.ids.add(attrs["id"])
         if tag == "h1":
@@ -35,6 +43,7 @@ def main():
                 "TEMPLATES.html", "RULES.html", "PLAY_AND_EXPORT.html", "ONLINE.html",
                 "COLLABORATION.html", "LOCALIZATION.html", "TROUBLESHOOTING.html",
                 "DEVELOPMENT.html"}
+    expected |= {"en/" + name for name in list(expected)}
     pages = {path.resolve(): Page(path.read_text(encoding="utf-8"))
              for path in root.rglob("*.html")}
     errors = []
@@ -42,8 +51,35 @@ def main():
         path = root / name
         if path not in pages:
             errors.append(f"Missing page: {name}")
-        elif pages[path].headings != 1:
-            errors.append(f"Expected one main heading: {name}")
+        else:
+            page = pages[path]
+            language = "en" if name.startswith("en/") else "ko"
+            counterpart = name.removeprefix("en/")
+            if page.headings != 1:
+                errors.append(f"Expected one main heading: {name}")
+            if page.language != language:
+                errors.append(f"Wrong document language: {name}")
+            for lang, prefix in (("ko", ""), ("en", "en/")):
+                route = prefix + counterpart
+                if route.endswith("index.html"):
+                    route = route.removesuffix("index.html")
+                expected_url = base + "/" + route
+                matching = [a for a in page.anchors if a.get("hreflang") == lang]
+                if len(matching) != 1 or matching[0].get("href") != expected_url:
+                    errors.append(f"Wrong {lang} language switch: {name}")
+                elif (matching[0].get("aria-current") == "page") != (lang == language):
+                    errors.append(f"Wrong active language tab: {name}")
+            if re.search(r"Windows|윈도우|\(영문\)", page.source, re.IGNORECASE):
+                errors.append(f"Outdated platform or translation copy: {name}")
+            for anchor in page.anchors:
+                url = urlsplit(anchor.get("href", ""))
+                if anchor.get("hreflang") or url.scheme or url.netloc or not url.path:
+                    continue
+                route = url.path
+                if route.startswith(base + "/"):
+                    route = route[len(base) + 1:]
+                    if route.endswith((".html", "/")) and route.startswith("en/") != (language == "en"):
+                        errors.append(f"Navigation changes language unexpectedly: {name} -> {url.path}")
     links = 0
     for path, page in pages.items():
         for reference in page.links:
@@ -71,7 +107,7 @@ def main():
             elif url.fragment and target in pages and unquote(url.fragment) not in pages[target].ids:
                 errors.append(f"Missing anchor: {path.name} -> {reference}")
             links += 1
-    forbidden = {"IMPLEMENTATION_STATUS", "VERIFICATION", "DATA_FORMAT", "PUBLISHING"}
+    forbidden = {"IMPLEMENTATION_STATUS", "VERIFICATION", "DATA_FORMAT", "PUBLISHING", "SITE_DESIGN"}
     for path in root.rglob("*"):
         if path.is_file() and (path.stem in forbidden or path.suffix == ".md"
                               or path.relative_to(root).parts[0] in {"scripts", "internal", "cmd", ".git"}):

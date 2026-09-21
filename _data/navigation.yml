@@ -1,24 +1,24 @@
-- title: 시작과 제작
+- title: { ko: 시작과 제작, en: Getting started }
   pages:
-    - title: 시작하기
+    - title: { ko: 시작하기, en: Quick start }
       url: /QUICKSTART.html
-    - title: 세계관과 장면
+    - title: { ko: 세계관과 장면, en: Worlds and scenes }
       url: /WORLD_BUILDING.html
-    - title: 구성 요소 (영문)
+    - title: { ko: 구성 요소, en: Component templates }
       url: /TEMPLATES.html
-    - title: 규칙과 카탈로그
+    - title: { ko: 규칙과 카탈로그, en: Rules and catalogs }
       url: /RULES.html
-- title: 플레이와 공유
+- title: { ko: 플레이와 공유, en: Play and share }
   pages:
-    - title: 플레이와 게임 배포
+    - title: { ko: 플레이와 게임 배포, en: Play and export }
       url: /PLAY_AND_EXPORT.html
-    - title: 온라인 세션 (영문)
+    - title: { ko: 온라인 세션, en: Online sessions }
       url: /ONLINE.html
-    - title: Git 팀 제작
+    - title: { ko: Git 팀 제작, en: Git collaboration }
       url: /COLLABORATION.html
-    - title: 번역 작업실 (영문)
+    - title: { ko: 번역 작업실, en: Translation workspace }
       url: /LOCALIZATION.html
-- title: 도움말
+- title: { ko: 도움말, en: Help }
   pages:
-    - title: 문제 해결과 호환성
+    - title: { ko: 문제 해결과 호환성, en: Troubleshooting }
       url: /TROUBLESHOOTING.html

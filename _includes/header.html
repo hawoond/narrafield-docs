@@ -1,9 +1,12 @@
+{% assign language = page.lang | default: 'ko' %}
+{% assign ui = site.data.ui[language] %}
 <header class="site-header wrap">
-  <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Narrafield Studio 소개 홈">Narrafield<span>STUDIO</span></a>
-  <nav class="header-nav" aria-label="사이트 탐색">
-    <a href="{{ '/' | relative_url }}#experience">만드는 경험</a>
-    <a href="{{ '/WIKI.html' | relative_url }}">사용 가이드</a>
-    <a href="{{ '/' | relative_url }}#development">개발 상태</a>
+  <a class="wordmark" href="{{ ui.prefix | append: '/' | relative_url }}" aria-label="{{ ui.home_label }}">Narrafield<span>STUDIO</span></a>
+  <nav class="header-nav" aria-label="{{ ui.site_nav }}">
+    <a href="{{ ui.prefix | append: '/' | relative_url }}#experience">{{ ui.experience }}</a>
+    <a href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}">{{ ui.guide }}</a>
+    <a href="{{ ui.prefix | append: '/' | relative_url }}#development">{{ ui.development }}</a>
   </nav>
-  <a class="button button-outline header-cta" href="{{ '/WIKI.html' | relative_url }}">위키 열기 <span aria-hidden="true">↗</span></a>
+  <a class="button button-outline header-cta" href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}">{{ ui.open_wiki }} <span aria-hidden="true">↗</span></a>
+  {% include language-nav.html %}
 </header>

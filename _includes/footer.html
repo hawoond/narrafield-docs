@@ -1,8 +1,10 @@
+{% assign language = page.lang | default: 'ko' %}
+{% assign ui = site.data.ui[language] %}
 <footer class="site-footer wrap">
-  <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Narrafield Studio 소개 홈">Narrafield<span>STUDIO</span></a>
-  <p class="footer-line">상상에서 시작해, 이야기로 연결되는 세계.</p>
+  <a class="wordmark" href="{{ ui.prefix | append: '/' | relative_url }}" aria-label="{{ ui.home_label }}">Narrafield<span>STUDIO</span></a>
+  <p class="footer-line">{{ ui.footer_line }}</p>
   <div class="footer-meta">
-    <nav aria-label="하단 탐색"><a href="{{ '/WIKI.html' | relative_url }}">사용 가이드</a><a href="https://github.com/{{ site.repository }}">문서 저장소</a></nav>
+    <nav aria-label="{{ ui.footer_nav }}"><a href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}">{{ ui.guide }}</a><a href="https://github.com/{{ site.repository }}">{{ ui.repository }}</a></nav>
     <small>© Narrafield Studio</small>
   </div>
 </footer>

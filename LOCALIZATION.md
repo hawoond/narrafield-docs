@@ -1,11 +1,71 @@
-# Content translation workspace
+---
+title: 번역 작업실
+---
 
-The native editor's translation tab lists stable string IDs for entity names/bodies, scene titles/bodies and action labels. It shows Korean source beside English translation, with search and missing/draft/reviewed/source-changed filters. A saved project is required before applying translations.
+# 번역 작업실
 
-Applying one translation or importing a JSON exchange validates every entry before changing content. Unknown and duplicate keys, another project/locale, changed source text or hash, mismatched placeholder names/counts/types and locked glossary violations reject the whole import. Keys use entity/scene/action IDs, so reordering actions cannot redirect translations. Imports are bounded to 4 MiB and reject unknown JSON fields and trailing data.
+제작기의 **번역 작업실**에서 게임 콘텐츠의 한국어 원문과 영어 번역을 나란히 편집합니다. 번역을 적용하려면 먼저 프로젝트를 저장하세요.
 
-Translation content remains in the existing per-ID entity and scene JSON files and uses existing runtime English fallback. `localization/review.json` holds source and target hashes, review flags and a glossary. It is authoring-only and is not copied into game packages. Source edits mark existing translations as source-changed; target edits invalidate review. Applying translation content is one normal editor undo step. Review metadata saves separately immediately; hashes ensure undo or discarded unsaved content cannot incorrectly inherit a reviewed state. Glossary edits save immediately and do not participate in project undo.
+이 기능은 제작 중인 **게임 콘텐츠**를 번역합니다. 지금 읽는 사용 가이드의 언어는 사이트 상단의 **한국어 / English** 탭에서 바꿀 수 있습니다.
 
-The glossary editor accepts an array such as `[{"source":"마라","target":"Mara","locked":true}]`. Locked terms use literal case-sensitive containment. Empty or duplicate source terms are rejected. Empty translations remain missing and are allowed for incremental work. Placeholder checking supports named `{actor}` and typed `{amount:int}` tokens, including repeated occurrences. Translation import is a trusted-authoring action, not an automatic runtime update.
+## 번역할 수 있는 항목
 
-Current limitations: the source column assumes Korean and targets English; bidirectional authoring, locale catalogs replacing inline fields, project/item/quest/summary/relation translations, automatic plural rules, language completeness export gates and full Unicode/IME/font accessibility QA remain separate work. Supported UI languages do not imply all game content has been translated. Source-hash review history is local to this authoring metadata file; it is not a translation service or machine translation API.
+- 세계관 항목의 이름과 본문
+- 장면의 제목과 본문
+- 행동에 표시되는 문구
+
+각 문자열은 세계관·장면·행동의 ID를 기준으로 식별합니다. 행동의 순서를 바꿔도 번역이 다른 행동에 적용되지 않습니다. 검색과 **누락**, **초안**, **검토 완료**, **원문 변경** 필터로 작업할 항목을 찾으세요.
+
+## 직접 번역하기
+
+1. 프로젝트를 저장하고 **번역 작업실**을 엽니다.
+2. 검색이나 상태 필터로 문자열을 선택합니다.
+3. 한국어 원문을 확인하고 영어 번역을 입력합니다.
+4. 자리표시자와 잠금 용어를 확인한 뒤 번역을 적용합니다.
+5. 콘텐츠를 저장하고 실제 장면에서 표시를 확인합니다.
+
+빈 번역은 **누락** 상태로 남겨둘 수 있어 일부부터 작업할 수 있습니다. 번역 내용의 적용은 일반 편집처럼 한 번의 실행 취소 단계로 기록됩니다.
+
+## JSON으로 주고받기
+
+번역 교환용 JSON을 내보내고 편집한 뒤 가져올 수 있습니다. 가져오기 전 모든 항목을 검사하며, 다음 문제가 하나라도 있으면 전체 가져오기를 거부합니다.
+
+- 알 수 없는 문자열 키 또는 중복 키
+- 다른 프로젝트나 대상 언어의 데이터
+- 내보낸 이후 변경된 원문 또는 원문 해시
+- 자리표시자의 이름·개수·타입 불일치
+- 잠금 용어 위반
+- 알 수 없는 JSON 필드 또는 JSON 뒤에 남은 데이터
+
+가져올 파일은 최대 **4 MiB**입니다. 실패하면 표시된 문제를 수정하고 다시 가져오세요. JSON 가져오기는 제작자가 검토한 번역을 편집기에 반영하는 작업이며, 실행 중인 게임을 자동으로 업데이트하는 기능은 아닙니다.
+
+## 자리표시자와 용어집
+
+자리표시자는 `{actor}`처럼 이름을 쓰거나 `{amount:int}`처럼 타입을 지정합니다. 같은 자리표시자가 여러 번 등장하면 번역에서도 이름·타입과 등장 횟수를 유지하세요.
+
+용어집은 다음과 같은 배열로 작성합니다.
+
+```json
+[{"source":"마라","target":"Mara","locked":true}]
+```
+
+잠금 용어는 대소문자를 구분해 문자열이 그대로 포함되는지 검사합니다. 비어 있거나 중복된 원문 용어는 사용할 수 없습니다. 용어집 편집은 즉시 저장되며 프로젝트 실행 취소에 포함되지 않습니다.
+
+## 검토 상태와 저장 위치
+
+번역 내용은 기존 세계관·장면별 JSON 파일에 저장되며, 플레이어는 기존 영어 표시 및 대체 표시 규칙을 사용합니다.
+
+`localization/review.json`에는 원문·번역 해시, 검토 표시와 용어집이 저장됩니다. 이 파일은 제작용이므로 게임 패키지에는 포함되지 않습니다.
+
+원문을 고치면 기존 번역은 **원문 변경** 상태가 됩니다. 번역을 고치면 검토 완료 표시가 무효화됩니다. 검토 정보는 콘텐츠와 별도로 즉시 저장하지만, 해시를 비교하므로 실행 취소하거나 저장하지 않은 내용을 버렸을 때 잘못된 검토 완료 상태가 이어지지 않습니다.
+
+## 현재 제한
+
+현재 원문은 한국어, 대상 언어는 영어입니다. 양방향 번역, 인라인 필드를 대체하는 언어별 카탈로그, 프로젝트·아이템·퀘스트·요약·관계의 번역, 자동 복수형 처리와 번역 완성도에 따른 내보내기 차단은 아직 제공하지 않습니다.
+
+편집기의 표시 언어 지원이 모든 게임 콘텐츠의 번역 완료를 뜻하지는 않습니다. 유니코드·입력기·글꼴 접근성 전반의 검증도 추가로 필요합니다. 검토 이력은 프로젝트의 로컬 제작 정보이며 자동 번역 서비스나 번역 API가 아닙니다.
+
+## 관련 문서
+
+- [세계관과 장면](WORLD_BUILDING.md): 번역할 원문 콘텐츠를 작성합니다.
+- [문제 해결과 호환성](TROUBLESHOOTING.md): 번역 적용 오류를 확인합니다.

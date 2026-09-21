@@ -1,0 +1,52 @@
+ko:
+  prefix: ""
+  locale: ko_KR
+  description: 세계관을 엮고, 선택지를 만들고, 나만의 TRPG를 플레이할 수 있는 게임으로. 내러필드 스튜디오 공식 소개와 사용 가이드.
+  skip: 본문으로 바로가기
+  home_label: Narrafield Studio 소개 홈
+  site_nav: 사이트 탐색
+  experience: 만드는 경험
+  guide: 사용 가이드
+  development: 개발 상태
+  open_wiki: 위키 열기
+  language: 언어 선택
+  wiki: 사용자 위키
+  wiki_nav: 위키 목차
+  mobile_nav: 모바일 위키 목차
+  location: 현재 위치
+  introduction: 소개
+  all_guides: 위키 전체 목차
+  about: Narrafield 소개
+  support: 현재 지원 범위
+  footer_line: 상상에서 시작해, 이야기로 연결되는 세계.
+  footer_nav: 하단 탐색
+  repository: 문서 저장소
+  stores: 공식 스토어
+  store_pending: 스토어 공개 예정
+  store_note: 출시 후 이곳에서 공식 스토어로 안내합니다. 구매와 설치는 해당 스토어에서 진행합니다.
+en:
+  prefix: /en
+  locale: en_US
+  description: Build worlds, create choices, and turn your TRPG into a playable game. The official Narrafield Studio website and user guide.
+  skip: Skip to content
+  home_label: Narrafield Studio home
+  site_nav: Site navigation
+  experience: Create
+  guide: User guide
+  development: Development
+  open_wiki: Open wiki
+  language: Choose language
+  wiki: User wiki
+  wiki_nav: Wiki contents
+  mobile_nav: Mobile wiki contents
+  location: You are here
+  introduction: Home
+  all_guides: All guides
+  about: About Narrafield
+  support: Current capabilities
+  footer_line: Worlds born from imagination, connected through stories.
+  footer_nav: Footer navigation
+  repository: Docs repository
+  stores: Official stores
+  store_pending: Store pages coming soon
+  store_note: Official store links will appear here when available. Purchases and installation will take place through those stores.
