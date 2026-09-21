@@ -35,7 +35,7 @@ class Page(HTMLParser):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("directory", type=Path)
-    parser.add_argument("--base-path", default="/narrafield-docs")
+    parser.add_argument("--base-path", default="")
     args = parser.parse_args()
     root = args.directory.resolve()
     base = args.base_path.rstrip("/")
