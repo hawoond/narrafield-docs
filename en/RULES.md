@@ -13,7 +13,7 @@ A condition can check for a key, and an effect can open a door or move to anothe
 ## Make a first check
 
 1. Define the attribute in Game data. Basic d20 checks use attributes as modifiers.
-2. Create an action in **Scenes & actions** and apply it once.
+2. Create an action in **Story** and apply it once.
 3. Reopen it and combine values and operations in the **Expression builder**.
 4. Set the target for the dice-plus-attribute result and both success and failure destinations.
 5. Save, validate, and preview both outcomes.

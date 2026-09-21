@@ -5,9 +5,11 @@ description: Add backgrounds and place pins, connect submaps, and prepare a sepa
 
 # Maps
 
+**Open: World → Maps**
+
 **Maps** lets you mark locations on a background image. Pins point to world places; adding a pin does not automatically create a playable scene or travel action.
 
-{% include screenshot.html file="f8d737be47ae1b95c634.png" alt="Map pins marking the harbor, old channel and last lighthouse" caption="An example of place pins. Backgrounds and individual controls may differ by build." %}
+{% include screenshot.html file="bd58172953adeb209d2d.png" alt="Map pins marking the harbor, old channel and last lighthouse" caption="Place pins in The Dark Lighthouse sample. A background image can be imported separately." width="1440" height="960" %}
 
 ## Create the first map
 

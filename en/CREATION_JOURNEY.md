@@ -41,7 +41,7 @@ When changing configurations, you will be able to compare your settings with the
 | Noncombat mystery, tactical adventure, long faction campaign | Validate the full engine's expressive range and standalone exports |
 | Existing The Dark Lighthouse | The alpha's checks, combat, and branching sample; separate from the new basic story template |
 
-The new samples are still being made and are not available to download. Playtesting will help us adjust values and rewards and see whether the stories are enjoyable.
+**A Small Errand** is included in the current demo’s starter catalog. The other new samples are still being made. Playtesting will help us adjust values and rewards and see whether the stories are enjoyable.
 
 ## Start with the current demo
 

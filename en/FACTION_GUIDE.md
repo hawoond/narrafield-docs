@@ -5,6 +5,8 @@ description: Author nations and guilds with organizations, members, diplomacy, p
 
 # Factions
 
+**Open: World → Factions**
+
 **Factions** lets you build nations, guilds, and secret societies. Write a name and description, then add members, ranks, reputation, and goals. This guide covers demo {{ site.data.review.demo_version }}.
 
 ## Create a first faction

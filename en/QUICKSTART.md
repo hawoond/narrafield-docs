@@ -4,44 +4,39 @@ title: Quick start
 
 # Quick start
 
-Open the sample, play through a short story, and then create your own project.
+Open a short sample, change one scene, and play through the result.
 
-## Before you start
+## Run the editor
 
-[Download the demo](DEMO.md), extract the archive, and run `maker.exe`. Keep the matching `player.exe` in the same folder so you can export games. No development tools are needed to run the editor or an exported game.
+Extract the entire [demo ZIP](DEMO.md) and run **`maker.exe`**. Keep the matching `player.exe` for exports. No development tools are required.
 
-If you use a different development build, follow its included instructions. If you received another creator’s game ZIP, see [how to run it](PLAY_AND_EXPORT.md).
+## Start from a template
 
-## Play the sample
+1. Choose **Starter Templates** on the launcher.
+2. Select **A Small Errand**, a short story about conversation and choices without dice or combat. Choose **The Dark Lighthouse** if you want to explore checks and combat.
+3. Review the contents and optional artwork, then create the project.
+4. Choose **Save** and select a project folder.
 
-1. Choose **Sample** to open **The Dark Lighthouse**.
-2. Choose **Save** and select a project folder.
-3. In **Scenes and actions**, inspect the text and choices. After editing, choose **Apply**, then **Save**.
-4. Run **Validate** to check that scenes and choices are connected correctly.
-5. Open **Play** and try the choices, checks, combat, and endings.
-6. Choose **Export**, then select the play mode and output folder.
+{% include screenshot.html file="6235cd6482f612d2b8c0.png" alt="A Small Errand selected in Starter Templates" caption="Review the description and included content before creating a project." width="1140" height="850" %}
 
-## Start a blank project
+## Edit and play a scene
 
-Choose **New project**. Set the title and content version in the **Project** tab, then save. An unfinished draft can be saved, but preview and export require an existing starting scene and a route to an ending.
+1. Open **Story** in the sidebar and select a scene.
+2. Change its text or choice labels, then **Apply** and **Save**.
+3. Choose **Validate** to check references and branches.
+4. Choose **Preview**, set the initial state, and try the choices.
+5. Use **Export** to select a play mode and output folder.
 
-For a quick start, choose a narrative, d20, or combat component in **Components**. Review the proposed addition before confirming. The entire addition can be undone in one step.
+## Start with a blank project
 
-If the project already has a starting scene, added scenes are not connected automatically. Connect them in **Scenes and actions**. See [Component templates](TEMPLATES.md) for details and limitations.
+Choose **New project → Blank project**. No rules, characters, or images are added automatically. Set the title and content version under **Project settings → General**, then save.
 
-For a story-only game, start with the **Story** component. Add d20 checks or combat only if needed. The [rule-pack guide](RULE_PACKS.md) explains the basic story template and optional packs planned for future versions.
+Write a place or person in World and make your first scene in **Story**. **Resources → Components** can add story, d20, or combat content. If the project already has a starting scene, connect the new scenes with your own choices.
 
 ## Apply and save
 
-**Apply** updates the project currently being edited. Choose **Save** as well to write changes to files. Use **↶ / ↷** to undo or redo edits.
+**Apply** changes the project; **Save** writes it to disk. Undo and Redo reverse applied edits.
 
-Use **Open** and select a project folder to load an existing project. Use **Save to another folder** to work on a separate copy.
+Click the **project name** at the top left for **Open project** or **Save as** while editing.
 
-## Read next
-
-- [Editor menu guide](EDITOR.md): find the menu for your task.
-- [Worlds and scenes](WORLD_BUILDING.md): create people and places, then connect them to scenes.
-- [Play and export](PLAY_AND_EXPORT.md): turn your finished story into a game ZIP.
-- [Troubleshooting](TROUBLESHOOTING.md): resolve launch and export problems.
-
-A new start screen and basic story template are also in development. See [Your first story](CREATION_JOURNEY.md) and [Starter images and templates](STARTER_CONTENT.md) for plans beyond the current demo.
+[Editor menus](EDITOR.md) · [Starter images](STARTER_CONTENT.md) · [Play and export](PLAY_AND_EXPORT.md) · [Troubleshooting](TROUBLESHOOTING.md)

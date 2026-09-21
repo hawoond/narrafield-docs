@@ -1,6 +1,6 @@
 ---
 title: Current capabilities and development plans
-description: Compare the public 0.6 demo with the latest plans, concept screens, and remaining release work.
+description: Compare the public 0.8.0 demo with future plans, and remaining release work.
 ---
 
 # Current capabilities and development plans
@@ -11,18 +11,21 @@ Narrafield Studio is a TRPG engine developed by **sortie**. Start with a sample,
 
 The guides were reviewed on **{{ site.data.review.date }}** against the source and capabilities of **public demo {{ site.data.review.demo_version }}**. Pages marked **In development** describe plan **{{ site.data.review.plan_version }}**. They include features that are not yet available in the demo.
 
-[Download demo](DEMO.md) · [Current editor menus](EDITOR.md) · [Latest workspace concept](DESIGN.md)
+[Download demo](DEMO.md) · [Current editor menus](EDITOR.md) · [Current creation workspace](DESIGN.md)
 
 ## Available in the demo
 
 | Area | Current scope | Guide |
 | --- | --- | --- |
+| Workspace | Creation sidebar, separate project/app settings, search, and preserved drafts | [Workspace](DESIGN.md) |
+| Starter content | Twenty images, one removable/restorable template catalog, and A Small Errand | [Starter content](STARTER_CONTENT.md) |
 | World | Documents, relations, map pins, timelines, visibility, and scene references | [World](WORLD_BUILDING.md) |
 | Story and rules | Scenes, choices, conditions, effects, optional dice, branches, and endings | [Rules](RULES.md) |
 | Game data | Characters, enemies, abilities, spells, statuses, equipment, resources, compound costs, optional proficiency, growth, and encounters | [Game data](GAME_DATA.md) |
 | Factions | Organizations, members, diplomacy, bases, personal reputation, goals, and rewards | [Factions](FACTION_GUIDE.md) |
-| Play and export | Preview, save slots, backgrounds/portraits, standalone ZIPs, separate online client/server packages | [Play and export](PLAY_AND_EXPORT.md) |
+| Play and export | Title, New game, Load, scene-focused preview, save slots, backgrounds/portraits, standalone ZIPs, separate online client/server packages | [Play and export](PLAY_AND_EXPORT.md) |
 | Online | Personal invitations, character assignments, private notes, GM NPC control, WebSocket synchronization, reconnect, and persisted sessions | [Online](ONLINE.md) |
+| Roleplay chat | Speech, actions, OOC, GM/NPC and certified results; authorized speakers/recipients, records, reconnect | [Roleplay chat](ROLEPLAY_CHAT.md) |
 | Collaboration | Git changes, merge/conflict tools, LFS integration, and optional scoped LLM proposals | [Tools](TOOLS.md) |
 | Extensions | Restricted WASM, pinned versions, permissions, runtime bindings, content packs, and configured hub access | [Plugins](TOOLS.md) |
 | Translation | Paired Korean/English fields, JSON exchange, source-change tracking, review, and glossary | [Translation](LOCALIZATION.md) |
@@ -36,13 +39,10 @@ The features below are in development. The following section explains what comes
 | Experience | Planned journey | Details |
 | --- | --- | --- |
 | A first story | One world detail → an action → a consequential choice → testing and export; dice, combat, characters, and LLMs are optional | [Your first story](CREATION_JOURNEY.md) |
-| Starting content | 20 starter images, a blank project and one template catalog, removal and restoration | [Starter content](STARTER_CONTENT.md) |
 | Free creation content | Shared discovery, library, type-specific application, and reviewed publication for plugins, templates, and assets | [Free content stores](CONTENT_STORES.md) |
-| Creation workspace | Separate creative navigation, project settings, and personal preferences; multiple views of the same source | [Workspace concept](DESIGN.md) |
 | World and story | World laws, relationships, promises, chosen costs, and legacies affect later scenes and campaigns | [A world that remembers](WORLD_STORIES.md) |
-| Game-specific screens | Text RP, scene-led, and tactical layouts, themes and bindings with essential controls preserved | [Game screens](GAME_SCREENS.md) |
-| Starting and parties | Title, New game, Load, character preparation, personal/shared parties, delegation, and split exploration | [Starting a game](PLAYER_START.md) · [Parties](PARTY_PLAY.md) |
-| Shared conversation | Character speech, action descriptions, OOC, GM narration, confirmed results, speakers and recipients | [Roleplay chat](ROLEPLAY_CHAT.md) |
+| Game-specific screens | Freeform layouts, game themes, widget bindings, tactical screens, and screen packs | [Game screens](GAME_SCREENS.md) |
+| Starting and parties | Character-creation editing, personal/shared parties, delegation, and split exploration | [Starting a game](PLAYER_START.md) · [Parties](PARTY_PLAY.md) |
 | Continuing play | Lobby preparation, session endings, chapters, campaign completion, migration, and recovery | [Campaign continuity](CAMPAIGN_FLOW.md) |
 | Rules and publishing | Source-aware packs, game identity, credits, permitted formats, and separate game store profiles | [Rule packs](RULE_PACKS.md) · [Publishing](PUBLISHING_GAME.md) |
 | Testing from creation to release | Follow one version through creation, play, saving, translation, team changes, and release | [Test and release](TEST_AND_RELEASE.md) |
@@ -53,15 +53,15 @@ The first release includes verification of existing creation, play, and export c
 
 | Stage | Scope |
 | --- | --- |
-| Current public demo 0.6.0 | The capability table above and current demo guides; the integrated workspace and basic RP chat are not already included |
-| First-release essentials · P0 | New project, title, New game, Load and save protection; editor slots for 20 starter images; one default template catalog with removal/restoration; basic roleplay chat |
+| Current public demo 0.8.0 | Creation sidebar, twenty images and templates, Title/New game/Load, and basic roleplay chat |
+| First-release verification · P0 | Test and refine the implemented creation, startup, content, and chat flows on actual devices and with multiple participants |
 | Later R1 | Recommended configurations and change impact; consistent world, party, permissions, and cost handling; foundations for later experiences such as action requests |
 | Later R2 | World laws, relationships, story checks, richer editing, and advanced chat presentation, communication, channels, and search |
 | Later R3 | Integration testing and refinement across creation, play, long campaigns, updates, and publishing |
 
-R1–R3 describe development and verification stages, not announced release dates or shipped versions. Features may span stages. Advanced chat, action requests, summaries, and operations tools are planned for later releases. Basic chat should work without an LLM or optional operations module.
+R1–R3 describe development and verification stages, not announced release dates or shipped versions. Features may span stages. Advanced chat, action requests, summaries, and operations tools are planned for later releases. Current basic chat works without an LLM or optional operations module.
 
-The 20 original images and their usage terms are ready. Installer bundling, catalog integration, project import, and runtime verification remain separate work. The four UI concepts show the proposed layouts; they are not screenshots of a finished product.
+The editor includes all twenty original images and their terms. Selected assets are copied into projects; exports include the images actually used. Previous site concepts have been replaced with screens from this demo.
 
 ## Broader creation goals
 
@@ -84,7 +84,7 @@ Sales readiness and future subscription requirements are separate release condit
 
 ## Remaining release checks
 
-Real devices and networks, long projects and campaigns, input/scaling/accessibility, official code signing, actual store SDKs and achievements, Workshop integration, and an external creator's publication journey still need verification. Builds and interactive concepts alone do not complete those checks.
+Real devices and networks, long projects and campaigns, input/scaling/accessibility, official code signing, actual store SDKs and achievements, Workshop integration, and an external creator's publication journey still need verification. Automated checks and screen captures alone do not complete those checks.
 
 The current demo runtime is **{{ site.data.demo.version }}**. Source projects, play saves, and server sessions are separate. Keep copies before changes and review [Compatibility](TROUBLESHOOTING.md).
 
@@ -94,4 +94,4 @@ The full Narrafield Studio product will be offered through official stores. The 
 
 {% include stores.html %}
 
-The homepage harbor is conceptual art. New workspace and play images are labeled **concept screens**; older application captures are labeled **earlier development-alpha screens**.
+The homepage harbor is concept art. Editor and player images are rendered from the current demo UI with example data. Appearance may vary with theme, scale, and project content.

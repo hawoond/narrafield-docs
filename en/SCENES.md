@@ -7,6 +7,9 @@ description: Write scenes and choices, then connect conditions, checks, effects 
 
 A **scene** is a passage the player reads. An **action** is a choice they select. Actions lead to other scenes and can change the outcome through checks and effects.
 
+
+{% include screenshot.html file="382c96b47c43c8421feb.png" alt="Scene and action editing in Story" caption="Select a scene under Story and edit its text and actions." width="1440" height="960" %}
+
 ## Create a first scene
 
 1. Choose **Scenes & actions → + New scene**.
@@ -48,7 +51,7 @@ Use **Advanced · translations · combat** and the combat settings in [Game data
 
 ## Check through play
 
-{% include screenshot.html file="b4887255d494fd132f37.png" width="1120" height="800" alt="Player showing a persuasion check and character attributes" caption="Read the scene and select actions to verify the actual flow." %}
+{% include screenshot.html file="1ad766a77d7ad3ce3afe.png" alt="Current player showing scene text and persuasion and exploration choices" caption="Read the scene and select actions to verify the actual flow." width="1120" height="800" %}
 
 - The correct scene starts, and its text and images appear as intended.
 - Choices behave correctly when conditions are met and unmet.

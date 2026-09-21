@@ -5,63 +5,45 @@ description: Find each Narrafield Studio editor menu, its purpose, and the detai
 
 # Editor menu guide
 
-Find the right menu for your task. The menus below are from **demo {{ site.data.review.demo_version }}**. Older builds may show some Game data features separately as **Items & quests** or **Rules & character**.
+Demo **{{ site.data.review.demo_version }}** uses a left sidebar. Move between world records, story editing, and a preview of the same project.
 
-{% include screenshot.html file="422400efb855c8236a05.png" alt="Editor with toolbar, menu tabs, world entries and an editing area" caption="The World tab shows the toolbar, entry list, and editing area used throughout the editor." %}
+{% include screenshot.html file="a78a9a8a17938185b503.png" alt="World documents with the creation sidebar" caption="Select a world record to edit its name, text, and visibility." width="1440" height="960" %}
 
-## Screen layout
+## Creation menus
 
-1. Use the **top toolbar** to open, save, validate, and preview a project.
-2. Choose a **menu tab** for the kind of work you want to do.
-3. Select an entry in the **list** and use the **editing area** to change it.
-4. **Apply** changes to the project, then **Save** them to disk. Check the bottom status area for the save state and folder.
-
-## Start and configure
-
-| Menu | What you do here | Details |
+| Menu | What it contains | Guide |
 | --- | --- | --- |
-| Project | Set the title, content version, start scene and export options | [Project settings](PROJECT.md) |
-| Components | Add narrative, d20-check and combat bundles | [Components](TEMPLATES.md) |
+| Home | Resume a world record or scene; open starter templates | [Quick start](QUICKSTART.md) |
+| World | Documents, relations, maps, timeline, and factions | [World building](WORLD_BUILDING.md) |
+| Game data | Characters, items, quests, abilities, resources, and combat | [Game data](GAME_DATA.md) |
+| Story | Scene text, choices, conditions, checks, and branches | [Scenes and actions](SCENES.md) |
+| Game screens | Links to gameplay preview, scenes, artwork, and chat settings | [Game screens](GAME_SCREENS.md) |
+| Resources | Project assets, bundled images, and components | [Starter content](STARTER_CONTENT.md) · [Components](TEMPLATES.md) |
+| Translation | Korean/English content and review | [Translation](LOCALIZATION.md) |
+| Test | Preview and initial state, validation, and online connection tests | [Play and export](PLAY_AND_EXPORT.md) |
 
-## World and story
+Relations, Maps, Timeline, and Factions are tabs inside **World**. Use the top search field to jump to a menu, world record, or scene.
 
-| Menu | What you do here | Details |
-| --- | --- | --- |
-| World | Write places, people and events; choose visibility | [World building](WORLD_BUILDING.md) |
-| Relations | Connect entries and arrange the graph | [Relations](RELATIONS.md) |
-| Maps | Add backgrounds, place pins and submaps | [Maps](MAPS.md) |
-| Timeline | Arrange events by era, date and order | [Timeline](TIMELINE.md) |
-| Scenes & actions | Write scenes, choices, conditions, checks and branches | [Scenes and actions](SCENES.md) |
-| Factions | Manage organizations, members, diplomacy, places, reputation and goals | [Factions](FACTION_GUIDE.md) |
+## Project settings and app settings
 
-## Rules and team projects
+**Project settings** contains General, Version control, Plugins, Online & operations, Language & content, LLM policy, and Build & publish. These settings belong to the game and its team.
 
-| Menu | What you do here | Details |
-| --- | --- | --- |
-| Game data | Define items, quests, attributes, resources, abilities, characters and combat | [Game data](GAME_DATA.md) |
-| Tools & extensions | Share Git changes, review AI proposals and inspect extensions | [Tools and extensions](TOOLS.md) |
-| Merge & conflicts | Clone, switch branches, merge and resolve conflicts | [Git collaboration](COLLABORATION.md) |
-| Translation | Translate and review supported Korean/English content | [Translation workspace](LOCALIZATION.md) |
+**App settings** contains Appearance, App language, Connections, and Help for this device. Change the editor language under **App settings → App language**; edit game text in **Translation**. **Back to creation** returns to your previous workspace.
 
-## Top toolbar
+## Common actions
 
-| Action | When to use it |
+| Location | Actions |
 | --- | --- |
-| New / Sample / Open | Start a blank project, explore the sample, or open a saved project. |
-| Save / Save as | Write to the current folder or create a separate working copy. |
-| ↶ / ↷ | Undo or redo applied edits. |
-| Recover | Inspect available recovery records. Preserve your current work first. |
-| Validate / Play | Find broken links between entries and try the choices and branches. |
-| Export | Build an offline or online package of your game. |
-| Join online / Server operations | Join a session or operate it with GM credentials. |
-| KO / EN | Change the editor UI language. Translating game content is a separate task. |
+| Project name | New project, Starter Templates, Open project, Save as, Recover |
+| Save / Undo / Redo | Write applied changes to disk or undo an edit |
+| Search / command | Find menus, world records, and scenes |
+| Assistant | Request and review changes for the current task |
+| Preview / Validate / Export | Test choices and branches, then build a game package |
 
-## Suggested first-project route
+Use **Apply** or **Apply changes** in a form before choosing **Save**. Drafts survive navigation to settings, but navigation does not apply or save them.
 
-[Project](PROJECT.md) → [World](WORLD_BUILDING.md) → [Scenes & actions](SCENES.md) → [Game data](GAME_DATA.md) → [Validate, play and export](PLAY_AND_EXPORT.md)
+## A useful first route
 
-Add relations, maps, timelines, and factions when you need them. You do not have to fill every menu before starting.
+[Project settings](PROJECT.md) → [World](WORLD_BUILDING.md) → [Story](SCENES.md) → any needed [Game data](GAME_DATA.md) → [Validate, Preview, Export](PLAY_AND_EXPORT.md).
 
-## Where can I see the new workspace?
-
-[New creation workspace](DESIGN.md) shows the planned sidebar and separate project/app settings. The demo still uses the tabs listed above. **App settings** is already available in the toolbar.
+Start with a short story. Add maps, relationships, and rules when you need them.

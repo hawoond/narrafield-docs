@@ -6,9 +6,9 @@ content_status: planned
 
 # Choose only the rules you need
 
-Start with a story and choices, then add the rules your game needs. **New projects and the default quick-start template will not automatically include the d20 component or external SRD rule packs.**
+Start with a story and choices, then add the rules your game needs. **Blank projects and A Small Errand do not automatically include d20 components or external SRD rule packs.**
 
-The current demo still includes d20-based samples and optional components. The revised default quick start, official pack catalog, and automatic notice generation described below remain planned.
+The current demo still includes d20-based samples and optional components. A dice-free story template is also available. The official pack catalog and automatic notice generation described below remain planned.
 
 ## Which rules do you need?
 

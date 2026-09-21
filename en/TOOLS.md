@@ -5,7 +5,7 @@ description: Share changes through Git, review AI proposals and understand exten
 
 # Tools and extensions
 
-**Tools & extensions** groups Git, LLM, and plugin/store options. Basic world building and local play do not require an external service connection.
+Find Git in **Project settings → Version control**, and plugins in **Project settings → Plugins**. Set up private LLM connections in **App settings → Connections** and review proposals in the top **Assistant** panel. Basic world building and local play do not require an external service connection.
 
 ## Git — share saved changes
 
@@ -37,7 +37,7 @@ Your prompt and selected entries are sent to the provider. The response is not a
 
 ## Plugins and stores
 
-Demo 0.6 includes **Project extensions**, **Common hub**, **Dependencies / transfer / trust**, **Save migration**, and **Create content pack** tabs. Extensions are optional; ordinary authoring does not require them.
+Demo 0.8.0 includes **Project extensions**, **Common hub**, **Dependencies / transfer / trust**, **Save migration**, and **Create content pack** tabs. Extensions are optional; ordinary authoring does not require them.
 
 1. Choose a local archive in **Project extensions** and use **Inspect package / permissions / activate**.
 2. Review the source, hash, exact version, dependencies, and requested permissions, then activate only the permissions you approve.

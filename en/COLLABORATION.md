@@ -4,7 +4,7 @@ title: Git collaboration
 
 # Git collaboration
 
-Git lets you keep a history of your project and share changes with collaborators. Use **Tools & extensions** to stage, commit, and push changes. Use **Merge and conflicts** to clone projects, switch branches, and merge work. Git must be installed on your computer.
+Git lets you keep a history of your project and share changes with collaborators. Open **Project settings → Version control**. Use **Connect, commit & share** for staging, commits, and Push; use **Merge, conflicts & history** for cloning, branches, and merges. Git must be installed on your computer.
 
 ## Bring in team changes
 
@@ -41,9 +41,9 @@ Remote LFS support and transfers between two physical computers need further tes
 
 Automated checks use a temporary bare remote and two local clones. They cover Korean and space-containing paths, Fetch, changes to JSON on both sides, three-way reads, manual resolution, explicit commit and push, abort backups after conflict resolution, protection for uncommitted changes, rejection of path/option injection, suppression of credential output, and shared repository locks.
 
-## Planned workspace location
+## Workspace location
 
-The new design groups GitHub connections, branches, commits, and merges under **Project settings → Version control**. The [workspace concept](DESIGN.md) is a planned layout; the demo still uses **Merge & conflicts / Tools & extensions**.
+GitHub connections, branches, commits, and merges are under **Project settings → Version control**. See the [current workspace](DESIGN.md) for its layout.
 
 ## Coming later: testing merged changes
 

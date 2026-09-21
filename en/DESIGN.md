@@ -1,57 +1,35 @@
 ---
-title: A new creation workspace
-description: Preview Narrafield Studio's planned workspace for worlds, stories, and game screens, with separate project settings.
-content_status: planned
+title: Creation workspace
+description: Use the demo 0.8.0 creation sidebar and separate project and app settings.
+content_status: mixed
 ---
 
-# A new creation workspace
+# Creation workspace
 
-The planned workspace keeps creative content in focus, with a separate place for collaboration and publishing settings. These captures come from the latest interactive concept, rather than the downloadable demo.
+Since demo 0.8.0, creation menus live in a left sidebar. Game content, shared project settings, and preferences for this device have separate places.
 
-{% include screenshot.html kind="concept" file="e3d2ede897558165f3f7.jpg" width="1265" height="737" alt="Workspace concept with creation navigation on the left, a timeline in the center, and selected-record properties on the right" caption="Documents, relations, and the timeline refer to the same world records. The selected record stays available in the properties panel." %}
+{% include screenshot.html file="a78a9a8a17938185b503.png" alt="World documents in the creation workspace" caption="Switch between Documents, Relations, Maps, Timeline, and Factions inside World." width="1440" height="960" %}
 
-## Find what you want to create
+## Return to your work
 
-| Workspace | Content |
-| --- | --- |
-| World | People, places, factions, documents, relations, maps, and timelines |
-| Game data | Characters, enemies, skills, spells, items, statuses, creation, party, and check rules |
-| Story | Scenes, dialogue, quests, reusable events, and campaigns |
-| Game screens | Title, character creation, dialogue, sheets, inventory, and credits |
-| Assets | Images, audio, fonts, and attribution |
-| Translation | Korean and English content and review status |
-| Testing | Play previews, rule checks, and multiple participant viewpoints |
+**Home** can reopen the record or scene you were editing. Type a menu, character name, or scene title in the top search field and select a result to go there. The top-left menu button collapses the sidebar.
 
-Create an entry once and edit it from documents, relations, or the timeline. A visibility switch helps review what players can see. The interactive concept does not implement every planned view or campaign feature.
+Moving to settings keeps your drafts and selection. Use **Apply → Save** to put those edits in the project and write them to disk. See the [editor menu guide](EDITOR.md) for every location.
 
-## Separate project and app settings
+## Team work in project settings
 
-**Project settings** cover game identity, modules, version control, plugins, online operations, language policy, and publishing. **App settings** cover personal themes, text size, shortcuts, connected accounts, and local tools. Shared project settings should not replace personal accounts or display preferences.
+{% include screenshot.html file="cd6b32677c706bb6a1e4.png" alt="Version control in Project settings" caption="Review changes and merges, then return to creation." width="1440" height="960" %}
 
-{% include screenshot.html kind="concept" file="d91b5ef3bf952f24193f.jpg" width="1265" height="739" alt="Version-control concept comparing local changes, team changes, and the final merge result" caption="GitHub connections, commits, branches, and merges are grouped under project version control, so you can finish version-control work and return to editing." %}
+**Project settings → Version control** has **Connect, commit & share** and **Merge, conflicts & history** tabs. Saving, committing, and pushing are separate actions. See [Git collaboration](COLLABORATION.md) for the workflow.
 
-Saving, committing, and sharing remotely remain distinct actions. The planned merge flow compares the common base, local edits, team edits, and final result before validation. The concept's merge controls only change sample state; they do not connect to a repository.
+Plugins, online policy, and export settings also belong here. Personal LLM connections are in **App settings → Connections**. Open the **Assistant** panel to review proposed edits.
 
-## Choose the depth of editing
+## Starting a project
 
-- **Guided:** start with a template and a short sequence of steps.
-- **Composed:** connect conditions, effects, costs, and widgets.
-- **Direct:** edit the detailed definitions behind the same data.
+The launcher offers **New project**, **Starter Templates**, and **Open project**. The template catalog includes short stories and feature samples, with removal and restoration. See [Starter images and templates](STARTER_CONTENT.md).
 
-These are editing approaches, not separate project formats. LLM assistance remains optional, with proposals reviewed before application.
+## Still in development
 
-## Start a project and review changes
+Guided recommended setups, a unified view of change impacts, and freeform game-screen layout editing are planned. The current **Game screens** menu opens preview and related settings.
 
-Begin with **New project / Default templates / Open project**. You can start with a blank project or choose a template. Recommended configurations, starter images, removal, and restoration use [the same catalog](STARTER_CONTENT.md). [Three recommended configurations](CREATION_JOURNEY.md)—solo narrative, GM cooperation, and automated parties—propose related settings together.
-
-You will be able to review changes made by hand, added through templates, suggested by AI, or brought in through Git. Accepting only some changes will trigger another check for broken connections and conflicts. Previews and exports will show which version they use. See [Test and release](TEST_AND_RELEASE.md).
-
-## Where to work in the current demo
-
-The demo uses top-level tabs. World, Relations, Maps, and Timeline have separate tabs; Git lives in **Tools & extensions / Merge & conflicts**, and display preferences live in **App settings**. The new sidebar and unified project settings are planned.
-
-[Current editor menus](EDITOR.md) · [Game-screen design](GAME_SCREENS.md) · [Git collaboration](COLLABORATION.md)
-
-## Find content while creating
-
-The planned [Free content stores](CONTENT_STORES.md) will be available while choosing images, adding components, or configuring plugins. Find content, save it to your library, and return to the item you were editing.
+[Game screens](GAME_SCREENS.md) · [Your first story](CREATION_JOURNEY.md) · [Test and release](TEST_AND_RELEASE.md)

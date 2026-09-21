@@ -57,9 +57,9 @@ See [Troubleshooting](TROUBLESHOOTING.md) for launch and export errors, disconne
 
 Use the sidebar to change topics. On smaller screens, expand **Wiki contents**. Every guide is available in Korean and English; the **한국어 / English** tabs switch the current page's language. See [Current capabilities](DEVELOPMENT.md) for alpha features, limitations, and store availability.
 
-## Planned features and screen designs
+## New features and future plans
 
-Explore upcoming features and screen concepts. Pages marked **In development** include features that are not yet available in the demo. See [development stages and current capabilities](DEVELOPMENT.md) for details.
+Explore the current workspace, starter content, title flow, and basic chat alongside future plans. Pages marked **In development** include features that are not yet available in the demo. See [development stages and current capabilities](DEVELOPMENT.md) for details.
 
 | Topic | Detailed guides |
 | --- | --- |

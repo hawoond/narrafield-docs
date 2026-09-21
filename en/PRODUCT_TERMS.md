@@ -52,6 +52,18 @@ Accepted copies remain distinct from later revisions. Legal identity, addresses,
 
 ## Starter images are AI-generated
 
-The current 20 images in A Small Adventure are **AI-generated**. Original files and usage terms are ready. [Starter-image terms](STARTER_CONTENT.md) explain inclusion in free or paid games and their promotion, attribution preservation, and limits. Including the images in the installer is still in progress.
+The current 20 images in A Small Adventure are **AI-generated**. Original files and usage terms are ready. [Starter-image terms](STARTER_CONTENT.md) explain inclusion in free or paid games and their promotion, attribution preservation, and limits. The current demo includes the image pack and usage terms.
 
 [Publishing your game](PUBLISHING_GAME.md) · [External rule packs and notices](RULE_PACKS.md) · [Current capabilities and development stages](DEVELOPMENT.md)
+
+## Additional adopted operating policies
+
+These policies are planned; they do not announce active sales or implemented consent features.
+
+- **Versions and support:** Released updates within the purchased major series are included. Bug/security maintenance continues for at least 24 months after all official new sales of that series end, with 90 days’ notice of support ending. Longer statutory/contractual duties and perpetual use rights remain.
+- **Demo and refunds:** A free demo with project saving is planned, excluding commercial runtime export. Store purchases follow the actual seller’s policy and statutory rights. A voluntary 14-day refund without an hours-used limit is planned only for future direct sales.
+- **Output agreements:** An approved standard offer, completed schedule and separate express acceptance can conclude the agreement without another manual approval when its conditions are met. Negotiated changes require both parties’ assent.
+- **Settlement:** USD and the revenue month’s Federal Reserve G.5 average are the defaults. Confirmed remaining overpayments at final settlement are returned within 30 days. Fees, taxes and withholding evidence are separately specified.
+- **Age and data:** New tool agreements target Creators aged 16 or over with legally required guardian authorization. Initial publishing accounts require an adult under applicable law or an authorized adult representative. Local content and full usage time are not collected by default; records follow purpose-specific deletion periods.
+
+Actual seller details, prices, accounts, service providers, effective dates and regional review must be completed before launch. The internal plugin, template and asset stores remain within their free-service scope.

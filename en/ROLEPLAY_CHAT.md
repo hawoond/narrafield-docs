@@ -1,48 +1,37 @@
 ---
 title: Roleplay together through conversation
-description: Speak as a character, describe actions, and keep track of conversations with the planned roleplay chat.
-content_status: planned
+description: Speak as a character, describe actions, and keep track of conversations with the demo’s online roleplay chat.
+content_status: mixed
 ---
 
 # Roleplay together through conversation
 
-We are building chat that lets a GM and players run a session through dialogue and written actions. **Basic RP chat is planned for the first release.** Action proposals, dialogue effects, special communications, and advanced record tools will follow. Integrated chat is not yet available in demo {{ site.data.review.demo_version }}.
+Demo 0.8.0 lets a GM and players run an online session through dialogue and written actions. Chat does not require an LLM. See [Online sessions](ONLINE.md) for server setup and joining.
 
-## Who is speaking, and to whom?
+{% include screenshot.html file="e9ddc6952273bdd18ce4.png" alt="Conversation history with speaker and recipient controls" caption="Character speech, player conversation, and certified game results are distinct. The capture uses example messages." width="1140" height="900" %}
 
-| Mode | Meaning |
-| --- | --- |
-| Character dialogue | Speak with an assigned character's public name and portrait |
-| Action description | Describe roleplay such as unfolding a map, without confirming numerical effects or another character's action |
-| Player conversation (OOC) | Breaks, schedules, and conversation outside character knowledge |
-| GM narration / NPC dialogue | Narrate events or speak for an authorized NPC using its public identity or alias |
-| Checks / game results | Engine-confirmed events, visually distinct from ordinary messages |
+## Configure chat as a creator
 
-The message box will always show **how you are speaking, who you are speaking as, and who will receive the message**. Current-scene, party, all-participant, individual whisper, and GM recipients are separate. Spectator speech follows the game's policy. Games without characters can use OOC conversation and GM narration.
+Open **Project settings → Online & operations** to enable chat and choose a layout. **Text roleplay** emphasizes conversation; **Scene with chat panel** keeps it alongside the scene.
 
-If a configuration allows GMs to read whispers, it should disclose that before sending. A GM channel identifies which GMs receive it. Joining later or changing roles must not automatically reveal earlier private messages.
+Choose permitted recipients—current scene, party, all participants, whispers, GM, or spectators—and retention settings. If GMs may read whispers, they are disclosed as recipients before sending. Apply and save before exporting the game.
 
-## Separate control, speech, and consent
+## Send a message
 
-Delegated combat or movement control does not automatically grant RP speech rights. When delegating speech, choose the character, who may speak for them, what is allowed, how long it lasts, and how to revoke it. Consent to relationships, promises, and sacrifices remains separate.
+1. Check the message type, speaker, and recipients in the composer.
+2. Choose character speech, an action description, or out-of-character (OOC) conversation. GM narration and NPC speech require the corresponding permissions.
+3. Write the message and choose **Send**. Enter inserts a new line. Ctrl+Enter sending is an optional personal preference.
+4. Reconfirm recipients after a scene or speaker change. Retrying a failed pending request does not create a duplicate message.
 
-A dialogue choice that changes rules checks decision authority; free dialogue checks speech permission. A choice combining both requires both. Changing character or scene should not silently replace a draft's speaker or recipients. Permissions are checked again when the message is sent.
+Writing an action in chat does not roll dice or change HP or items. Engine-certified results are distinct from ordinary messages. Character control and speaking rights are checked separately.
 
-## A chat layout for the game
+## Records and session progress
 
-- **Text roleplay:** central RP, descriptions, narration, results, and input, with OOC and whispers in distinct views.
-- **Scene-focused:** open or pin a chat panel while viewing the scene.
-- **Tabletop / tactical:** chat beside the map, with essential checks and choices separately accessible.
+Conversation supports replies, author edits/deletions, GM pins, unread positions, and returning to recent messages. Personal blocks/mutes and room speech limits are available. Exports contain only the records the participant may read.
 
-New messages should not force readers away from older records. Unread positions and return-to-current controls are planned, together with large text, keyboard operation, Korean IME handling, and draft/focus preservation through notifications and reconnection. Basic chat should work without the advanced screen editor, an LLM, or the optional operations console.
+With history saving enabled, records are kept with the server campaign. GMs can create and restore game checkpoints without deleting human conversation or earlier certified results. Game state and conversation are separate records.
 
-## Records and personal protection
-
-Basic goals include sending/sent/failed states, duplicate-free retries, reconnection, replies, quotations, pinned messages, and edit/delete indicators. Retention, backups, and export policies should be visible. Rolling back a game save must not secretly delete or resend people's conversations.
-
-Personal blocking/muting and room speech limits are basic online protections. They should preserve essential choices, recovery, and help. When a GM's absence pauses play, authenticated player conversation and recovery guidance should remain available while the server is reachable.
-
-A player reading a clue and a character acquiring it are different. Only an explicitly connected knowledge-transfer action changes character knowledge. Search, quotations, summaries, and exports use the same visibility rules. [Facts, rumors, and knowledge](WORLD_STORIES.md)
+The current scope is one session with a shared party/scene and one GM. Independent parties, joint GMs, advanced action proposals, and advanced search remain planned below.
 
 ## Features planned for later
 
@@ -61,4 +50,4 @@ Writing an action in chat does not execute a game rule. Without a GM, proposals 
 
 Edited session records and summaries do not turn false dialogue or OOC remarks into world facts. LLM summaries use only content permitted for transmission. If generation fails, players can still catch up using the original records. Actual conversations, private drafts, and participant identities are not automatically included in creation projects or public game packages. Voice, video, and asynchronous services remain separate longer-term goals.
 
-[Parties and permissions](PARTY_PLAY.md) · [Lobbies, sessions, and return](CAMPAIGN_FLOW.md) · [Screen concepts](GAME_SCREENS.md) · [Current online guide](ONLINE.md)
+[Parties and permissions](PARTY_PLAY.md) · [Lobbies, sessions, and return](CAMPAIGN_FLOW.md) · [Game screens](GAME_SCREENS.md) · [Current online guide](ONLINE.md)

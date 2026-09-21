@@ -4,7 +4,7 @@ title: Translation workspace
 
 # Translation workspace
 
-Use the **Translation workspace** to edit Korean source text and English translations side by side. Save your project before applying a translation.
+Use the **Translation** to edit Korean source text and English translations side by side. Save your project before applying a translation.
 
 This feature translates the game you are making. To change the language of this guide, use the **한국어 / English** tabs at the top of the site.
 

@@ -31,7 +31,7 @@ Exploration can use **shared travel, individual exploration, or party splitting 
 
 1. **Host or join:** identify player hosting, a dedicated server, or a creator-operated service.
 2. **Prepare in the lobby:** review roles, characters, parties, approvals, readiness, and blocking conditions.
-3. **Play:** distinguish the selected character, action target, and pending request. Pings, shared plans, chat, and conversation catch-up are planned collaboration tools.
+3. **Play:** distinguish the selected character, action target, and pending request. Basic chat and reading conversation history are available. Pings and shared planning remain planned.
 4. **Leave and return:** preserve control and progress, then review permitted events and objectives.
 5. **Resume or recover a campaign:** handle session saves, updates, server transfer, and recovery separately. An individual player's Load action should not roll back shared progress.
 

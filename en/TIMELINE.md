@@ -5,9 +5,11 @@ description: Arrange historical events by era, date label and order, and connect
 
 # Timeline
 
+**Open: World → Timeline**
+
 **Timeline** organizes historical world events. Use it to see which events happened first. Adding events does not advance time during play.
 
-{% include screenshot.html file="dbf2d3ff8eec7ef2f198.png" alt="A timeline with the lighthouse extinguishing event placed seven days before the story" caption="A historical event linked to its place in time." %}
+{% include screenshot.html file="f2be05fdf41472f9e0e0.png" alt="A timeline with the lighthouse extinguishing event placed seven days before the story" caption="A historical event linked to its place in time." width="1440" height="960" %}
 
 ## Place an event
 

@@ -5,9 +5,11 @@ description: Create relationships between people, places and organizations, then
 
 # Relations
 
+**Open: World → Relations**
+
 **Relations** connects world entries: a person belongs to a guild, lives at a place, or witnesses an event.
 
-{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="Membership, residence and event relations between Mara, the keepers' guild and places" caption="Arrows and labels show how people, places, and organizations are connected." %}
+{% include screenshot.html file="849e9e37699281f55a9e.png" alt="Membership, residence and event relations between Mara, the keepers' guild and places" caption="Arrows and labels show how people, places, and organizations are connected." width="1440" height="960" %}
 
 ## Create a relationship
 

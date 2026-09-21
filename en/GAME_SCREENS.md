@@ -1,53 +1,39 @@
 ---
 title: Game screens and customization
 description: Scene-focused play, creator-controlled layouts and themes, and separate player preferences.
-content_status: planned
+content_status: mixed
 ---
 
 # Game screens and customization
 
-Players should see the story and their next action. Creators will have tools to arrange those screens for their game. The Dark Lighthouse concepts explore both sides.
+Demo 0.8.0 puts the scene and choices at the center of play, with details available when needed. The screen below shows the bundled **A Small Errand** story.
 
-{% include screenshot.html kind="concept" file="54d886cab1c766f4c8b5.jpg" width="1280" height="720" alt="Lighthouse play concept with location and objective above dialogue and choices, and compact status and inventory controls below" caption="Scenes, dialogue, and choices take priority, with details opened when needed. The background is concept art prepared for this preview." %}
+{% include screenshot.html file="811b31f9162d06bdfccb.png" alt="Scene background, portrait, story text, and choices" caption="Read the scene and choose an action to continue the story." width="1120" height="800" %}
 
 ## The player's screen
 
-Location and objectives sit above the scene; speaker, dialogue, and choices form a readable area below. Abilities, inventory, journal, map, and character sheets open on demand. Closing them returns to the scene. Games without HP or MP should not display empty resource bars.
+The top bar shows the current place and **Menu**. Scene text and choices are central; abilities, inventory, history, and the character sheet open when needed. Choice conditions and checks follow the creator's rules.
 
-Exploration, conversation, checks, combat, and another player's turn call for different information. Online actions should distinguish processing, approval, result lookup, confirmation, and reselection. Success effects should follow confirmed results.
+Exported offline games begin with **New game** or **Load** on the title. During play, **Menu** provides saving, loading, settings, notices, and returning to the title. Editor preview and online games have different save and operation controls. See [Play and export](PLAY_AND_EXPORT.md).
 
-This scene view is not the game's initial entry point. The planned flow is **Title → New game / Load → Required preparation → Play**. See [Starting a game and character creation](PLAYER_START.md).
+## The editor's Game screens menu
 
-## The creator's screen editor
+{% include screenshot.html file="42180f8a2cb62cffbe1c.png" alt="Game screens with preview, scene, artwork, and chat links" caption="Connect the content and artwork used during play, then preview the result." width="1440" height="960" %}
 
-{% include screenshot.html kind="concept" file="e93a6e0cc33a0ddfd021.jpg" width="1265" height="735" alt="Creator properties beside a play preview, with dialogue layout, theme, text size, resource, and objective controls" caption="Creator controls stay outside the player's screen. The concept demonstrates selected layout, theme, and information-density adjustments." %}
+**Game screens** currently links to actual gameplay preview, scene/dialogue/background editing, artwork, and online chat layout and policy. It does not yet provide a freeform widget layout editor.
 
-| Area | Planned controls |
-| --- | --- |
-| Screen template | Text-led, cinematic, or tactical starting layouts |
-| Layout and widgets | Dialogue, choices, objectives, resources, sheets, inventory, and menus |
-| Theme | Colors, fonts, backgrounds, spacing, and reduced-motion alternatives |
-| Data binding | Connect widgets to public names, values, objectives, and actions |
-| Context | Adapt to exploration, combat, waiting, and reconnection |
+Connect scene backgrounds in **Story**, and assign portraits, items, abilities, and status images to their definitions. Bundled art is under **Resources → Assets → Bundled**. [Starter content](STARTER_CONTENT.md)
 
-The planned editor lives in **Game screens**, including title, character creation, game information, and credits. Free placement, complete binding tools, screen-pack sharing, and export integration are not included in this concept.
+## Conversation during online play
 
-## Creator controls and player preferences
+In **Project settings → Online & operations**, choose **Text roleplay** or **Scene with chat panel**. Text roleplay puts the transcript and composer at the center; scene mode lets you open or pin conversation beside the scene.
 
-Creators define the game's layout and theme. Players use the text, input, audio, and motion preferences that the game provides. Display preferences do not change game rules or grant access to hidden information.
+{% include screenshot.html file="e9ddc6952273bdd18ce4.png" alt="Basic roleplay transcript and composer" caption="Check the speaker and recipients before sending. This capture uses example conversation data." width="1140" height="900" %}
 
-## Text RP puts conversation at the center
+Basic chat is included in the demo and requires a configured server connection. See [Roleplay chat](ROLEPLAY_CHAT.md) for messages, permissions, and records.
 
-Scene-led play is one template. Text RP puts **chat history and the message box** at the center; cinematic play uses a conversation panel and tactical play a side panel. The image above shows a scene-focused layout. It does not show the new chat feature running.
+## Editing features still planned
 
-Basic chat is a first-release goal, with clear speakers, speech/action/OOC modes, recipients, and delivery state. Bubbles, dialogue effects, speaker styles, special communication, detailed channels, search, and summaries are planned for later releases. See [Roleplay chat](ROLEPLAY_CHAT.md).
+Free placement of dialogue, objectives, resources, and sheets; game-specific themes; character-creation screens; tactical layouts; and screen-pack sharing remain in development. Current appearance preferences affect this device without changing rules or information permissions.
 
-## Keep essential actions reachable
-
-Even after a creator changes widgets or modules, players need access to choices, approvals, costs, chat, saves, and required notices. If the default screen cannot provide a missing essential function, validation will explain the problem and block that combination. [Screen verification](TEST_AND_RELEASE.md) also covers large text, keyboards, IME input, and the reader's position in conversation history.
-
-## Difference from the current demo
-
-The demo supports scene backgrounds, portraits, choices, abilities, items, and saves. Its current menu and information-panel interface is covered in [Play and export](PLAY_AND_EXPORT.md). The scene-focused design and general screen composer above remain planned features.
-
-[New workspace](DESIGN.md) · [Starting a game](PLAYER_START.md) · [Online party design](PARTY_PLAY.md)
+[Creation workspace](DESIGN.md) · [Starting a game](PLAYER_START.md) · [Online party plans](PARTY_PLAY.md)

@@ -24,7 +24,7 @@ An item cannot be deleted while a scene condition, effect, expression, or charac
 
 ## An older game or save will not open
 
-The current demo uses runtime **{{ site.data.demo.version }}**. Packages, saves, and server snapshots are checked against their runtime and content. Keep the source project and original saves. When exporting again, use a player runtime that matches the editor version. There is no general automatic migration to 0.6. Use an explicit migration tool only when its exact source-runtime, content, and plugin requirements are satisfied, and retain the original file.
+The current demo uses runtime **{{ site.data.demo.version }}**. Packages, saves, and server snapshots are checked against their runtime and content. Keep the source project and original saves. When exporting again, use a player runtime that matches the editor version. There is no general automatic migration of all older saves to the current runtime. Use an explicit migration tool only when its exact source-runtime, content, and plugin requirements are satisfied, and retain the original file.
 
 When changing online content or runtime versions, preserve the existing state file and give `--state` a new path outside the project. See [Online sessions](ONLINE.md) for restart and state-file restrictions.
 
@@ -38,7 +38,7 @@ Save the project first. JSON import validates project, locale, string keys, sour
 
 ## The concept menus are missing
 
-Pages marked **In development** show planned workflows, including the new workspace, screen composer, character creation, and party rules. The downloadable demo still uses the [current editor menus](EDITOR.md).
+The creation sidebar is available from 0.8.0. Features marked **In development**, such as freeform screen composition, character creation, and complex party rules, are still planned. The downloadable demo still uses the [current editor menus](EDITOR.md).
 
 ## I can join but cannot act
 

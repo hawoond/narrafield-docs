@@ -15,13 +15,13 @@ Use **World** for names, summaries, and descriptions. Connect people and organiz
 
 For a story about an extinguished lighthouse, create the harbor, lighthouse keeper, and guild, then connect them. Separate public lore from information reserved for the GM.
 
-{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="Development-alpha relation graph connecting people, places and a guild" caption="See how people, places, and organizations are connected." %}
+{% include screenshot.html file="849e9e37699281f55a9e.png" alt="Development-alpha relation graph connecting people, places and a guild" caption="See how people, places, and organizations are connected." width="1440" height="960" %}
 
 [World building](WORLD_BUILDING.md) · [Relations](RELATIONS.md) · [Maps](MAPS.md) · [Timeline](TIMELINE.md)
 
 ## 2. Turn lore into scenes and choices
 
-In **Scenes & actions**, write a scene and add actions such as “Persuade the keeper” or “Look for another route.” Connect each action to its destination and add conditions or dice checks when needed.
+In **Story**, write a scene and add actions such as “Persuade the keeper” or “Look for another route.” Connect each action to its destination and add conditions or dice checks when needed.
 
 A lighthouse entry describes a place. Visiting it requires a scene and an action that leads there. Link the lore to the scene, then define movement through action destinations.
 
@@ -37,22 +37,22 @@ Use **Game data** to define and assign items, quests, resources, skills, spells,
 
 ## 4. Play, check, and export
 
-Use **Validate** to find invalid references and **Play** to test success, failure, and ending routes. Export the completed project as a standalone game. Online play requires a separate server setup.
+Use **Validate** to find invalid references and **Preview** to test success, failure, and ending routes. Export the completed project as a standalone game. Online play requires a separate server setup.
 
-{% include screenshot.html file="b4887255d494fd132f37.png" width="1120" height="800" alt="Development-alpha player displaying scene text, a persuasion action and character attributes" caption="Preview what players will read and select." %}
+{% include screenshot.html file="1ad766a77d7ad3ce3afe.png" alt="Current player displaying scene text, persuasion and exploration choices" caption="Preview what players will read and select." width="1120" height="800" %}
 
 [Play and export](PLAY_AND_EXPORT.md) · [Online sessions](ONLINE.md)
 
 ## Start alone, finish together
 
-**Tools & extensions** and **Merge & conflicts** help teams share changes through Git. **Translation** manages Korean source text and English translations for supported game content.
+**Project settings → Version control** helps teams share changes through Git. **Translation** manages Korean source text and English translations for supported game content.
 
 A development alpha is available now. [Download the demo](DEMO.md) to try it, or read about [supported features and development plans](DEVELOPMENT.md). The full product’s **store pages are coming soon**.
 
 **Next:** [Start with the sample](QUICKSTART.md) or explore the [editor menu guide](EDITOR.md).
 
-## What we are working on
+## Explore next
 
-The [new workspace](DESIGN.md) gives creative work and project settings their own places. The planned [screen editor](GAME_SCREENS.md) lets creators arrange dialogue and choices to suit their games.
+The [creation workspace](DESIGN.md) separates content from project and app settings. [Starter images and templates](STARTER_CONTENT.md), [game screens](GAME_SCREENS.md), and [roleplay chat](ROLEPLAY_CHAT.md) are available in the demo.
 
-[Your first story](CREATION_JOURNEY.md) introduces starting setups for solo stories, GM-led games, and parties that play without a GM. The guides also cover planned starter content, worlds that change through play, and publishing tools.
+Freeform screen layouts, guided recommended setups, and deeper consequences across worlds and long campaigns remain planned. See [Your first story](CREATION_JOURNEY.md) and [Current capabilities](DEVELOPMENT.md).

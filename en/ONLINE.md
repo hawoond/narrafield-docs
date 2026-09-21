@@ -4,7 +4,14 @@ title: Online sessions
 
 # Online sessions and access
 
-The demo lets you test online play by inviting players individually and assigning them characters. Participants control only their assigned character; unassigned participants spectate. GMs manage assignments, private visibility, and NPC control. Multiple personal parties, integrated lobbies, chat, and exploration in separate scenes are still [in development](PARTY_PLAY.md).
+The demo lets you test online play by inviting players individually and assigning them characters. Participants control only their assigned character; unassigned participants spectate. GMs manage assignments, private visibility, and NPC control. Basic roleplay chat is included. Multiple personal parties, integrated lobbies, and exploration in separate scenes are still [in development](PARTY_PLAY.md).
+
+
+## Chat layout and policy
+
+Open **Project settings → Online & operations** to enable chat and choose its layout and permitted recipients. See [Roleplay chat](ROLEPLAY_CHAT.md) for conversation and records.
+
+{% include screenshot.html file="df43f7b893b65e936893.png" alt="Online chat layout and policy in project settings" caption="Choose the layout, recipients, and conversation retention for the game." width="1440" height="960" %}
 
 ## Start and restart the server
 

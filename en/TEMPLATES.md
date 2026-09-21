@@ -18,11 +18,11 @@ For a character without combat settings, the combat component supplies starting 
 
 ## Add a component
 
-1. Select a component in the **Components** tab.
+1. Select a component in the **Resources → Components**.
 2. Choose **Preview addition**. Review the item counts, new ID prefix, and notes.
 3. Confirm the addition.
-4. If you already have a starting scene, use scene actions to connect the new scenes. To start at a new scene instead, change the starting scene in **Project**.
-5. **Validate**, **Play**, and **Save**.
+4. If you already have a starting scene, use scene actions to connect the new scenes. To start at a new scene instead, change the starting scene in **Project settings → General**.
+5. **Validate**, **Preview**, and **Save**.
 
 One **Undo** reverses the whole addition. If the project changes after you open the preview, open a new preview before applying it.
 
@@ -40,16 +40,12 @@ The demo provides bundled components without external assets or scripts. It cann
 
 You can edit added content, but those edits do not update the original template. Template updates also leave content already added to a project unchanged.
 
-## Coming later
+## Starter template catalog
 
-We are bringing default templates into one catalog. **New project → Start from template** will open the same list, where you can browse story, combat, and other template types.
+Open **Starter Templates** from the launcher or project-name menu. **New project → Start from a template** opens the same catalog. Full-project templates create new projects; components add content to the current project.
 
-You will be able to remove defaults you do not need. Removed entries will stay removed after updates, and you can choose which ones to restore. Removing a catalog entry will leave existing projects intact. Copies in a project can be edited or deleted after checking their connections to other content.
+Removing a catalog entry preserves projects already created from it. Removed templates stay removed after restarts and updates. Use **Restore deleted templates** to bring them back.
 
-The 20 starter images and their usage terms are ready. Bundling them with the editor and letting creators copy selected images into a project are still in development. See [Starter images and templates](STARTER_CONTENT.md).
+**A Small Errand** starts without dice or combat. Include its five images or play the same story as text. See [Starter content](STARTER_CONTENT.md) for the 20 bundled images.
 
-The new quick-start story will begin without dice or SRD content. Add the optional 20-sided Die (d20) Check when you need it. See [Choose only the rules you need](RULE_PACKS.md) for rule packs and attribution.
-
-The planned [Free content stores](CONTENT_STORES.md) will offer external templates. A whole template will create a new project; a component will add content to an existing one. **These features are not yet included in the demo.**
-
-**Related:** [Quick start](QUICKSTART.md) · [Worlds and scenes](WORLD_BUILDING.md) · [Rules and expressions](RULES.md)
+The [Free content stores](CONTENT_STORES.md) and official [rule-pack](RULE_PACKS.md) catalog remain in development.

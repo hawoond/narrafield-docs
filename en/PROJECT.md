@@ -5,12 +5,12 @@ description: Create or open a project and configure its title, start scene, cont
 
 # Project settings
 
-The **Project** menu defines the title and starting point of your story. The project folder contains editable source material. Use **Export** to create the separate package players receive.
+The **Project settings → General** page defines the title and starting point of your story. The project folder contains editable source material. Use **Export** to create the separate package players receive.
 
 ## Start a project
 
-1. Choose **New project** to start from scratch, or open a **Sample**.
-2. Enter a title and content version in **Project**.
+1. Choose **New project** to start from scratch, or choose a sample from **Starter Templates**.
+2. Enter a title and content version in **Project settings → General**.
 3. Select **Apply**, then **Save** and choose a project folder.
 4. Create the first scene in [Scenes & actions](SCENES.md), then select **Set as start**.
 5. Save again and **Validate** the start scene and ending routes.
@@ -36,7 +36,7 @@ Save the sample to your own folder before editing. Check the bottom status for *
 
 1. **Open** the original project folder.
 2. Make your changes and update the content version.
-3. **Validate** and **Play** the changed routes.
+3. **Validate** and **Preview** the changed routes.
 4. Export a new package and check it runs.
 
 Content or runtime changes can invalidate old saves. Online sessions also use a specific content version. Keep the existing session file and choose a separate state-file path for the new version. Read [compatibility guidance](TROUBLESHOOTING.md).
@@ -51,4 +51,4 @@ Content or runtime changes can invalidate old saves. Online sessions also use a 
 
 ## Planned identity and publishing settings
 
-[Publish under your game’s identity](PUBLISHING_GAME.md) describes planned creator information, credits, and per-game store profiles. See the [workspace concept](DESIGN.md) for the new settings structure.
+[Publish under your game’s identity](PUBLISHING_GAME.md) describes planned creator information, credits, and per-game store profiles. See the [creation workspace](DESIGN.md) for the new settings structure.

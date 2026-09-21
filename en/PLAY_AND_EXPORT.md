@@ -10,19 +10,19 @@ The `.exe` names below are examples from the current development build. Check th
 
 ## Run a game you received
 
-Extract the creator's entire game ZIP into a folder, then run the game executable, named `game.exe` in the current build. Do not run directly from inside the ZIP; extract all accompanying files. Players do not need the editor or a compiler.
+Extract the creator's entire game ZIP into a folder, then run the game executable, named `game.exe` in the current build. Do not run directly from inside the ZIP; extract all accompanying files. Players do not need the editor or a compiler. Choose **New game** or **Load** on the title to begin.
 
 For an online game, also obtain the server address and player token from the creator. The token is your access credential.
 
 ## Validate and preview while creating
 
-**Apply** form changes, **Save** the project, and check **Validate** results. Resolve starting-scene, reference, and branching errors, then use **Play** to play each choice and ending.
+**Apply** form changes, **Save** the project, and check **Validate** results. Resolve starting-scene, reference, and branching errors, then use **Preview** to play each choice and ending.
 
 Check backgrounds, portraits, conditional choices, successful and failed checks, and branches after combat. Passing automatic validation does not mean every route has been played through.
 
 ## Save a game
 
-The local player provides five manual and three automatic save slots. Preview saves and exported-game saves are separate.
+Each local playthrough has five manual and three automatic save slots, managed from **Menu → Save / Load**. **New game** on the title creates a separate playthrough. Preview saves and exported-game saves are separate.
 
 Packages and saves must be compatible with the current runtime. See [Troubleshooting](TROUBLESHOOTING.md) for older versions.
 
@@ -40,7 +40,7 @@ The current default package is an unsigned development build.
 
 Online export creates separate `client` and `server` folders. **Give players only the client folder.** The server operator runs the server executable (`server.exe` in the current build). Players connect with the server address and a player token. External connections require an HTTPS proxy.
 
-Packages with the optional operations module include the operator console (`operator.exe`). Use **Server operations** in the editor or the console with the GM token to manage invitations, revocation, announcements, and restrictions.
+Packages with the optional operations module include the operator console (`operator.exe`). Use **Project settings → Online & operations → Server operations** in the editor or the console with the GM token to manage invitations, revocation, announcements, and restrictions.
 
 The online demo assigns characters to personal invitations and checks control on the server. Unassigned participants join as spectators. Keep server state and credentials outside the project; see [Online sessions](ONLINE.md) for startup, restart, assignment, and backup limitations.
 
@@ -52,6 +52,6 @@ The online demo assigns characters to personal invitations and checks control on
 
 ## Coming later
 
-We are working on [scene-focused game screens](GAME_SCREENS.md), [title screens and character creation](PLAYER_START.md), and [session endings and campaign recovery](CAMPAIGN_FLOW.md). These features are not all available in the demo.
+The demo includes [scene-focused play](GAME_SCREENS.md) and [Title, New game, and Load](PLAYER_START.md). Freeform layouts, character-creation editing, and integrated [session endings and campaign recovery](CAMPAIGN_FLOW.md) remain planned.
 
 See [Test and release](TEST_AND_RELEASE.md) for planned pre-release checks, and [Publishing your game](PUBLISHING_GAME.md) for game identity, credits, and additional export formats.
