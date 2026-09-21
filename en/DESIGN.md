@@ -8,7 +8,7 @@ content_status: planned
 
 The planned workspace keeps creative content in focus, with a separate place for collaboration and publishing settings. These captures come from the latest interactive concept, rather than the downloadable demo.
 
-{% include screenshot.html kind="concept" file="c01ea0fb95ce7700c0d8.jpg" width="1424" height="721" alt="Workspace concept with creation navigation on the left, a timeline in the center, and selected-record properties on the right" caption="Documents, relations, and the timeline refer to the same world records. The selected record stays available in the properties panel." %}
+{% include screenshot.html kind="concept" file="e3d2ede897558165f3f7.jpg" width="1265" height="737" alt="Workspace concept with creation navigation on the left, a timeline in the center, and selected-record properties on the right" caption="Documents, relations, and the timeline refer to the same world records. The selected record stays available in the properties panel." %}
 
 ## Find what you want to create
 
@@ -28,7 +28,7 @@ The design reuses a record across views instead of requiring repeated entry. A v
 
 **Project settings** cover game identity, modules, version control, plugins, online operations, language policy, and publishing. **App settings** cover personal themes, text size, shortcuts, connected accounts, and local tools. Shared project settings should not replace personal accounts or display preferences.
 
-{% include screenshot.html kind="concept" file="fa488e98a948413d4224.jpg" width="1424" height="723" alt="Version-control concept comparing local changes, team changes, and the final merge result" caption="GitHub connections, commits, branches, and merges are grouped under project version control, with a return path to the original creative context." %}
+{% include screenshot.html kind="concept" file="d91b5ef3bf952f24193f.jpg" width="1265" height="739" alt="Version-control concept comparing local changes, team changes, and the final merge result" caption="GitHub connections, commits, branches, and merges are grouped under project version control, with a return path to the original creative context." %}
 
 Saving, committing, and sharing remotely remain distinct actions. The planned merge flow compares the common base, local edits, team edits, and final result before validation. The concept's merge controls only change sample state; they do not connect to a repository.
 

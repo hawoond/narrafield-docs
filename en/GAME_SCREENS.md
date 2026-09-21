@@ -8,7 +8,7 @@ content_status: planned
 
 Players should see the story and their next action. Creators need a separate workspace for composing that experience. The Dark Lighthouse concepts explore both sides.
 
-{% include screenshot.html kind="concept" file="e7869ac5f22deef5b30e.jpg" width="1424" height="634" alt="Lighthouse play concept with location and objective above dialogue and choices, and compact status and inventory controls below" caption="Scenes, dialogue, and choices take priority, with details opened when needed. The background is concept art prepared for this preview." %}
+{% include screenshot.html kind="concept" file="54d886cab1c766f4c8b5.jpg" width="1280" height="720" alt="Lighthouse play concept with location and objective above dialogue and choices, and compact status and inventory controls below" caption="Scenes, dialogue, and choices take priority, with details opened when needed. The background is concept art prepared for this preview." %}
 
 ## The player's screen
 
@@ -20,7 +20,7 @@ This scene view is not the game's initial entry point. The planned flow is **Tit
 
 ## The creator's screen editor
 
-{% include screenshot.html kind="concept" file="d4d9e0bd7682cfdd2f97.jpg" width="1424" height="673" alt="Creator properties beside a play preview, with dialogue layout, theme, text size, resource, and objective controls" caption="Creator controls stay outside the player's screen. The concept demonstrates selected layout, theme, and information-density adjustments." %}
+{% include screenshot.html kind="concept" file="e93a6e0cc33a0ddfd021.jpg" width="1265" height="735" alt="Creator properties beside a play preview, with dialogue layout, theme, text size, resource, and objective controls" caption="Creator controls stay outside the player's screen. The concept demonstrates selected layout, theme, and information-density adjustments." %}
 
 | Area | Planned controls |
 | --- | --- |

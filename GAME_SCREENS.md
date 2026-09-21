@@ -8,7 +8,7 @@ content_status: planned
 
 플레이어에게는 이야기와 지금 할 행동을, 제작자에게는 그 화면을 구성하는 도구를 제공합니다. 이 방향을 확인하기 위해 `꺼진 등대`의 장면과 화면 편집 시안을 만들었습니다.
 
-{% include screenshot.html kind="concept" file="e7869ac5f22deef5b30e.jpg" width="1424" height="634" alt="등대 배경 위에 장소·목표와 대화·선택지, 아래에 핵심 상태와 소지품 메뉴가 놓인 플레이 화면 시안" caption="장면·대화·선택이 중심이 되고 상세 정보는 필요할 때 여는 플레이 화면 구상입니다. 배경은 시안용 콘셉트 아트입니다." %}
+{% include screenshot.html kind="concept" file="54d886cab1c766f4c8b5.jpg" width="1280" height="720" alt="등대 배경 위에 장소·목표와 대화·선택지, 아래에 핵심 상태와 소지품 메뉴가 놓인 플레이 화면 시안" caption="장면·대화·선택이 중심이 되고 상세 정보는 필요할 때 여는 플레이 화면 구상입니다. 배경은 시안용 콘셉트 아트입니다." %}
 
 ## 플레이어가 보는 화면
 
@@ -20,7 +20,7 @@ content_status: planned
 
 ## 제작자가 편집하는 화면
 
-{% include screenshot.html kind="concept" file="d4d9e0bd7682cfdd2f97.jpg" width="1424" height="673" alt="플레이 화면 옆에서 대화 위치, 테마, 글자 크기, 핵심 자원과 목표 표시를 조절하는 제작자 편집 시안" caption="제작자의 편집 도구는 플레이 화면 바깥에 둡니다. 이 시안은 배치·테마·정보량 조절의 일부 동작을 보여줍니다." %}
+{% include screenshot.html kind="concept" file="e93a6e0cc33a0ddfd021.jpg" width="1265" height="735" alt="플레이 화면 옆에서 대화 위치, 테마, 글자 크기, 핵심 자원과 목표 표시를 조절하는 제작자 편집 시안" caption="제작자의 편집 도구는 플레이 화면 바깥에 둡니다. 이 시안은 배치·테마·정보량 조절의 일부 동작을 보여줍니다." %}
 
 | 편집 대상 | 계획된 설정 |
 | --- | --- |
