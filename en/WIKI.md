@@ -5,7 +5,7 @@ description: Learn how to start, build worlds, define rules, export games, and c
 
 # Narrafield Studio user wiki
 
-Narrafield Studio is a TRPG engine for building worlds and scenes, connecting choices and checks, and exporting playable games. It is being developed toward multi-platform support. Use this wiki to find the guide you need.
+Narrafield Studio is a TRPG engine developed by the **sortie** team. Build worlds and scenes, connect choices and checks, and export playable games. The engine is being developed toward multi-platform support. Use this wiki to find the guide you need.
 
 **Start with [Quick start](QUICKSTART.md) and open The Dark Lighthouse sample.** If you received someone else's game, see [Play and save a game](PLAY_AND_EXPORT.md).
 

@@ -5,7 +5,7 @@ description: Features, online limitations, compatibility, and store availability
 
 # Current capabilities
 
-Narrafield Studio is a **TRPG engine being developed toward multi-platform support**. It is currently a development alpha; this does not mean every operating system is supported today. Supported operating systems and installation requirements will be listed on official store product pages at release.
+Narrafield Studio is a **TRPG engine developed by the sortie team**, with multi-platform support as a development goal. It is currently a development alpha; this does not mean every operating system is supported today. Supported operating systems and installation requirements will be listed on official store product pages at release.
 
 This website provides product information and complete Korean and English guides. It does not distribute executable files. Purchases and installation will be handled through official stores.
 

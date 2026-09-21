@@ -1,7 +1,8 @@
 ko:
   prefix: ""
   locale: ko_KR
-  description: 세계관을 엮고, 선택지를 만들고, 나만의 TRPG를 플레이할 수 있는 게임으로. 내러필드 스튜디오 공식 소개와 사용 가이드.
+  description: 개발팀 sortie가 만드는 TRPG 엔진 Narrafield Studio. 세계관을 엮고, 선택지를 만들어 플레이할 수 있는 이야기로 완성하세요. 공식 제품 소개와 사용 가이드.
+  developer_label: 개발팀
   skip: 본문으로 바로가기
   home_label: Narrafield Studio 소개 홈
   site_nav: 사이트 탐색
@@ -27,7 +28,8 @@ ko:
 en:
   prefix: /en
   locale: en_US
-  description: Build worlds, create choices, and turn your TRPG into a playable game. The official Narrafield Studio website and user guide.
+  description: Narrafield Studio is a TRPG engine developed by the sortie team. Build worlds, create choices, and turn your story into a playable game. Official product website and user guide.
+  developer_label: Development team
   skip: Skip to content
   home_label: Narrafield Studio home
   site_nav: Site navigation
