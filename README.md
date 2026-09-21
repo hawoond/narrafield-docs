@@ -1,6 +1,6 @@
 # Narrafield Studio · 소개와 사용자 위키
 
-제품 **Narrafield Studio** · 개발팀 **sortie**
+제품 **Narrafield Studio** · **sortie**
 
 내러필드 스튜디오는 예제로 쉽게 시작하고, 장면과 선택지를 연결해 나만의 이야기를 게임으로 완성하는 TRPG 엔진입니다. 이 공개 저장소는 제품 소개와 한국어·영어 사용 가이드를 제공합니다.
 

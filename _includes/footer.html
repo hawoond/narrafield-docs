@@ -5,6 +5,6 @@
   <p class="footer-line">{{ ui.footer_line }}</p>
   <div class="footer-meta">
     <nav aria-label="{{ ui.footer_nav }}"><a href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}">{{ ui.guide }}</a><a href="https://github.com/{{ site.repository }}">{{ ui.repository }}</a></nav>
-    <small>{{ ui.developer_label }} <strong>{{ site.developer_team | escape }}</strong></small>
+    <small><strong>{{ site.developer_team | escape }}</strong></small>
   </div>
 </footer>

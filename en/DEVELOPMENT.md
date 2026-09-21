@@ -5,7 +5,7 @@ description: Features, online limitations, compatibility, and store availability
 
 # Current capabilities
 
-Narrafield Studio is a **TRPG engine developed by the sortie team**. It is currently a development alpha. Samples and guides help you build worlds, scenes, and choices step by step.
+Narrafield Studio is a **TRPG engine developed by sortie**. It is currently a development alpha. Samples and guides help you build worlds, scenes, and choices step by step.
 
 This website provides product information and complete Korean and English guides. It does not distribute executable files. Purchases and installation will be handled through official stores.
 

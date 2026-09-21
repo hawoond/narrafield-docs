@@ -5,7 +5,7 @@ description: Connect world lore, scenes and rules, then turn your story into a p
 
 # From world lore to a playable story
 
-Narrafield Studio is a TRPG engine developed by the **sortie** team. Organize people and places, connect choices and checks, and export a game from the same project.
+Narrafield Studio is a TRPG engine developed by **sortie**. Organize people and places, connect choices and checks, and export a game from the same project.
 
 Start with **one place, one character, and two choices**. Finish a short story before adding the rules it needs.
 
