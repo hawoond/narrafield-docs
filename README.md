@@ -5,6 +5,7 @@
 내러필드 스튜디오는 세계관과 장면을 만들고, 선택지와 판정을 연결해 플레이할 수 있는 게임으로 내보내는 TRPG 엔진입니다. 멀티플랫폼 지원을 목표로 개발 중입니다. 이 공개 저장소는 제품 소개와 한국어·영어 사용 가이드를 제공합니다.
 
 - [제품 소개](https://hawoond.github.io/narrafield-docs/)
+- [제작기 메뉴별 안내](https://hawoond.github.io/narrafield-docs/EDITOR.html)
 - [한국어 사용자 위키](https://hawoond.github.io/narrafield-docs/WIKI.html)
 - [English user wiki](https://hawoond.github.io/narrafield-docs/en/WIKI.html)
 - [현재 지원 범위](DEVELOPMENT.md)

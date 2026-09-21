@@ -3,9 +3,11 @@
 <header class="site-header wrap">
   <a class="wordmark" href="{{ ui.prefix | append: '/' | relative_url }}" aria-label="{{ ui.home_label }}">Narrafield<span>STUDIO</span></a>
   <nav class="header-nav" aria-label="{{ ui.site_nav }}">
-    <a href="{{ ui.prefix | append: '/' | relative_url }}#experience">{{ ui.experience }}</a>
-    <a href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}">{{ ui.guide }}</a>
-    <a href="{{ ui.prefix | append: '/' | relative_url }}#development">{{ ui.development }}</a>
+    {% assign experience_url = ui.prefix | append: '/EXPERIENCE.html' %}
+    {% assign development_url = ui.prefix | append: '/DEVELOPMENT.html' %}
+    <a href="{{ experience_url | relative_url }}"{% if page.url == experience_url %} aria-current="page"{% endif %}>{{ ui.experience }}</a>
+    <a href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}"{% if page.layout == 'guide' and page.url != experience_url and page.url != development_url %} aria-current="page"{% endif %}>{{ ui.guide }}</a>
+    <a href="{{ development_url | relative_url }}"{% if page.url == development_url %} aria-current="page"{% endif %}>{{ ui.development }}</a>
   </nav>
   <a class="button button-outline header-cta" href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}">{{ ui.open_wiki }} <span aria-hidden="true">↗</span></a>
   {% include language-nav.html %}

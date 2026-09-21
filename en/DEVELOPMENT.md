@@ -11,12 +11,18 @@ This website provides product information and complete Korean and English guides
 
 {% include stores.html %}
 
+## Guide baseline
+
+The detailed guides follow the **runtime 0.4 development-alpha** menu structure. Older builds may differ in Game data, Factions, and individual forms. Find the relevant task in the [editor menu guide](EDITOR.md).
+
 ## Available features
 
 | Area | Features | Guide |
 | --- | --- | --- |
 | World building | Places, characters, relations, map pins, chronology, scene connections | [Worlds and scenes](WORLD_BUILDING.md) |
 | Stories and rules | Choices, conditions, effects, dice checks, items, quests, attributes | [Rules and catalogs](RULES.md) |
+| Game data | Resources, abilities, spells, statuses, characters, combat definitions and assignments | [Game data](GAME_DATA.md) |
+| Factions | Organization, members, diplomacy, places, reputation, goals and scene connections | [Factions](FACTION_GUIDE.md) |
 | Components | Add narrative, d20 checks, and combat to a project | [Component templates](TEMPLATES.md) |
 | Play and export | Preview, local save slots, standalone game export | [Play and export](PLAY_AND_EXPORT.md) |
 | Team creation | Git cloning, branches, merges, conflict resolution, LFS | [Git collaboration](COLLABORATION.md) |
@@ -32,6 +38,14 @@ The translation workspace handles Korean source and English translations for wor
 
 A store release date has not been announced. Development features and test results are not a guarantee of final release quality. Display scaling, input, networking, and other real-world environments need further validation.
 
-The current runtime compatibility version is **0.2.0**. Version 0.1 game packages, saves, and server sessions are incompatible. Export again from the source project using the new runtime. See [Troubleshooting](TROUBLESHOOTING.md).
+The current runtime compatibility version is **0.4.0**. Game packages, saves, and server sessions from earlier runtimes are incompatible. Export again from the source project using the new runtime. See [Troubleshooting](TROUBLESHOOTING.md).
 
 The harbor image is conceptual world art. The editor image is an actual development-alpha screenshot; its layout may differ from the current build.
+
+## Where should I start?
+
+- Explore the [creation workflow](EXPERIENCE.md) for the overall product experience.
+- Use the [editor menu guide](EDITOR.md) to find a specific editor task.
+- Read [Troubleshooting](TROUBLESHOOTING.md) for launch, save, and compatibility issues.
+
+Multi-platform support and a store release are development goals, without a promised date. Official store links will be added to the store section when available.

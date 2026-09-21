@@ -42,7 +42,8 @@ def main():
     expected = {"index.html", "WIKI.html", "QUICKSTART.html", "WORLD_BUILDING.html",
                 "TEMPLATES.html", "RULES.html", "PLAY_AND_EXPORT.html", "ONLINE.html",
                 "COLLABORATION.html", "LOCALIZATION.html", "TROUBLESHOOTING.html",
-                "DEVELOPMENT.html"}
+                "DEVELOPMENT.html",
+                "EXPERIENCE.html", "EDITOR.html", "PROJECT.html", "RELATIONS.html", "MAPS.html", "TIMELINE.html", "SCENES.html", "GAME_DATA.html", "FACTION_GUIDE.html", "TOOLS.html"}
     expected |= {"en/" + name for name in list(expected)}
     pages = {path.resolve(): Page(path.read_text(encoding="utf-8"))
              for path in root.rglob("*.html")}

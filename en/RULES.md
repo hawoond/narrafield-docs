@@ -1,8 +1,22 @@
 ---
-title: Rules and catalogs
+title: Rules and expressions
 ---
 
-# Rules and catalogs
+# Rules and expressions
+
+See [Game data](GAME_DATA.md) for item, quest, and ability authoring. This page covers **scene-action conditions, checks, and effect expressions**, followed by advanced data-format details.
+
+## Make a first check
+
+1. Define the attribute in Game data. Basic d20 checks use attributes as modifiers.
+2. Create an action in **Scenes & actions** and apply it once.
+3. Reopen it and combine values and operations in the **Expression builder**.
+4. Set the target for the dice-plus-attribute result and both success and failure destinations.
+5. Save, validate, and preview both outcomes.
+
+For example, **d20 + persuasion modifier ≥ 12** is a persuasion check. Do not add dice to a condition that only checks whether the player owns a key. Effects define values changed by the action or its result.
+
+## Catalogs and references
 
 Create items, quests, player attributes, and initial inventory using the catalog forms. Item, quest, and attribute IDs are fixed after creation; names, descriptions, and values can change while preserving IDs. Setting an initial inventory quantity to zero removes that entry. Negative quantities and negative healing amounts are not allowed.
 

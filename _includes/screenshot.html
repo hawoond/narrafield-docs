@@ -1,0 +1,8 @@
+{% assign language = page.lang | default: 'ko' %}
+{% assign ui = site.data.ui[language] %}
+<figure class="guide-screenshot">
+  <a href="{{ '/assets/images/' | append: include.file | relative_url }}" target="_blank" rel="noopener" aria-label="{{ include.alt | escape }} — {{ ui.enlarge_image }}">
+    <img src="{{ '/assets/images/' | append: include.file | relative_url }}" alt="{{ include.alt | escape }}" width="{{ include.width | default: 1380 }}" height="{{ include.height | default: 900 }}" loading="lazy">
+  </a>
+  <figcaption>{{ include.caption | escape }} <span>{{ ui.screenshot_note }} {{ ui.enlarge_image }}.</span></figcaption>
+</figure>

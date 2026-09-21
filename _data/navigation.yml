@@ -1,20 +1,44 @@
-- title: { ko: 시작과 제작, en: Getting started }
+- title: { ko: 시작하기, en: Get started }
   pages:
-    - title: { ko: 시작하기, en: Quick start }
+    - title: { ko: 만드는 경험, en: Creation workflow }
+      url: /EXPERIENCE.html
+    - title: { ko: 시작 가이드, en: Quick start }
       url: /QUICKSTART.html
-    - title: { ko: 세계관과 장면, en: Worlds and scenes }
-      url: /WORLD_BUILDING.html
-    - title: { ko: 구성 요소, en: Component templates }
+    - title: { ko: 제작기 메뉴별 안내, en: Editor menu guide }
+      url: /EDITOR.html
+    - title: { ko: 프로젝트 설정, en: Project settings }
+      url: /PROJECT.html
+    - title: { ko: 구성 요소, en: Components }
       url: /TEMPLATES.html
-    - title: { ko: 규칙과 카탈로그, en: Rules and catalogs }
+- title: { ko: 세계관과 이야기, en: World and story }
+  pages:
+    - title: { ko: 세계관, en: World building }
+      url: /WORLD_BUILDING.html
+    - title: { ko: 관계도, en: Relations }
+      url: /RELATIONS.html
+    - title: { ko: 지도, en: Maps }
+      url: /MAPS.html
+    - title: { ko: 연표, en: Timeline }
+      url: /TIMELINE.html
+    - title: { ko: 장면과 행동, en: Scenes and actions }
+      url: /SCENES.html
+    - title: { ko: 세력, en: Factions }
+      url: /FACTION_GUIDE.html
+- title: { ko: 게임 규칙, en: Game rules }
+  pages:
+    - title: { ko: 게임 데이터, en: Game data }
+      url: /GAME_DATA.html
+    - title: { ko: 규칙과 수식, en: Rules and expressions }
       url: /RULES.html
-- title: { ko: 플레이와 공유, en: Play and share }
+- title: { ko: 플레이와 함께 만드는 작업, en: Play and shared work }
   pages:
     - title: { ko: 플레이와 게임 배포, en: Play and export }
       url: /PLAY_AND_EXPORT.html
     - title: { ko: 온라인 세션, en: Online sessions }
       url: /ONLINE.html
-    - title: { ko: Git 팀 제작, en: Git collaboration }
+    - title: { ko: 협업과 확장, en: Tools and extensions }
+      url: /TOOLS.html
+    - title: { ko: 병합과 충돌, en: Merge and conflicts }
       url: /COLLABORATION.html
     - title: { ko: 번역 작업실, en: Translation workspace }
       url: /LOCALIZATION.html

@@ -24,7 +24,7 @@ Deletion is rejected while scene conditions, effects, expressions, or characters
 
 ## An older game or save will not open
 
-The current runtime compatibility version is **0.2.0**. Version 0.1 game packages, saves, and server session snapshots are incompatible. Schema 1 source projects can still be opened; export them again with the new player. Play progress is not migrated automatically.
+The current runtime compatibility version is **0.4.0**. Game packages, saves, and server session snapshots from earlier runtimes are incompatible. Schema 1 source projects can still be opened; export them again with the new player. Play progress is not migrated automatically.
 
 When changing online content or runtime versions, preserve the existing state file and give `--state` a new path outside the project. See [Online sessions](ONLINE.md) for restart and state-file restrictions.
 

@@ -9,16 +9,32 @@ Narrafield Studio is a TRPG engine developed by the **sortie** team. Build world
 
 **Start with [Quick start](QUICKSTART.md) and open The Dark Lighthouse sample.** If you received someone else's game, see [Play and save a game](PLAY_AND_EXPORT.md).
 
-These guides describe the current **development alpha**. This is not a final store release; available features may vary with your build.
+These guides describe the **runtime 0.4 development alpha**. This is not a final store release; available features may vary with your build.
+
+**Looking for a menu? Open the [editor menu guide](EDITOR.md).** For the whole product workflow, explore [the creation experience](EXPERIENCE.md).
 
 ## Getting started
 
 | Guide | Topics |
 | --- | --- |
 | [Quick start](QUICKSTART.md) | Launch preparation, the sample, new projects, applying and saving |
+| [Project settings](PROJECT.md) | Title, content version, start scene, saving and copies |
 | [Worlds and scenes](WORLD_BUILDING.md) | Places, characters, relations, maps, chronology, choices and connections |
 | [Component templates](TEMPLATES.md) | Narrative, d20 and combat components, previews, connecting existing projects |
 | [Rules and catalogs](RULES.md) | Items, quests, attributes, initial inventory, conditions, checks and effects |
+
+## Detailed menu guides
+
+| Menu | Topics |
+| --- | --- |
+| [World](WORLD_BUILDING.md) | Entry types, visibility, connections to scenes |
+| [Relations](RELATIONS.md) | Direction, types, search, layout and team views |
+| [Maps](MAPS.md) | Place pins, submaps and public backgrounds |
+| [Timeline](TIMELINE.md) | Event placement, eras, dates, order and related entries |
+| [Scenes & actions](SCENES.md) | Choices, conditions, checks, effects and branches |
+| [Game data](GAME_DATA.md) | Items, resources, skills, spells, character assignments and combat |
+| [Factions](FACTION_GUIDE.md) | Organization, members, diplomacy, places, reputation and goals |
+| [Tools & extensions](TOOLS.md) | Git sharing, AI proposal review and extension packages |
 
 ## Play and share
 

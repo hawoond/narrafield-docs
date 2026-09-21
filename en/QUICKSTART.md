@@ -42,3 +42,7 @@ Use **Open** and select a project folder to load an existing project. Use **Save
 - [Worlds and scenes](WORLD_BUILDING.md): write settings and choices.
 - [Play and export](PLAY_AND_EXPORT.md): validate and create a game ZIP.
 - [Troubleshooting](TROUBLESHOOTING.md): resolve launch and export problems.
+
+## Find instructions by menu
+
+Use the [editor menu guide](EDITOR.md) to find each menu's role. Choose a starting point in [Project settings](PROJECT.md), then build your first choice in [Scenes and actions](SCENES.md).

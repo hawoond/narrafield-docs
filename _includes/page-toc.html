@@ -1,0 +1,13 @@
+{% assign sections = content | split: '<h2 id="' %}
+{% if sections.size > 2 %}
+<details class="page-toc">
+  <summary>{{ ui.on_this_page }}</summary>
+  <nav aria-label="{{ ui.on_this_page }}"><ul>
+    {% for section in sections offset:1 %}
+    {% assign anchor = section | split: '"' | first %}
+    {% assign heading = section | split: '</h2>' | first | split: '">' | last | strip_html %}
+    <li><a href="#{{ anchor | escape }}">{{ heading | escape }}</a></li>
+    {% endfor %}
+  </ul></nav>
+</details>
+{% endif %}
