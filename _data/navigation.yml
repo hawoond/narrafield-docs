@@ -1,0 +1,24 @@
+- title: 시작과 제작
+  pages:
+    - title: 시작하기
+      url: /QUICKSTART.html
+    - title: 세계관과 장면
+      url: /WORLD_BUILDING.html
+    - title: 구성 요소 (영문)
+      url: /TEMPLATES.html
+    - title: 규칙과 카탈로그
+      url: /RULES.html
+- title: 플레이와 공유
+  pages:
+    - title: 플레이와 게임 배포
+      url: /PLAY_AND_EXPORT.html
+    - title: 온라인 세션 (영문)
+      url: /ONLINE.html
+    - title: Git 팀 제작
+      url: /COLLABORATION.html
+    - title: 번역 작업실 (영문)
+      url: /LOCALIZATION.html
+- title: 도움말
+  pages:
+    - title: 문제 해결과 호환성
+      url: /TROUBLESHOOTING.html

@@ -1,0 +1,10 @@
+<a class="wiki-home" href="{{ '/WIKI.html' | relative_url }}"{% if page.url == '/WIKI.html' %} aria-current="page"{% endif %}>사용자 위키</a>
+{% for group in site.data.navigation %}
+<p class="nav-group">{{ group.title | escape }}</p>
+<ul>
+  {% for item in group.pages %}
+  <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+<a class="wiki-support" href="{{ '/DEVELOPMENT.html' | relative_url }}">현재 지원 범위</a>

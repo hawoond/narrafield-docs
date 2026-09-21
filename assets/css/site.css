@@ -1,0 +1,178 @@
+:root {
+  --paper: #f6f4ef;
+  --ink: #153b32;
+  --muted: #63736d;
+  --line: #cecbbf;
+  --sage: #e3e5da;
+  --ochre: #a4967f;
+  --serif: "Noto Serif KR", Georgia, serif;
+  --sans: "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.8; word-break: keep-all; overflow-wrap: break-word; }
+a { color: inherit; text-underline-offset: 5px; }
+a:hover { color: #61745e; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #9a6330; outline-offset: 6px; }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { width: calc(100% - 144px); max-width: 1296px; margin-inline: auto; }
+.skip-link { position: absolute; left: 16px; top: -90px; z-index: 10; padding: 12px 20px; background: var(--ink); color: white; }
+.skip-link:focus { top: 16px; color: white; }
+.site-header { min-height: 104px; display: flex; align-items: center; gap: 42px; position: relative; z-index: 2; }
+.wordmark { font-family: Georgia, serif; font-size: 35px; font-weight: 700; letter-spacing: -1.5px; text-decoration: none; line-height: 1; }
+.wordmark span { display: block; font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 5px; text-align: center; padding-top: 8px; }
+.header-nav { display: flex; gap: 34px; margin-left: auto; font-size: 15px; font-weight: 500; }
+.header-nav a, .footer-meta a { text-decoration: none; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; min-height: 58px; padding: 14px 26px; border: 1px solid var(--ink); border-radius: 3px; background: var(--ink); color: var(--paper); font-size: 17px; font-weight: 500; text-decoration: none; transition: background-color .18s ease, transform .18s ease; }
+.button:hover { color: white; background: #285043; transform: translateY(-2px); }
+.button-outline { background: transparent; color: var(--ink); min-height: 45px; padding: 9px 23px; font-size: 15px; }
+.button-outline:hover { background: var(--sage); color: var(--ink); }
+.hero { min-height: 695px; display: grid; grid-template-columns: 1fr 1.05fr; align-items: center; position: relative; padding: 36px 0 72px; }
+.hero-copy { z-index: 1; padding: 28px 0; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -.065em; }
+.hero h1 { font-size: clamp(42px, 4.7vw, 68px); line-height: 1.38; margin: 0 0 28px; }
+.hero-description { font-size: 22px; line-height: 1.75; margin: 0 0 30px; letter-spacing: -.035em; }
+.hero-actions { display: flex; gap: 30px; align-items: center; }
+.text-link { font-size: 15px; font-weight: 500; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 3px; }
+.alpha-note { margin-top: 20px; color: var(--muted); font-size: 13px; }
+.hero-visual { align-self: stretch; position: relative; min-width: 0; }
+.hero-art { position: absolute; width: 780px; max-width: none; top: 50%; left: 50%; transform: translate(-51%, -50%); }
+body:has(.hero) { overflow-x: clip; }
+.ornament { display: flex; align-items: center; gap: 18px; color: var(--ochre); font-size: 31px; line-height: 1; }
+.ornament::before, .ornament::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.experience { padding-top: 74px; }
+.experience h2 { text-align: center; font-size: clamp(32px, 3.3vw, 48px); line-height: 1.5; margin: 0 0 64px; }
+.feature-layout { display: grid; grid-template-columns: .76fr 1.3fr; gap: 48px; align-items: center; }
+.feature-list { list-style: none; padding: 0; margin: 0; }
+.feature-list li { display: grid; grid-template-columns: 36px 1fr; gap: 20px; border-top: 1px solid var(--line); padding: 26px 0; }
+.feature-number { font-family: var(--serif); font-size: 24px; font-weight: 400; }
+.feature-number::after { content: ""; display: block; width: 20px; height: 1px; background: var(--ochre); margin-top: 12px; }
+.feature-list h3 { font-size: 24px; line-height: 1.6; margin: 0 0 12px; }
+.feature-list p { font-size: 16px; line-height: 1.85; margin: 0; color: var(--muted); }
+.product-figure { margin: 0; min-width: 0; }
+.product-figure img { width: 100%; border-radius: 4px; border: 1px solid #3e4644; }
+.product-figure figcaption { color: var(--muted); font-size: 12px; margin-top: 12px; }
+.workflow { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); padding: 19px 0; margin: 42px 0 0; background: var(--sage); border-radius: 4px; text-align: center; }
+.workflow li { position: relative; font-size: 17px; font-weight: 500; }
+.workflow li span { display: block; font-family: var(--serif); font-size: 20px; font-weight: 400; margin-bottom: 2px; }
+.workflow li:not(:last-child)::after { content: "→"; position: absolute; right: -12px; top: 15px; font-family: var(--serif); font-size: 30px; font-weight: 400; }
+.guide-entry { display: grid; grid-template-columns: 1.2fr 1fr; gap: 100px; align-items: center; padding-top: 132px; padding-bottom: 96px; }
+.guide-entry h2 { font-size: clamp(36px, 4.3vw, 60px); line-height: 1.5; margin: 0 0 24px; }
+.guide-entry p { font-size: 21px; line-height: 1.9; margin-bottom: 32px; }
+.guide-links a { display: flex; gap: 22px; padding: 20px 0; border-bottom: 1px solid var(--line); text-decoration: none; font-size: 20px; align-items: center; }
+.guide-links a span { font-family: var(--serif); color: #8b806e; font-size: 22px; }
+.guide-links a b { margin-left: auto; font-size: 23px; font-weight: 400; }
+.guide-links a:hover b { transform: translate(2px, -2px); }
+.guide-links .all-guides { margin-top: 12px; font-size: 18px; }
+.development { display: grid; grid-template-columns: 1.15fr 1fr; gap: 72px; padding-top: 65px; padding-bottom: 76px; }
+.development h2 { font-size: 33px; line-height: 1.7; margin: 0; }
+.development p { margin: 0 0 22px; font-size: 16px; line-height: 1.95; }
+.site-footer { border-top: 1px solid var(--line); padding-top: 32px; padding-bottom: 36px; display: flex; align-items: center; justify-content: space-between; gap: 35px; }
+.site-footer .wordmark { font-size: 28px; }
+.site-footer .wordmark span { font-size: 8px; }
+.footer-line { font-family: var(--serif); font-size: 17px; margin: 0; }
+.footer-meta { text-align: right; font-size: 13px; }
+.footer-meta nav { display: flex; gap: 25px; }
+.footer-meta small { display: block; margin-top: 14px; font-size: 11px; color: var(--muted); }
+.wiki-layout { display: grid; grid-template-columns: 235px minmax(0, 1fr); gap: 64px; padding-top: 42px; padding-bottom: 80px; border-top: 1px solid var(--line); }
+.wiki-sidebar { align-self: start; position: sticky; top: 30px; font-size: 14px; padding-right: 20px; }
+.wiki-home { font-family: var(--serif); font-size: 21px; font-weight: 600; text-decoration: none; }
+.nav-group { color: var(--muted); font-size: 12px; margin: 28px 0 8px; }
+.wiki-sidebar ul, .wiki-mobile-nav ul { padding: 0; margin: 0; list-style: none; }
+.wiki-sidebar li a, .wiki-mobile-nav li a { display: block; text-decoration: none; padding: 7px 12px; margin-left: -12px; }
+[aria-current="page"] { background: var(--sage); border-radius: 3px; font-weight: 600; }
+.wiki-support { display: block; margin-top: 28px; font-size: 13px; }
+.wiki-main { min-width: 0; max-width: 910px; }
+.breadcrumbs { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+.breadcrumbs a { text-decoration: none; }
+.wiki-article { font-size: 16px; line-height: 1.95; }
+.wiki-article h1 { font-size: 36px; line-height: 1.6; margin: 20px 0 30px; }
+.wiki-article h2 { font-size: 25px; line-height: 1.7; padding-top: 12px; margin: 40px 0 16px; border-top: 1px solid var(--line); }
+.wiki-article h3 { font-size: 20px; margin: 28px 0 12px; }
+.wiki-article p, .wiki-article ul, .wiki-article ol { margin: 0 0 20px; }
+.wiki-article li { margin-bottom: 10px; }
+.wiki-article a { color: #376650; }
+.wiki-article table { display: block; overflow-x: auto; border-collapse: collapse; max-width: 100%; margin: 24px 0; font-size: 14px; }
+.wiki-article th, .wiki-article td { border-bottom: 1px solid var(--line); padding: 13px 16px; text-align: left; min-width: 100px; }
+.wiki-article th { background: var(--sage); font-weight: 600; }
+.wiki-article code { font-family: Consolas, monospace; background: #eae8df; padding: 2px 5px; border-radius: 3px; font-size: .88em; word-break: break-word; }
+.wiki-article pre { overflow-x: auto; padding: 22px; background: #eae8df; border-radius: 4px; font-size: 14px; line-height: 1.7; }
+.wiki-article pre code { padding: 0; word-break: normal; }
+.wiki-return { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); margin-top: 48px; padding-top: 20px; font-size: 14px; }
+.wiki-mobile-nav { display: none; }
+@media (min-width: 1600px) { .hero-art { width: 850px; } .hero { min-height: 740px; } }
+@media (max-width: 1100px) {
+  .wrap { width: calc(100% - 80px); }
+  .hero h1 { font-size: 48px; }
+  .hero-description { font-size: 18px; }
+  .hero-art { width: 620px; }
+  .hero { min-height: 610px; }
+  .hero-actions { gap: 18px; flex-wrap: wrap; }
+  .feature-layout { gap: 28px; grid-template-columns: .9fr 1.15fr; }
+  .feature-list h3 { font-size: 20px; }
+  .feature-list p { font-size: 14px; }
+  .guide-entry { gap: 65px; }
+  .guide-entry h2 { font-size: 48px; }
+  .development { gap: 45px; }
+  .development h2 { font-size: 28px; }
+  .footer-line { display: none; }
+  .wiki-layout { grid-template-columns: 205px minmax(0, 1fr); gap: 35px; }
+}
+@media (max-width: 760px) {
+  .wrap { width: calc(100% - 40px); }
+  .site-header { flex-wrap: wrap; gap: 16px; padding-top: 22px; padding-bottom: 20px; min-height: 120px; }
+  .wordmark { font-size: 28px; }
+  .header-cta { margin-left: auto; min-height: 40px; font-size: 13px; padding: 7px 15px; }
+  .header-nav { order: 3; width: 100%; margin: 0; gap: 25px; font-size: 13px; }
+  .hero { display: flex; flex-direction: column; padding: 28px 0 0; min-height: 0; align-items: stretch; }
+  .hero-copy { padding: 8px 0 0; }
+  .hero h1 { font-size: clamp(36px, 7.8vw, 54px); line-height: 1.45; letter-spacing: -.065em; margin-bottom: 20px; }
+  .hero-description { font-size: 17px; line-height: 1.9; margin-bottom: 25px; }
+  .hero-actions { gap: 21px; }
+  .button { font-size: 14px; min-height: 49px; padding: 12px 18px; gap: 13px; }
+  .text-link { font-size: 13px; }
+  .alpha-note { font-size: 11px; margin-top: 17px; }
+  .hero-visual { width: 100%; align-self: auto; margin-top: -15px; min-height: 0; }
+  .hero-art { position: relative; width: calc(100% + 28px); max-width: none; top: auto; left: -14px; transform: none; }
+  .ornament { font-size: 25px; gap: 12px; }
+  .experience { padding-top: 45px; }
+  .experience h2 { font-size: 29px; line-height: 1.6; margin-bottom: 34px; }
+  .feature-layout { display: flex; flex-direction: column; gap: 24px; }
+  .feature-list { width: 100%; }
+  .feature-list li { grid-template-columns: 27px 1fr; gap: 16px; padding: 22px 0; }
+  .feature-list h3 { font-size: 22px; }
+  .feature-list p { font-size: 15px; }
+  .feature-number { font-size: 20px; }
+  .product-figure figcaption { font-size: 10px; }
+  .workflow { grid-template-columns: repeat(2, 1fr); gap: 22px 0; padding: 20px 8px; margin-top: 28px; }
+  .workflow li { font-size: 14px; }
+  .workflow li span { font-size: 16px; }
+  .workflow li::after { display: none; }
+  .guide-entry { display: block; padding-top: 65px; padding-bottom: 55px; }
+  .guide-entry h2 { font-size: 39px; line-height: 1.5; }
+  .guide-entry p { font-size: 17px; }
+  .guide-links { margin-top: 36px; }
+  .guide-links a { font-size: 17px; padding: 16px 0; gap: 17px; }
+  .guide-links a span { font-size: 18px; }
+  .guide-links .all-guides { font-size: 16px; }
+  .development { display: block; padding-top: 38px; padding-bottom: 46px; }
+  .development h2 { font-size: 25px; margin-bottom: 23px; }
+  .development p { font-size: 15px; }
+  .site-footer { align-items: flex-start; flex-wrap: wrap; padding-top: 25px; gap: 27px; }
+  .site-footer .wordmark { font-size: 24px; }
+  .footer-meta { margin-left: auto; font-size: 11px; }
+  .footer-meta nav { gap: 15px; }
+  .wiki-layout { display: block; padding-top: 20px; padding-bottom: 40px; }
+  .wiki-sidebar { display: none; }
+  .wiki-mobile-nav { display: block; padding: 15px 18px; margin-bottom: 25px; border: 1px solid var(--line); border-radius: 3px; }
+  .wiki-mobile-nav summary { cursor: pointer; font-weight: 500; font-size: 14px; }
+  .wiki-mobile-nav nav { padding-top: 20px; font-size: 14px; }
+  .wiki-article { font-size: 15px; }
+  .wiki-article h1 { font-size: 29px; }
+  .wiki-article h2 { font-size: 22px; }
+  .wiki-article ul, .wiki-article ol { padding-left: 22px; }
+  .wiki-article table { font-size: 13px; }
+  .wiki-article td, .wiki-article th { padding: 12px; }
+  .wiki-return { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } .button:hover { transform: none; } }
