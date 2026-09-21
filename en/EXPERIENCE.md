@@ -47,6 +47,6 @@ Use **Validate** to find invalid references and **Play** to test success, failur
 
 **Tools & extensions** and **Merge & conflicts** help teams share changes through Git. **Translation** manages Korean source text and English translations for supported game content.
 
-The product is a development alpha working toward multi-platform support. See [Development](DEVELOPMENT.md) for current capabilities and limits. Purchases and installation will use official stores; **store pages are coming soon**.
+The product is currently a development alpha. See [Development](DEVELOPMENT.md) for current capabilities and limits. Purchases and installation will use official stores; **store pages are coming soon**.
 
 **Next:** [Start with the sample](QUICKSTART.md) or explore the [editor menu guide](EDITOR.md).

@@ -5,7 +5,7 @@ description: Features, online limitations, compatibility, and store availability
 
 # Current capabilities
 
-Narrafield Studio is a **TRPG engine developed by the sortie team**, with multi-platform support as a development goal. It is currently a development alpha; this does not mean every operating system is supported today. Supported operating systems and installation requirements will be listed on official store product pages at release.
+Narrafield Studio is a **TRPG engine developed by the sortie team**. It is currently a development alpha. Samples and guides help you build worlds, scenes, and choices step by step.
 
 This website provides product information and complete Korean and English guides. It does not distribute executable files. Purchases and installation will be handled through official stores.
 
@@ -36,7 +36,7 @@ The translation workspace handles Korean source and English translations for wor
 
 ## Release and compatibility
 
-A store release date has not been announced. Development features and test results are not a guarantee of final release quality. Display scaling, input, networking, and other real-world environments need further validation.
+Multi-platform support remains a development goal. Supported operating systems and installation requirements will be listed on official store product pages at release. A store release date has not been announced. Development features and test results are not a guarantee of final release quality. Display scaling, input, networking, and other real-world environments need further validation.
 
 The current runtime compatibility version is **0.4.0**. Game packages, saves, and server sessions from earlier runtimes are incompatible. Export again from the source project using the new runtime. See [Troubleshooting](TROUBLESHOOTING.md).
 
@@ -48,4 +48,4 @@ The harbor image is conceptual world art. The editor image is an actual developm
 - Use the [editor menu guide](EDITOR.md) to find a specific editor task.
 - Read [Troubleshooting](TROUBLESHOOTING.md) for launch, save, and compatibility issues.
 
-Multi-platform support and a store release are development goals, without a promised date. Official store links will be added to the store section when available.
+Official store links will be added to the store section when available.
