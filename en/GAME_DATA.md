@@ -5,7 +5,7 @@ description: Define and assign items, quests, attributes, resources, skills, spe
 
 # Game data
 
-**Game data** holds shared definitions and character assignments. This guide follows the **runtime {{ site.data.review.demo_version }} development alpha**; older builds have different menus and capabilities.
+**Game data** is where you create items, attributes, and abilities, then assign them to characters. This guide follows the **demo {{ site.data.review.demo_version }}**; older builds have different menus and capabilities.
 
 Defining an item does not give it to a character. Abilities also need the appropriate assignment and usage conditions before appearing in play.
 
@@ -59,9 +59,9 @@ Proficiency is optional: enable it when needed and set its experience and growth
 
 After creating shared definitions, assign them in **Characters & enemies** and configure participants in **Encounters**. World guild membership and combat team membership are separate settings.
 
-For statuses, equipment, and passives, check triggers, maintenance conditions, and targets. The presence of a menu does not mean every TRPG rule is supported; resolve validation errors for unsupported combinations.
+For statuses, equipment, and passives, check triggers, maintenance conditions, and targets. Not every TRPG rule can be implemented here. If validation finds an unsupported combination, adjust the settings before continuing.
 
-## Interpret trials correctly
+## Test an ability
 
 **Test applied ability** uses an isolated state and the definition already applied to the project. It does not test unapplied form edits or modify actual play saves.
 
@@ -69,10 +69,8 @@ Check sufficient and insufficient resources, success and failure, and unavailabl
 
 **Related:** [Rules and expressions](RULES.md) · [Scenes and actions](SCENES.md) · [Current capabilities](DEVELOPMENT.md)
 
-## Planned player creation and party rules
+## Character creation and parties
 
-Shared character definitions are distinct from runtime character instances. Two instances can have separate equipment, resources, and progress. See [Online sessions](ONLINE.md) for current GM assignment, and [Starting a game](PLAYER_START.md) and [Online parties](PARTY_PLAY.md) for planned creation steps and personal parties.
+Characters created from the same definition keep their own equipment, resources, and progress during play. See [Online sessions](ONLINE.md) for GM character assignment in the current demo.
 
-## Planned connections through shared data
-
-Character creation, personal/shared parties, speaking rights, consent, and costs should connect while retaining separate scopes. See [Starting a game](PLAYER_START.md), [Parties](PARTY_PLAY.md), and [World stories](WORLD_STORIES.md) for planned flows beyond the current capabilities.
+Planned features will let creators choose character-creation steps and let players form personal or shared parties. Permission to control a character, permission to speak for them, and consent to pay a cost will remain separate. See [Starting a game](PLAYER_START.md), [Online parties](PARTY_PLAY.md), and [A world that remembers](WORLD_STORIES.md).

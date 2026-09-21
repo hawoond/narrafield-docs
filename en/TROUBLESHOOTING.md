@@ -20,11 +20,11 @@ If a starting scene already exists, added scenes remain independent. Connect an 
 
 ## I cannot delete an item, quest, or attribute
 
-Deletion is rejected while scene conditions, effects, expressions, or characters reference that definition. Remove references first. See [Rules and catalogs](RULES.md).
+An item cannot be deleted while a scene condition, effect, expression, or character still uses it. Update those connections first. See [Rules and expressions](RULES.md).
 
 ## An older game or save will not open
 
-The current demo uses runtime **{{ site.data.demo.version }}**. Packages, saves, and server snapshots are checked against their runtime and content. Keep source projects and original saves, then export with the matching player. There is no general automatic migration to 0.6. Use an explicit migration tool only when its exact source-runtime, content, and plugin requirements are satisfied, and retain the original file.
+The current demo uses runtime **{{ site.data.demo.version }}**. Packages, saves, and server snapshots are checked against their runtime and content. Keep the source project and original saves. When exporting again, use a player runtime that matches the editor version. There is no general automatic migration to 0.6. Use an explicit migration tool only when its exact source-runtime, content, and plugin requirements are satisfied, and retain the original file.
 
 When changing online content or runtime versions, preserve the existing state file and give `--state` a new path outside the project. See [Online sessions](ONLINE.md) for restart and state-file restrictions.
 
@@ -43,7 +43,3 @@ Pages marked **In development** show planned workflows, including the new worksp
 ## I can join but cannot act
 
 An invitation without a character assignment joins as a spectator. Ask the GM to review the participant assignment and current turn. See [Online sessions](ONLINE.md).
-
-## Features described only in development plans
-
-If the new sidebar, unified template catalog, starter image pack, or integrated RP chat is absent from your demo, check [current, first-release, and later stages](DEVELOPMENT.md). A planned-feature guide does not mean those features ship in the demo.

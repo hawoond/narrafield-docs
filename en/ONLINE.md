@@ -4,7 +4,7 @@ title: Online sessions
 
 # Online sessions and access
 
-The demo is an **online development alpha with personal invitations and character assignments**. Participants control only their assigned character; unassigned participants spectate. GMs manage assignments, private visibility, and NPC control. Complete personal-party, lobby, chat, and split-scene workflows remain [planned](PARTY_PLAY.md).
+The demo lets you test online play by inviting players individually and assigning them characters. Participants control only their assigned character; unassigned participants spectate. GMs manage assignments, private visibility, and NPC control. Multiple personal parties, integrated lobbies, chat, and exploration in separate scenes are still [in development](PARTY_PLAY.md).
 
 ## Start and restart the server
 
@@ -55,9 +55,9 @@ All endpoints require a Bearer credential. Participant management remains GM-onl
 
 ## Private notes and GM control
 
-Players use **My private note**; the GM uses **Edit participant private view** for notes and personal lore visibility. Notes are visible to their participant and the GM. Character inventories, resources, and permitted private lore are projected for the relevant participant.
+Players use **My private note**; the GM uses **Edit participant private view** for notes and personal lore visibility. Notes are visible to their participant and the GM. Each participant sees the inventories, resources, and private lore they are allowed to view.
 
-In **GM actors & AI**, use **Refresh actors & definitions**, select an actor, then **GM manual control**, **Return control to AI**, **Pause AI / Resume AI**, or the selected actor's GM play view. The server still checks control and the current turn. General delegation and absence automation are not complete.
+In **GM actors & AI**, use **Refresh actors & definitions**, select an actor, then **GM manual control**, **Return control to AI**, **Pause AI / Resume AI**, or the selected actor's GM play view. The server still checks control and the current turn. Automatic actions and delegated control for absent players are not yet complete.
 
 ## Runtime images
 
@@ -65,7 +65,7 @@ In **GM actors & AI**, use **Refresh actors & definitions**, select an actor, th
 
 ## Verification and limits
 
-Local automated tests cover ownership, private views, persistence, duplicate commands, WebSocket reconnect, and credential revocation. These checks do not certify external multi-player networks or production operation. External connectivity, latency, load, accessibility, integrated lobbies, multiple personal parties, split exploration, identity recovery, and server transfer require further work.
+Local automated tests cover ownership, private views, persistence, duplicate commands, WebSocket reconnect, and credential revocation. Real sessions with several players on external networks still need testing. External connectivity, latency, load, accessibility, integrated lobbies, multiple personal parties, split exploration, identity recovery, and server transfer require further work.
 
 [Play and export](PLAY_AND_EXPORT.md) · [Troubleshooting](TROUBLESHOOTING.md) · [Planned parties and campaigns](PARTY_PLAY.md)
 

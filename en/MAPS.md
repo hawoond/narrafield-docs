@@ -5,7 +5,7 @@ description: Add backgrounds and place pins, connect submaps, and prepare a sepa
 
 # Maps
 
-**Maps** places locations in space. Pins point to world places; adding a pin does not automatically create a playable scene or travel action.
+**Maps** lets you mark locations on a background image. Pins point to world places; adding a pin does not automatically create a playable scene or travel action.
 
 {% include screenshot.html file="f8d737be47ae1b95c634.png" alt="Map pins marking the harbor, old channel and last lighthouse" caption="An example of place pins. Backgrounds and individual controls may differ by build." %}
 
@@ -31,7 +31,7 @@ Hiding pins is not enough when secret passages or GM notes are painted into the 
 
 Without a public background, player view shows a blank surface. Set visibility for places and pins, then check **Player view**. Conditional entries depend on unlock state.
 
-## A small example
+## Example: connect a harbor and lighthouse
 
 Place harbor, old-channel, and lighthouse pins on a “Northern coast” map. Connect a “Harbor streets” submap to the harbor pin. Remove the secret entrance from the public image and configure the entrance pin's visibility separately.
 
@@ -40,6 +40,6 @@ Place harbor, old-channel, and lighthouse pins on a “Northern coast” map. Co
 - **No place available for a pin:** Create a world place or use the new-place field in the pin form.
 - **Missing background in player view:** The normal and public backgrounds are separate. Check the public image assignment.
 - **A pin exists but the player cannot travel there:** Create and connect the corresponding scenes and actions.
-- **Remove a pin:** Use **Remove pin** in its form. This differs from deleting the world place.
+- **Remove a pin:** Use **Remove pin** in its form. The place itself remains in World.
 
 **Next:** [Scenes and actions](SCENES.md) · [World building](WORLD_BUILDING.md)

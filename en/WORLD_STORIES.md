@@ -1,12 +1,12 @@
 ---
 title: Choices the world remembers
-description: Planned world laws, relationships, promises, legacies, facts and rumors, causal feedback, and story progression checks.
+description: Explore planned tools for promises, relationships, rumors, and choices that shape later stories.
 content_status: planned
 ---
 
 # Choices the world remembers
 
-The goal is for world details to change available actions and costs, and for play to change where the next story begins. These are full-engine development goals, distinct from the demo's existing conditions, effects, and relationship editing.
+Who did you help last session? Which promises did you keep? We are building ways for those choices to change the next story. This page introduces the features that will connect world details to actions and consequences.
 
 ## Connect details to choices and consequences
 
@@ -19,9 +19,9 @@ The goal is for world details to change available actions and costs, and for pla
 | Goal-focused conflicts | Build negotiations, escapes, rescues, and rituals around objectives and risks without requiring combat |
 | Shared world proposals | Players propose allowed details, followed by review, agreement, and affected parties' consent |
 
-For example, connect **a broken promise → damaged cooperation → lost support → a different route next session**. Planned feedback shows known costs and risks before a choice, confirmed changes afterward, and lasting consequences at session end and return. Unrevealed outcomes stay hidden.
+For example, breaking a promise to a guild could cost you its support, forcing you to find another route next session. Planned feedback shows known costs and risks before a choice, confirmed changes afterward, and lasting consequences at session end and return. Unrevealed outcomes stay hidden.
 
-World laws, promises, abilities, faction goals, and quests should share the cause and processing order of an event. Checks should prevent duplicate rewards and conflicting scene transitions. If state changes after a cost preview, the player reviews the changed conditions before choosing again.
+When one event affects world laws, promises, abilities, faction goals, and quests, the game needs a defined order for applying those effects. Checks should prevent duplicate rewards and conflicting scene transitions. If state changes after a cost preview, the player reviews the changed conditions before choosing again.
 
 ## Facts, rumors, and beliefs differ
 
@@ -32,7 +32,7 @@ World laws, promises, abilities, faction goals, and quests should share the caus
 - Each character's knowledge and belief: awareness, belief, doubt, or rejection.
 - Applicable time, campaign, branch, and what players may read.
 
-Intentional deception is different from an invalid reference or rule. Free text or an LLM suggestion does not automatically establish truth. A world record, a game definition, and a live character instance remain distinct even when they share a name. Personal and party reputation, trust, and faction membership are not automatically combined.
+Intentional deception is different from an invalid reference or rule. Free text or an LLM suggestion does not automatically establish truth. World lore, the data used to create a character, and the character in play remain separate even when they share a name. Personal and party reputation, trust, and faction membership are not automatically combined.
 
 ## Reading information is not character knowledge
 
@@ -44,10 +44,10 @@ Search, notifications, quotations, and summaries should follow the same visibili
 
 The planned **Testing → Story progression checks** cover an absent clue holder, a dead or hostile key NPC, a lost required item, every check failing, every cost being declined, and an unavailable consent holder. Define an **alternative route / different cost / failure ending / GM decision** where appropriate. A failure ending can be an intended conclusion. A game without a GM cannot rely solely on a GM decision to escape a wait.
 
-Reference checks and reproducible state-based tests are distinct. Paths beyond automated exploration limits remain unverified. This does not automatically prove that every story can finish or is enjoyable. LLM assistance proposes supported rules and test drafts for the creator to review.
+Checking scene connections is different from playing through a situation. Paths the automated tests cannot reach will be marked as unverified. The tools cannot prove that every story will reach an ending or be enjoyable. Optional AI assistance can draft rules and tests for the creator to review.
 
 ## Bring results into a later work
 
-The next chapter or session of the same campaign inherits confirmed state. Updating the creation source or another campaign is a separate operation: the creator reviews provenance, secrets, and conflicts before applying a change proposal. Opening a summary must not grant rewards again. [Campaign continuity](CAMPAIGN_FLOW.md)
+The next chapter or session of the same campaign inherits confirmed state. Updating the creation source or another campaign is a separate operation: the creator checks where the content came from, whether it includes secrets, and whether it conflicts with existing lore before applying it. Opening a summary must not grant rewards again. [Campaign continuity](CAMPAIGN_FLOW.md)
 
 [Creation journey](CREATION_JOURNEY.md) · [Current worldbuilding guide](WORLD_BUILDING.md) · [Current scenes and actions](SCENES.md)

@@ -1,10 +1,10 @@
 {% assign language = page.lang | default: 'ko' %}
 <aside class="plan-note" role="note">
   {% if language == 'en' %}
-  <strong>In development · Design preview</strong>
-  <p>Development goals from plan {{ site.data.review.plan_version }}, reviewed on {{ site.data.review.date }}. These complete workflows are not included in demo {{ site.data.review.demo_version }}. <a href="{{ '/en/DEVELOPMENT.html' | relative_url }}">Compare current capabilities, first-release goals, and later stages</a>.</p>
+  <strong>In development</strong>
+  <p>This guide describes features we are working on. Demo {{ site.data.review.demo_version }} does not yet include everything shown here. <a href="{{ '/en/DEVELOPMENT.html' | relative_url }}">See what is available now</a>.</p>
   {% else %}
-  <strong>개발 중 · 기획과 화면 시안</strong>
-  <p>{{ site.data.review.date }}에 검토한 기획 {{ site.data.review.plan_version }}의 개발 목표입니다. 현재 데모 {{ site.data.review.demo_version }}에 아래 흐름 전체가 포함된 것은 아닙니다. <a href="{{ '/DEVELOPMENT.html' | relative_url }}">현재 기능·첫 출시 목표·후속 단계 비교하기</a>.</p>
+  <strong>개발 중인 기능 안내</strong>
+  <p>앞으로 추가할 기능을 소개합니다. 현재 데모 {{ site.data.review.demo_version }}의 지원 범위는 아래 링크에서 확인하세요. <a href="{{ '/DEVELOPMENT.html' | relative_url }}">지금 사용할 수 있는 기능 보기</a></p>
   {% endif %}
 </aside>

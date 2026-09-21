@@ -6,7 +6,7 @@ content_status: planned
 
 # Game screens and customization
 
-Players should see the story and their next action. Creators need a separate workspace for composing that experience. The Dark Lighthouse concepts explore both sides.
+Players should see the story and their next action. Creators will have tools to arrange those screens for their game. The Dark Lighthouse concepts explore both sides.
 
 {% include screenshot.html kind="concept" file="54d886cab1c766f4c8b5.jpg" width="1280" height="720" alt="Lighthouse play concept with location and objective above dialogue and choices, and compact status and inventory controls below" caption="Scenes, dialogue, and choices take priority, with details opened when needed. The background is concept art prepared for this preview." %}
 
@@ -30,7 +30,7 @@ This scene view is not the game's initial entry point. The planned flow is **Tit
 | Data binding | Connect widgets to public names, values, objectives, and actions |
 | Context | Adapt to exploration, combat, waiting, and reconnection |
 
-The planned editor lives in **Game screens**, including title, character creation, game information, and credits. Free placement, complete binding tools, screen-pack sharing, and export integration are not implemented by this limited concept.
+The planned editor lives in **Game screens**, including title, character creation, game information, and credits. Free placement, complete binding tools, screen-pack sharing, and export integration are not included in this concept.
 
 ## Creator controls and player preferences
 
@@ -38,13 +38,13 @@ Creators define the game's layout and theme. Players use the text, input, audio,
 
 ## Text RP puts conversation at the center
 
-Scene-led play is one template. Text RP puts **conversation history and composition** at the center; cinematic play uses a conversation panel and tactical play a side panel. The image above illustrates cinematic play, not an implemented new chat screen.
+Scene-led play is one template. Text RP puts **chat history and the message box** at the center; cinematic play uses a conversation panel and tactical play a side panel. The image above shows a scene-focused layout. It does not show the new chat feature running.
 
-Basic chat is a first-release goal, with clear speakers, speech/action/OOC modes, recipients, and delivery state. Bubbles, dialogue effects, speaker styles, special communication, detailed channels, search, and summaries are adopted later goals. See [Roleplay chat](ROLEPLAY_CHAT.md).
+Basic chat is a first-release goal, with clear speakers, speech/action/OOC modes, recipients, and delivery state. Bubbles, dialogue effects, speaker styles, special communication, detailed channels, search, and summaries are planned for later releases. See [Roleplay chat](ROLEPLAY_CHAT.md).
 
 ## Keep essential actions reachable
 
-Changing widgets or modules should preserve routes to choices, approvals, cost review, chat, saving, and required notices. Combinations without a usable fallback should be blocked with an explanation. [Screen verification](TEST_AND_RELEASE.md) also covers large text, keyboards, IME input, and the reader's position in conversation history.
+Even after a creator changes widgets or modules, players need access to choices, approvals, costs, chat, saves, and required notices. If the default screen cannot provide a missing essential function, validation will explain the problem and block that combination. [Screen verification](TEST_AND_RELEASE.md) also covers large text, keyboards, IME input, and the reader's position in conversation history.
 
 ## Difference from the current demo
 

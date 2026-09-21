@@ -22,13 +22,13 @@ The planned workspace keeps creative content in focus, with a separate place for
 | Translation | Korean and English content and review status |
 | Testing | Play previews, rule checks, and multiple participant viewpoints |
 
-The design reuses a record across views instead of requiring repeated entry. A visibility switch helps review what players can see. The interactive concept does not implement every planned view or campaign feature.
+Create an entry once and edit it from documents, relations, or the timeline. A visibility switch helps review what players can see. The interactive concept does not implement every planned view or campaign feature.
 
 ## Separate project and app settings
 
 **Project settings** cover game identity, modules, version control, plugins, online operations, language policy, and publishing. **App settings** cover personal themes, text size, shortcuts, connected accounts, and local tools. Shared project settings should not replace personal accounts or display preferences.
 
-{% include screenshot.html kind="concept" file="d91b5ef3bf952f24193f.jpg" width="1265" height="739" alt="Version-control concept comparing local changes, team changes, and the final merge result" caption="GitHub connections, commits, branches, and merges are grouped under project version control, with a return path to the original creative context." %}
+{% include screenshot.html kind="concept" file="d91b5ef3bf952f24193f.jpg" width="1265" height="739" alt="Version-control concept comparing local changes, team changes, and the final merge result" caption="GitHub connections, commits, branches, and merges are grouped under project version control, so you can finish version-control work and return to editing." %}
 
 Saving, committing, and sharing remotely remain distinct actions. The planned merge flow compares the common base, local edits, team edits, and final result before validation. The concept's merge controls only change sample state; they do not connect to a repository.
 
@@ -40,11 +40,11 @@ Saving, committing, and sharing remotely remain distinct actions. The planned me
 
 These are editing approaches, not separate project formats. LLM assistance remains optional, with proposals reviewed before application.
 
-## One starting catalog, reviewable changes
+## Start a project and review changes
 
-Begin with **New project / Default templates / Open project**. Blank projects and template starts have equal entry points. Recommended configurations, starter images, removal, and restoration use [the same catalog](STARTER_CONTENT.md). [Three recommended configurations](CREATION_JOURNEY.md)—solo narrative, GM cooperation, and automated parties—propose related settings together.
+Begin with **New project / Default templates / Open project**. You can start with a blank project or choose a template. Recommended configurations, starter images, removal, and restoration use [the same catalog](STARTER_CONTENT.md). [Three recommended configurations](CREATION_JOURNEY.md)—solo narrative, GM cooperation, and automated parties—propose related settings together.
 
-Direct edits, template additions, LLM proposals, and Git merges should use the same project source and references. Partial application still requires renewed impact, source, and conflict checks. Previews identify current edits or a saved revision; export freezes the chosen revision in the planned [test and release journey](TEST_AND_RELEASE.md).
+You will be able to review changes made by hand, added through templates, suggested by AI, or brought in through Git. Accepting only some changes will trigger another check for broken connections and conflicts. Previews and exports will show which version they use. See [Test and release](TEST_AND_RELEASE.md).
 
 ## Where to work in the current demo
 
@@ -54,4 +54,4 @@ The demo uses top-level tabs. World, Relations, Maps, and Timeline have separate
 
 ## Find content while creating
 
-The planned app opens template, asset, and plugin tabs with a shared library. Image selection, component addition, and project plugin settings lead to suitable content, then return to the original editing context. [Free content stores](CONTENT_STORES.md)
+The planned [Free content stores](CONTENT_STORES.md) will be available while choosing images, adding components, or configuring plugins. Find content, save it to your library, and return to the item you were editing.

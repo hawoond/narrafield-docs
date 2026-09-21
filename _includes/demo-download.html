@@ -2,15 +2,15 @@
 {% assign language = page.lang | default: 'ko' %}
 <section class="demo-download" aria-label="{% if language == 'en' %}Current demo{% else %}현재 데모{% endif %}">
   <p class="demo-version">{{ demo.version | escape }} · {% if language == 'en' %}Development alpha{% else %}개발용 알파{% endif %}</p>
-  <p>{% if language == 'en' %}This download: Windows 64-bit · ZIP{% else %}이번 배포의 실행 환경: Windows 64비트 · ZIP{% endif %}{% if demo.size != '' %} · {{ demo.size | escape }}{% endif %}</p>
+  <p>{% if language == 'en' %}This download: Windows 64-bit · ZIP{% else %}실행 환경: Windows 64비트 · ZIP{% endif %}{% if demo.size != '' %} · {{ demo.size | escape }}{% endif %}</p>
   {% if demo.url != '' %}
   <p><a class="button" href="{{ demo.url | escape }}">{% if language == 'en' %}Download demo ZIP{% else %}데모 ZIP 다운로드{% endif %} <span aria-hidden="true">↓</span></a></p>
   <p class="demo-date">{% if language == 'en' %}Published{% else %}게시일{% endif %}: {{ demo.date | escape }}</p>
   <details class="demo-integrity">
-    <summary>{% if language == 'en' %}File details and SHA-256{% else %}파일 정보와 SHA-256 확인값{% endif %}</summary>
+    <summary>{% if language == 'en' %}File details and SHA-256{% else %}파일 정보와 무결성 확인{% endif %}</summary>
     <p>{{ demo.filename | escape }}</p>
     <code class="demo-checksum">{{ demo.sha256 | escape }}</code>
-    <p><a href="{{ demo.checksum_url | escape }}">{% if language == 'en' %}Download checksum file{% else %}확인값 파일 받기{% endif %}</a></p>
+    <p><a href="{{ demo.checksum_url | escape }}">{% if language == 'en' %}Download checksum file{% else %}SHA-256 파일 받기{% endif %}</a></p>
   </details>
   {% else %}
   <p>{% if language == 'en' %}The download is being prepared.{% else %}다운로드 파일을 준비하고 있습니다.{% endif %}</p>

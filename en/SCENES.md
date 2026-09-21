@@ -57,6 +57,6 @@ Use **Advanced · translations · combat** and the combat settings in [Game data
 
 **Next:** [Rules and expressions](RULES.md) · [Play and export](PLAY_AND_EXPORT.md)
 
-## Planned checks for blocked stories and costs
+## Coming later: story checks
 
-[Story-checking goals](WORLD_STORIES.md) include routes after every check fails, every cost is declined, or an essential character is absent, with costs shown before confirmation. These are later goals beyond the current scene-editing instructions.
+We are working on tools to find paths through a story when every check fails, every cost is declined, or an essential character is absent. Players will also be able to see a choice's cost before confirming it. See [A world that remembers](WORLD_STORIES.md).

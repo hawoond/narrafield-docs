@@ -1,14 +1,12 @@
 ---
 title: Starter images and one template catalog
-description: The twenty-image Small Adventure pack, planned offline bundling, selective copying, and a single removable and restorable template catalog.
+description: Explore 20 starter images, their usage terms, and planned tools for choosing, removing, and restoring templates.
 content_status: planned
 ---
 
 # Starter images and one template catalog
 
-Starter content should help creators make a first story before sourcing artwork. **The twenty Small Adventure image originals are prepared; bundling, editor integration, finished templates, and validation are separate stages.** The catalog and pack below are not advertised as included in the current public demo.
-
-The current pack contains **AI-generated images**.
+We have prepared artwork to help you make a first story without searching for images. **The Small Adventure pack contains 20 AI-generated images.** The originals and usage terms are ready, but installer bundling, editor integration, and templates are still in development. The current demo does not include this pack or the new catalog.
 
 ## Twenty starter images
 
@@ -32,7 +30,7 @@ A map image is also distinct from movement, vision, and tactical rules. Current 
 
 The planned home screen offers **New project / Starter Templates / Open project**, recent projects, and Git cloning. **Starter Templates** contains story, rules, combat, and screen filters with previews of content, images, dependencies, and notices.
 
-**New project → Empty project / Start from a template** offers equal starting paths. The latter opens the same catalog rather than a separate quick-start or sample list. Full-project templates create a new project; additive components identify the current project as their target. [The three recommended configurations](CREATION_JOURNEY.md) are planned in this same catalog.
+**New project → Empty project / Start from a template** lets you choose how to begin. The latter opens the same catalog rather than a separate quick-start or sample list. Full-project templates create a new project; additive components identify the current project as their target. [The three recommended configurations](CREATION_JOURNEY.md) are planned in this same catalog.
 
 ## Remove and restore built-in templates
 
@@ -48,7 +46,7 @@ Removal should persist through restarts and updates, without automatic reinstall
 
 The planned story meets the Pathfinder and Archivist at a camp, investigates, and makes choices **without mandatory dice or combat**. It selectively uses the camp, two portraits, vial, and key; the remaining fifteen images can be added separately. Excluding images should preserve the same text-based story.
 
-This new template remains a creation goal. Prepared artwork is not evidence of a completed playable sample.
+This template is still being made. The images are ready; the playable sample will follow.
 
 ## Finalized starter-image usage terms
 
@@ -56,10 +54,10 @@ The 20 originals in A Small Adventure 1.1.0 use **Starter Image Pack Usage Terms
 
 The attribution file bundled with a game must preserve pack ID `narrafield.starter-fantasy`, the version, generation source `image_gen`, and these terms. Modified copies retain the original source attribution and remain distinguishable from the originals. A separate in-game attribution banner is not required.
 
-The terms do not grant permission to resell the original pack by itself as an image product, guarantee third-party rights involving external brands or people, or certify exclusive rights. Image permissions are separate from engine, SDK, and external rule-pack terms. Finalizing these terms does not complete installer or store distribution verification.
+The terms do not grant permission to resell the original pack by itself as an image product, guarantee third-party rights involving external brands or people, or certify exclusive rights. Image permissions are separate from engine, SDK, and external rule-pack terms. The usage terms are finalized, but installer and store distribution are not ready yet.
 
 [Current components guide](TEMPLATES.md) · [New workspace](DESIGN.md) · [Rule packs and sources](RULE_PACKS.md)
 
 ## Discover more content
 
-[Free content stores](CONTENT_STORES.md) add external discovery to the same catalog. Bundled offline originals and removal/restoration choices remain. A download alone does not change project content or execution permissions.
+The planned [Free content stores](CONTENT_STORES.md) will let you find more content from the same catalog. Bundled offline originals and removal/restoration choices remain. A download alone does not change project content or execution permissions.

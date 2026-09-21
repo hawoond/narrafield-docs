@@ -9,7 +9,7 @@ Narrafield Studio is a TRPG engine developed by **sortie**. Start with a sample,
 
 **Start with [Quick start](QUICKSTART.md) and open The Dark Lighthouse sample.** If you received someone else's game, see [Play and save a game](PLAY_AND_EXPORT.md).
 
-These guides describe the **runtime {{ site.data.review.demo_version }} development alpha**. This is not a final store release; available features may vary with your build.
+These guides describe the **demo {{ site.data.review.demo_version }}**. This is not a final store release; available features may vary with your build.
 
 **Looking for a menu? Open the [editor menu guide](EDITOR.md).** For the whole product workflow, explore [the creation experience](EXPERIENCE.md).
 
@@ -23,7 +23,7 @@ Get the current demo from [Download the demo](DEMO.md).
 | [Project settings](PROJECT.md) | Title, content version, start scene, saving and copies |
 | [Worlds and scenes](WORLD_BUILDING.md) | Places, characters, relations, maps, chronology, choices and connections |
 | [Component templates](TEMPLATES.md) | Narrative, d20 and combat components, previews, connecting existing projects |
-| [Rules and catalogs](RULES.md) | Items, quests, attributes, initial inventory, conditions, checks and effects |
+| [Rules and expressions](RULES.md) | Items, quests, attributes, initial inventory, conditions, checks and effects |
 
 ## Detailed menu guides
 
@@ -49,17 +49,17 @@ Get the current demo from [Download the demo](DEMO.md).
 
 ## Troubleshooting
 
-See [Troubleshooting](TROUBLESHOOTING.md) for launch and export errors, disconnected components, older saves, and online character limitations.
+See [Troubleshooting](TROUBLESHOOTING.md) for launch and export errors, disconnected components, older saves, and online character-assignment problems.
 
 ## A path from blank project to game
 
-[Quick start](QUICKSTART.md) → [Worlds and scenes](WORLD_BUILDING.md) → [Rules and catalogs](RULES.md) → [Play and export](PLAY_AND_EXPORT.md)
+[Quick start](QUICKSTART.md) → [Worlds and scenes](WORLD_BUILDING.md) → [Rules and expressions](RULES.md) → [Play and export](PLAY_AND_EXPORT.md)
 
 Use the sidebar to change topics. On smaller screens, expand **Wiki contents**. Every guide is available in Korean and English; the **한국어 / English** tabs switch the current page's language. See [Current capabilities](DEVELOPMENT.md) for alpha features, limitations, and store availability.
 
 ## Planned features and screen designs
 
-Explore development goals from plan **{{ site.data.review.plan_version }}** and reviewed concepts. See [current, first-release, and later stages](DEVELOPMENT.md). **In development** does not mean the feature is available in the demo.
+Explore upcoming features and screen concepts. Pages marked **In development** include features that are not yet available in the demo. See [development stages and current capabilities](DEVELOPMENT.md) for details.
 
 | Topic | Detailed guides |
 | --- | --- |

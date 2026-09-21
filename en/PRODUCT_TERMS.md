@@ -1,14 +1,14 @@
 ---
 title: Planned product use and game agreements
-description: Planned perpetual version rights, separate game agreements, royalty bases, explicit consent, and offline document access.
+description: Read the planned policies for product purchases, individual game agreements, royalties, and document access.
 content_status: planned
 ---
 
 # Planned product use and game agreements
 
-This page explains the policies and consent flows adopted in plan {{ site.data.review.plan_version }}. **It is not an effective set of terms or a contract.** Regional documents remain review drafts; sales launch, local professional review, consent screens, and contract services are not complete. These screens are not features of the current public alpha.
+This page explains how we plan to handle product purchases and agreements for individual games. **It is not a set of terms in force or a contract.** Regional documents are review drafts, and local professional review and sales preparation are not complete. The consent screens and contract service described below are still in development.
 
-## Distinguish creators from players
+## Creator licenses and players
 
 The plan provides one license for each creator actually using the editor. Players of exported games do not need to purchase the tool or accept creator royalty terms.
 
@@ -27,7 +27,7 @@ Creators may use their chosen public name or team name in credits. **Made with N
 
 For example, a covered digital game's cumulative calculation revenue of USD 1 million incurs no royalty. At USD 1.2 million, 5% of the USD 200,000 excess is **USD 10,000 cumulatively**. Applying the default 10% to USD 100,000 of calculation revenue from a separately agreed physical product gives USD 10,000. The same revenue is not charged both the digital 5% and physical 10%.
 
-Physical direct sales, wholesale, and the creator's income from an external publisher are distinct. Covered works, products, rates, and settlement bases are to be specified in a completed individual schedule and separate agreement. Reading this summary or creating a project does not conclude a contract. A new product name or store ID alone does not reset an existing game's cumulative revenue.
+Physical direct sales, wholesale, and the creator's income from an external publisher are distinct. Covered works, products, rates, and settlement bases are to be specified in a completed individual schedule and separate agreement. Reading this summary or creating a project does not create a contract. A new product name or store ID alone does not reset an existing game's cumulative revenue.
 
 ## Purchase information and game agreements are separate
 
@@ -40,7 +40,7 @@ Free tests, new projects, and local previews do not each require a game agreemen
 
 ## Confirm region separately from language
 
-Documents and regional procedures are being prepared for Korea, the United States, the United Kingdom, Germany, France, Japan, and mainland China. Creators confirm their transaction region independently of the app language. Regions without an applicable approved document are not automatically assigned US terms. This list does not announce completed sales availability or legal review.
+Documents and regional procedures are being prepared for Korea, the United States, the United Kingdom, Germany, France, Japan, and mainland China. Creators confirm their transaction region independently of the app language. Regions without an applicable approved document are not automatically assigned US terms. Sales preparation and legal review are not complete in these regions.
 
 Refunds, withdrawal, subscription cancellation, and any separate confirmations should follow the region and actual sales channel. Sales activation requires finalized documents, seller information, review, and the necessary working procedures. Language tabs on this guide switch explanatory text; they do not choose a contract language or record consent.
 
@@ -52,6 +52,6 @@ Accepted copies remain distinct from later revisions. Legal identity, addresses,
 
 ## Starter images are AI-generated
 
-The current 20 images in A Small Adventure are **AI-generated**. Original files and usage terms are ready. [Starter-image terms](STARTER_CONTENT.md) explain inclusion in free or paid games and their promotion, attribution preservation, and limits. Prepared originals are separate from actual installer integration.
+The current 20 images in A Small Adventure are **AI-generated**. Original files and usage terms are ready. [Starter-image terms](STARTER_CONTENT.md) explain inclusion in free or paid games and their promotion, attribution preservation, and limits. Including the images in the installer is still in progress.
 
 [Publishing your game](PUBLISHING_GAME.md) · [External rule packs and notices](RULE_PACKS.md) · [Current capabilities and development stages](DEVELOPMENT.md)

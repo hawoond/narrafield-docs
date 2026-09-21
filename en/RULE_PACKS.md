@@ -1,16 +1,16 @@
 ---
 title: Choose only the rules you need
-description: Optional rule packs and planned source, notice, and output support for OGL, ORC, CC variants, FTL, CSOL, DPCGL, and community agreements.
+description: Choose optional rule packs and check their sources, usage terms, notices, and permitted release formats.
 content_status: planned
 ---
 
 # Choose only the rules you need
 
-Start with a story and choices, then add the rules your game needs. Plan {{ site.data.review.plan_version }} establishes **no automatic activation of external rule packs, including d20 and SRD packs, in a new project or the default quick-start template**.
+Start with a story and choices, then add the rules your game needs. **New projects and the default quick-start template will not automatically include the d20 component or external SRD rule packs.**
 
 The current demo still includes d20-based samples and optional components. The revised default quick start, official pack catalog, and automatic notice generation described below remain planned.
 
-## Distinguish the available choices
+## Which rules do you need?
 
 | Choice | Purpose |
 | --- | --- |
@@ -21,7 +21,7 @@ The current demo still includes d20-based samples and optional components. The r
 | ORC-based pack | Review ORC notices, upstream attribution, the creator's contribution, and licensed/reserved material scopes |
 | Creator-authored ORC rules | Choose to publish rules the creator has rights to license after reviewing the scope and conditions |
 
-The product design does not activate an external ruleset or add blanket OGL/ORC notices merely because a creator enters `1d20`. Calculations are tracked separately from imported rule text, data, and artwork.
+Entering `1d20` will not activate an external ruleset or automatically add OGL or ORC notices. Calculations are tracked separately from imported rule text, data, and artwork.
 
 ## Planned workflow
 
@@ -31,7 +31,7 @@ The product design does not activate an external ruleset or add blanket OGL/ORC 
 4. Connect characters, scenes, and actions, then test the result.
 5. Review notices for the material actually included in the export.
 
-Copied or modified material should retain its source even if the original pack is later removed. Notice collection does not automatically obtain rights to content.
+Copied or modified material should retain its source even if the original pack is later removed. A notice tool can collect attribution, but you still need permission to use the content.
 
 ## Follow the selected pack's conditions
 
@@ -49,9 +49,9 @@ Notices are planned for Game information → Licenses and the bundled `ORC-NOTIC
 
 Creators may also choose to publish their own rules under ORC after confirming their rights, the scope, and the irrevocable license grant. Additional sharing of eligible Reserved Material, such as their own lore and artwork, is off by default. This does not relicense the entire engine or require disclosure of all software source code. ORC notice generation, scope validation, and the pack catalog remain planned.
 
-## Additional licenses and output formats planned
+## Other licenses and release formats
 
-All entries below are planned for source registration, condition guidance, notice generation, and checks of permitted outputs. Being listed does not grant permission to distribute a standalone video game or publish through every store.
+We are preparing tools to record sources, explain conditions, generate notices, and check permitted release formats for the licenses below. Being listed does not grant permission to distribute a standalone video game or publish through every store.
 
 | Profile | Planned handling |
 |---|---|
@@ -68,7 +68,7 @@ CC profiles preserve the exact original license and version. Free distribution d
 
 FTL, CSOL, DPCGL, and community agreements have different scopes. For example, FTL excludes video games, and DPCGL imposes noncommercial conditions even on approved VTT sharing. Miskatonic Repository document and specific VTT connection paths do not grant permission to distribute software or apps. [FTL](https://freeleaguepublishing.com/wp-content/uploads/2023/11/Year-Zero-Engine-License-Agreement.pdf), [CSOL FAQ](https://csol.montecookgames.com/faq/), [DPCGL](https://darringtonpress.com/license/), [Miskatonic guidelines](https://help.drivethrurpg.com/hc/en-us/articles/12723261671959-Chaosium-Miskatonic-Repository)
 
-Pack details and export checks will show `Conditions met / Review needed / Outside permitted scope` with the source of each issue. Permitted PDF/print documents and target VTT modules/tools require separate output adapters. License review and implemented output support are distinct. These features, official pack supply, and external approvals are not claimed as complete.
+Pack details and export checks will show `Conditions met / Review needed / Outside permitted scope` with the source of each issue. PDF and print documents, VTT modules, and tools also need their own exporters. Completing a license review does not make an exporter available. Export features, official packs, and external approvals are still being prepared.
 
 ## Review the complete output
 

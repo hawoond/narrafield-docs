@@ -5,11 +5,11 @@ description: Find each Narrafield Studio editor menu, its purpose, and the detai
 
 # Editor menu guide
 
-Find the right menu for your task. This guide follows the **runtime {{ site.data.review.demo_version }} development-alpha menu structure**. Older builds may show some Game data features separately as **Items & quests** or **Rules & character**.
+Find the right menu for your task. The menus below are from **demo {{ site.data.review.demo_version }}**. Older builds may show some Game data features separately as **Items & quests** or **Rules & character**.
 
-{% include screenshot.html file="422400efb855c8236a05.png" alt="Editor with toolbar, menu tabs, world entries and an editing area" caption="The world editor illustrates the shared screen structure." %}
+{% include screenshot.html file="422400efb855c8236a05.png" alt="Editor with toolbar, menu tabs, world entries and an editing area" caption="The World tab shows the toolbar, entry list, and editing area used throughout the editor." %}
 
-## Read the screen
+## Screen layout
 
 1. Use the **top toolbar** to open, save, validate, and preview a project.
 2. Choose a **menu tab** for the kind of work you want to do.
@@ -34,7 +34,7 @@ Find the right menu for your task. This guide follows the **runtime {{ site.data
 | Scenes & actions | Write scenes, choices, conditions, checks and branches | [Scenes and actions](SCENES.md) |
 | Factions | Manage organizations, members, diplomacy, places, reputation and goals | [Factions](FACTION_GUIDE.md) |
 
-## Rules and shared work
+## Rules and team projects
 
 | Menu | What you do here | Details |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ Find the right menu for your task. This guide follows the **runtime {{ site.data
 | Save / Save as | Write to the current folder or create a separate working copy. |
 | ↶ / ↷ | Undo or redo applied edits. |
 | Recover | Inspect available recovery records. Preserve your current work first. |
-| Validate / Play | Check references and play through choices and branches. |
+| Validate / Play | Find broken links between entries and try the choices and branches. |
 | Export | Build an offline or online package of your game. |
 | Join online / Server operations | Join a session or operate it with GM credentials. |
 | KO / EN | Change the editor UI language. Translating game content is a separate task. |
@@ -64,4 +64,4 @@ Add relations, maps, timelines, and factions when you need them. You do not have
 
 ## Where can I see the new workspace?
 
-[New creation workspace](DESIGN.md) shows the planned sidebar and separate project/app settings. The current demo uses the menus above; planned menu locations are not current instructions. **App settings** is already available in the toolbar.
+[New creation workspace](DESIGN.md) shows the planned sidebar and separate project/app settings. The demo still uses the tabs listed above. **App settings** is already available in the toolbar.

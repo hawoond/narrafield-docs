@@ -4,16 +4,18 @@ title: Git collaboration
 
 # Git collaboration
 
-Use **Merge and conflicts** for cloning, branch lists, Fetch, switching existing branches, merges, conflict resolution, and LFS status. Use these alongside the explicit Stage / Commit / Push controls in the services screen.
+Git lets you keep a history of your project and share changes with collaborators. Use **Tools & extensions** to stage, commit, and push changes. Use **Merge and conflicts** to clone projects, switch branches, and merge work. Git must be installed on your computer.
+
+## Bring in team changes
 
 1. Enter an HTTPS/SSH URL or an existing local repository path and an empty destination folder. After cloning, open that folder as a project. Authentication uses the installed Git credential integration.
 2. Save, review, and commit your edits. Uncommitted or untracked files block branch switches and merges. The editor does not automatically stash changes, force a switch, or push.
 3. After Fetch, refresh branches and conflicts to see local and remote branches. You can switch to a local branch or an origin branch.
-4. A fast-forward merge moves to that commit. A merge of diverged history stops with `--no-commit`; review and an explicit commit are required even without conflicts.
+4. If your branch can move directly to the incoming commit, the merge finishes immediately. If both sides have separate changes, the merge stops before committing, even when there are no conflicts. Review the result, then commit it yourself.
 5. Select a conflicted file to see the common base, your changes, and team changes. For JSON, edit manually or choose a side; only valid JSON can be saved. If one side deleted a file, explicitly choose deletion or restore the remaining version. For binary files, compare sizes and blob IDs and select a side. Confirm the selected file and resolution before saving and staging.
 6. Reload the project and validate references and rules before committing and sharing. A successful Git merge does not guarantee a valid game.
 
-Conflict data comes from Git index stages 1/2/3, so it can be restored after restarting the app. Saving a resolution is rejected if the conflict stages have changed since the screen was loaded. Editor saves and Git mutations share a lock per repository path. External Git processes do not use that lock, so avoid simultaneous editing while an external tool is changing the repository.
+Unresolved conflicts remain available after you restart the app. If another tool changes the conflict, refresh the list before saving a resolution. Avoid saving or merging in the editor while an external Git tool is changing the repository.
 
 ## Abort a merge and recover edits
 
@@ -21,7 +23,7 @@ Conflict data comes from Git index stages 1/2/3, so it can be restored after res
 
 After a successful backup, it runs `git merge --abort`. If abort fails, the backup location and error are shown. Review files before restoring them; no automatic overwrite occurs. A clean working tree is required before starting a merge, so existing edits are not automatically discarded. Symlink and submodule conflicts cannot be resolved in the app.
 
-## Git execution and authentication
+## Advanced: Git execution and authentication
 
 Git arguments are passed directly without a shell command string. Hooks are disabled per command. Custom merge drivers and content filters are blocked; only standard `git-lfs` filter commands are allowed. Global Git settings and existing hook files are left unchanged.
 
@@ -33,7 +35,7 @@ The LFS screen shows the installed Git LFS version and `git lfs status`. If LFS 
 
 For repositories tracking LFS files, Push explicitly runs the standard `git lfs push origin HEAD` before the ordinary Git push. This prevents missing uploads when hooks are disabled. LFS downloads during clone depend on the remote, credentials, and installed tools.
 
-Remote LFS availability, blocking exports with missing assets, an LFS locking UI, and authentication and LFS reception on two physical computers remain separate validation areas.
+Remote LFS support and transfers between two physical computers need further testing. Export blocking for missing assets and an LFS locking interface also need further work. After cloning, check that the project’s images open correctly.
 
 ## Verification scope
 
@@ -43,6 +45,6 @@ Automated checks use a temporary bare remote and two local clones. They cover Ko
 
 The new design groups GitHub connections, branches, commits, and merges under **Project settings → Version control**. The [workspace concept](DESIGN.md) is a planned layout; the demo still uses **Merge & conflicts / Tools & extensions**.
 
-## Planned checks from merged changes to play
+## Coming later: testing merged changes
 
-[Complete-journey testing](TEST_AND_RELEASE.md) should verify a merged revision across world content, scenes, screens, saves, and exports. Preview and export revisions stay connected; migration of an active campaign receives separate review.
+The planned [Test and release](TEST_AND_RELEASE.md) tools will help check that merged changes work in scenes, screens, saves, and exported games. Moving an active campaign to a new version will require a separate review.

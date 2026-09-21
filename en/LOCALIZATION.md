@@ -2,24 +2,78 @@
 title: Translation workspace
 ---
 
-# Content translation workspace
+# Translation workspace
 
-This feature translates the game content you are creating. To change the language of this user guide, use the **한국어 / English** tabs at the top of the site.
+Use the **Translation workspace** to edit Korean source text and English translations side by side. Save your project before applying a translation.
 
-The native editor's translation tab lists stable string IDs for paired Korean/English fields across project identity, world records, scenes, action labels, and game data such as items, quests, characters, abilities, and factions. It shows Korean source beside English translation, with search and missing/draft/reviewed/source-changed filters. A saved project is required before applying translations.
+This feature translates the game you are making. To change the language of this guide, use the **한국어 / English** tabs at the top of the site.
 
-Applying one translation or importing a JSON exchange validates every entry before changing content. Unknown and duplicate keys, another project/locale, changed source text or hash, mismatched placeholder names/counts/types and locked glossary violations reject the whole import. Keys use stable record IDs and project field paths, so reordering actions cannot redirect translations. Imports are bounded to 4 MiB and reject unknown JSON fields and trailing data.
+## What you can translate
 
-Translation content remains in the existing project, world, scene, and game-data fields and uses existing runtime English fallback. `localization/review.json` holds source and target hashes, review flags and a glossary. It is authoring-only and is not copied into game packages. Source edits mark existing translations as source-changed; target edits invalidate review. Applying translation content is one normal editor undo step. Review metadata saves separately immediately; hashes ensure undo or discarded unsaved content cannot incorrectly inherit a reviewed state. Glossary edits save immediately and do not participate in project undo.
+- World-entry names and descriptions
+- Scene titles and text, and action labels
+- Project titles, summaries, and relation descriptions with paired Korean and English fields
+- Paired names and descriptions in items, quests, characters, abilities, factions, and other game data
 
-The glossary editor accepts an array such as `[{"source":"마라","target":"Mara","locked":true}]`. Locked terms use literal case-sensitive containment. Empty or duplicate source terms are rejected. Empty translations remain missing and are allowed for incremental work. Placeholder checking supports named `{actor}` and typed `{amount:int}` tokens, including repeated occurrences. Translation import is a trusted-authoring action, not an automatic runtime update.
+Only fields that support both languages appear in the list. Each translation is linked to a field and a stable entry ID, so reordering actions does not move a translation to the wrong action. Use search and the **Missing**, **Draft**, **Reviewed**, and **Source changed** filters to find work.
 
-Current limitations: the source column assumes Korean and targets English; bidirectional authoring, locale catalogs replacing inline fields, automatic plural rules, language completeness export gates and full Unicode/IME/font accessibility QA remain separate work. Supported UI languages do not imply all game content has been translated. Source-hash review history is local to this authoring metadata file; it is not a translation service or machine translation API.
+## Translate an entry
 
-## Later goals for translation and release checks
+1. Save the project and open the workspace.
+2. Find an entry with search or a status filter.
+3. Read the Korean source and enter the English translation.
+4. Check placeholders and locked glossary terms, then apply the translation.
+5. Save and check how the text appears in the scene.
 
-[Product use and game agreements](PRODUCT_TERMS.md) describes planned region, language, and accepted-document version handling for Korea, the United States, the United Kingdom, Germany, France, Japan, and mainland China. Regional texts remain review drafts; effective terms and consent features are not provided yet.
+You can leave a translation empty and return to it later; it will stay marked **Missing**. Applying translation content is one undo step.
 
-Contract documents are separate from the game translation workspace and runtime LLM translation. An English interface does not remove the applicable regional terms. Approved originals and supporting translations remain distinct. Preparing these documents does not add German, French, Japanese, or Chinese support to the entire application UI.
+## Exchange translations as JSON
 
-[Test and release](TEST_AND_RELEASE.md) connects choices, screens, notices, and private visibility across languages for one game revision. An old translation review should not certify a new revision after source or rule changes.
+Export a translation JSON file, edit it, and import it again. The whole file is checked before any changes are applied. An import fails if it contains:
+
+- Unknown or duplicate string keys
+- A different project or target language
+- Source text or a source hash that has changed since export
+- Placeholder names, counts, or types that do not match
+- Violations of locked glossary terms
+- Unknown JSON fields or extra data after the JSON
+
+Files can be up to **4 MiB**. Correct the reported errors and try again. Importing translations updates the editor project; it does not update a running game.
+
+## Placeholders and glossary terms
+
+Placeholders can be named, such as `{actor}`, or typed, such as `{amount:int}`. Keep their names, types, and number of occurrences in the translation.
+
+The glossary accepts an array like this:
+
+```json
+[{"source":"마라","target":"Mara","locked":true}]
+```
+
+Locked terms must appear exactly, including capitalization. Source terms cannot be empty or duplicated. Glossary edits save immediately and are not part of project undo.
+
+## Review status and saved files
+
+Translations are stored beside the source in the existing project fields. Games use the current English display and fallback rules.
+
+`localization/review.json` stores source and translation hashes, review marks, and the glossary. This file is for creators and is excluded from exported games.
+
+Changing source text marks its translation **Source changed**. Editing a translation clears its reviewed status. Review information saves immediately, but source and translation hashes are checked so undoing or discarding changes cannot leave an incorrect review mark.
+
+## Current limits
+
+The workspace translates from Korean to English. It does not yet support translation in the other direction, separate language catalogs, or automatic plural forms. Incomplete translations do not automatically block game export.
+
+An available interface language does not mean all game content has been translated. Unicode, input methods, fonts, and accessibility need further testing. The workspace records your translation work; it is not an automatic translation service.
+
+## Contract documents are separate
+
+[Product use and game agreements](PRODUCT_TERMS.md) explains planned handling of contract regions, display languages, and accepted versions for Korea, the United States, the United Kingdom, Germany, France, Japan, and mainland China. These documents remain review drafts. Effective terms and consent features are not available yet.
+
+Contract documents will not be changed through this workspace or runtime LLM translation. Choosing an English interface does not remove applicable regional terms. Approved originals and supporting translations remain distinct. Preparing regional documents does not add German, French, Japanese, or Chinese to the entire application interface.
+
+## Coming later: release checks
+
+The planned [Test and release](TEST_AND_RELEASE.md) tools will help check choices, screens, notices, and private information in each language. If source text or rules change, the new version needs another review.
+
+**Related:** [Worlds and scenes](WORLD_BUILDING.md) · [Troubleshooting](TROUBLESHOOTING.md)

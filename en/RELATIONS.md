@@ -7,7 +7,7 @@ description: Create relationships between people, places and organizations, then
 
 **Relations** connects world entries: a person belongs to a guild, lives at a place, or witnesses an event.
 
-{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="Membership, residence and event relations between Mara, the keepers' guild and places" caption="Read connections through their direction and relationship type." %}
+{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="Membership, residence and event relations between Mara, the keepers' guild and places" caption="Arrows and labels show how people, places, and organizations are connected." %}
 
 ## Create a relationship
 
@@ -21,7 +21,7 @@ For example, connect Mara to the keepers' guild with a membership label. To mana
 
 ## Organize a larger graph
 
-Search by name, type, or tag. Zoom and pan to inspect an area. Drag nodes or adjust their positions through the position entries. Review a type-based arrangement before applying it.
+Search by name, type, or tag. Zoom and pan to inspect an area. Drag nodes into place or enter their positions in the layout controls. Review a type-based arrangement before applying it.
 
 Use **Reset view** to regain your bearings and **Undo layout** to revert a recent arrangement. Moving a node changes its display position; editing a relation changes its meaning.
 
@@ -40,6 +40,6 @@ Unlock values entered in preview are test inputs. To reveal conditional lore dur
 - Direction and endpoints match the intended relationship.
 - Clearing search reveals the wider graph.
 - Private information stays hidden in player view.
-- Removing a relation is not confused with deleting the underlying world entry.
+Removing a relation leaves its world entries in place. To delete an entry itself, use the World menu.
 
 **Related:** [World building](WORLD_BUILDING.md) · [Factions](FACTION_GUIDE.md) · [Maps](MAPS.md)

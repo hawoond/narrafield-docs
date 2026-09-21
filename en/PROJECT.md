@@ -9,7 +9,7 @@ The **Project** menu defines the title and starting point of your story. The pro
 
 ## Start a project
 
-1. Choose **New**, or use **Sample** to explore an existing setup.
+1. Choose **New project** to start from scratch, or open a **Sample**.
 2. Enter a title and content version in **Project**.
 3. Select **Apply**, then **Save** and choose a project folder.
 4. Create the first scene in [Scenes & actions](SCENES.md), then select **Set as start**.
@@ -24,7 +24,7 @@ You can save a draft without scenes. A successful save does not mean the project
 | Title | The name of your game | Use your own work's title. |
 | Content version | A value identifying a revision of your work | This is separate from the engine runtime version. |
 | Start scene ID | The first scene's ID | Use an existing scene ID, not its title. |
-| Include local GM controls | Whether the exported game permits local GM intervention | Choose explicitly for your game's intended use. |
+| Include local GM controls | Whether the exported game permits local GM intervention | Choose whether local GMs should be able to intervene during play. |
 
 ## Apply, save, and save a copy
 
@@ -35,17 +35,17 @@ Save the sample to your own folder before editing. Check the bottom status for *
 ## Publish a revised game
 
 1. **Open** the original project folder.
-2. Make changes and distinguish the revision with a content version.
+2. Make your changes and update the content version.
 3. **Validate** and **Play** the changed routes.
 4. Export a new package and check it runs.
 
-Content or runtime changes can invalidate old saves. Online sessions are also tied to content: preserve the existing state file and use a new state path. Read [compatibility guidance](TROUBLESHOOTING.md).
+Content or runtime changes can invalidate old saves. Online sessions also use a specific content version. Keep the existing session file and choose a separate state-file path for the new version. Read [compatibility guidance](TROUBLESHOOTING.md).
 
 ## Common questions
 
 - **Start scene not found:** Check for a title entered instead of an ID, or a reference to a deleted scene.
-- **Saved but cannot play:** Resolve reference and ending-route errors reported by validation.
-- **Must I edit JSON?** Use the forms for ordinary work. Full project JSON editing is an advanced option for users who understand the structure.
+- **Saved but cannot play:** Check the validation results for missing entries and routes that cannot reach an ending.
+- **Must I edit JSON?** Use the forms for ordinary work. Edit the full project JSON only if you are familiar with its structure.
 
 **Next:** [Scenes and actions](SCENES.md) · [Play and export](PLAY_AND_EXPORT.md)
 

@@ -5,17 +5,17 @@ description: Connect world lore, scenes and rules, then turn your story into a p
 
 # From world lore to a playable story
 
-Narrafield Studio is a TRPG engine developed by **sortie**. Organize people and places, connect choices and checks, and export a game from the same project.
+Narrafield Studio is a TRPG engine developed by **sortie**. Write about the people and places in your world, give players choices, and turn the story into a game.
 
 Start with **one place, one character, and two choices**. Finish a short story before adding the rules it needs.
 
 ## 1. Build the world behind the story
 
-Use **World** for names, summaries, and descriptions. Connect people and organizations in **Relations**, place locations on **Maps**, and arrange events in **Timeline**. These views connect the same world entries.
+Use **World** for names, summaries, and descriptions. Connect people and organizations in **Relations**, place locations on **Maps**, and arrange events in **Timeline**. Each view uses the same entries, so you do not have to maintain separate copies.
 
 For a story about an extinguished lighthouse, create the harbor, lighthouse keeper, and guild, then connect them. Separate public lore from information reserved for the GM.
 
-{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="Development-alpha relation graph connecting people, places and a guild" caption="Read the connections between world entries in the relation graph." %}
+{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="Development-alpha relation graph connecting people, places and a guild" caption="See how people, places, and organizations are connected." %}
 
 [World building](WORLD_BUILDING.md) · [Relations](RELATIONS.md) · [Maps](MAPS.md) · [Timeline](TIMELINE.md)
 
@@ -47,14 +47,12 @@ Use **Validate** to find invalid references and **Play** to test success, failur
 
 **Tools & extensions** and **Merge & conflicts** help teams share changes through Git. **Translation** manages Korean source text and English translations for supported game content.
 
-The product is currently a development alpha. See [Development](DEVELOPMENT.md) for current capabilities and limits. Purchases and installation will use official stores; **store pages are coming soon**.
+A development alpha is available now. [Download the demo](DEMO.md) to try it, or read about [supported features and development plans](DEVELOPMENT.md). The full product’s **store pages are coming soon**.
 
 **Next:** [Start with the sample](QUICKSTART.md) or explore the [editor menu guide](EDITOR.md).
 
-## Preview the next creation experience
+## What we are working on
 
-Explore the [new workspace](DESIGN.md) that separates creative work from project management, and [game screens](GAME_SCREENS.md) focused on scenes and choices. Compare planned title flows, character creation, online parties, and publishing with the demo in [Current capabilities](DEVELOPMENT.md).
+The [new workspace](DESIGN.md) gives creative work and project settings their own places. The planned [screen editor](GAME_SCREENS.md) lets creators arrange dialogue and choices to suit their games.
 
-## The next creation experience
-
-[Your first story](CREATION_JOURNEY.md) describes planned solo narrative, GM cooperation, and automated-party configurations, connecting one world detail to a consequential choice. [Starter images](STARTER_CONTENT.md), [world stories](WORLD_STORIES.md), and [test and release](TEST_AND_RELEASE.md) describe further goals.
+[Your first story](CREATION_JOURNEY.md) introduces starting setups for solo stories, GM-led games, and parties that play without a GM. The guides also cover planned starter content, worlds that change through play, and publishing tools.

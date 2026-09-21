@@ -4,7 +4,7 @@ title: Rules and expressions
 
 # Rules and expressions
 
-See [Game data](GAME_DATA.md) for item, quest, and ability authoring. This page covers **scene-action conditions, checks, and effect expressions**, followed by advanced data-format details.
+See [Game data](GAME_DATA.md) for item, quest, and ability authoring. This page covers **scene-action conditions, checks, and effect expressions**, followed by a reference for editing expression data directly.
 
 ## Start without dice
 
@@ -22,11 +22,11 @@ For example, **d20 + persuasion modifier ≥ 12** is a persuasion check. Do not 
 
 ## Catalogs and references
 
-Create items, quests, player attributes, and initial inventory using the catalog forms. Item, quest, and attribute IDs are fixed after creation; names, descriptions, and values can change while preserving IDs. Setting an initial inventory quantity to zero removes that entry. Negative quantities and negative healing amounts are not allowed.
+Create items, quests, player-character attributes, and initial inventory using the catalog forms. Item, quest, and attribute IDs are fixed after creation; names, descriptions, and values can change while preserving IDs. Setting an initial inventory quantity to zero removes that entry. Negative quantities and negative healing amounts are not allowed.
 
 You cannot delete a definition referenced by scene conditions, effects, checks, expressions, or a character. Remove those references first. A successful form change is one undo step; invalid input leaves the project unchanged. Items acquired and quest progress during play are stored separately in play state.
 
-## Conditions and expression trees
+## Advanced: expression data
 
 An optional expression tree (AST) can be stored in `Condition.expression`, `Effect.expression`, and `Check.expression`. Existing condition `op`, effect `value`, and check `dice` + `attribute` formats remain supported. When present, `expression` takes precedence over those fields. A check expression's result is compared with `target`. Effect expressions are supported only for `inventory`, `set`, `add`, and `hp`.
 
@@ -59,6 +59,6 @@ Example: a `2d6 + insight` check.
 
 One expression can have a maximum depth of 24, 256 nodes, and 100 dice in total. Each die supports 2–100,000 sides. Conditions must return a boolean and cannot contain dice, so repeatedly checking whether a choice is visible changes neither randomness nor game state. Use check expressions for random branches.
 
-The complete AST is checked for types and size before evaluation; `and` and `or` short-circuit. Offline play uses a reproducible random stream. Persistent online sessions use cryptographic randomness for each die and record confirmed results. Failed commands roll back state, and retrying a processed online command with the same ID does not roll again.
+The whole expression is checked for valid types and size before it runs. During evaluation, `and` and `or` stop as soon as the result is known. Offline play uses a reproducible random stream. Persistent online sessions use cryptographic randomness for each die and record confirmed results. Failed commands roll back state, and retrying a processed online command with the same ID does not roll again.
 
 The expression system uses integers from its supported execution context. String operations, arbitrary function calls, multiplication, division, and user code are not supported.

@@ -5,7 +5,7 @@ description: Arrange historical events by era, date label and order, and connect
 
 # Timeline
 
-**Timeline** organizes historical world events. It explains chronology; it is not a timer that advances the game automatically.
+**Timeline** organizes historical world events. Use it to see which events happened first. Adding events does not advance time during play.
 
 {% include screenshot.html file="dbf2d3ff8eec7ef2f198.png" alt="A timeline with the lighthouse extinguishing event placed seven days before the story" caption="A historical event linked to its place in time." %}
 
@@ -39,6 +39,6 @@ For example, arrange “The light goes out,” “The guild starts investigating
 
 Set event and placement visibility, then inspect **Player view**. Use **Remove placement** to remove an entry from the timeline; this differs from deleting its world description.
 
-Check order, related entries, and unknown-time flags before saving. Define the actual play sequence separately in [Scenes & actions](SCENES.md).
+Before saving, check the event order, linked entries, and any events whose dates are still unknown. Define the actual play sequence separately in [Scenes & actions](SCENES.md).
 
 **Related:** [World building](WORLD_BUILDING.md) · [Relations](RELATIONS.md)

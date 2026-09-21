@@ -9,7 +9,7 @@ Narrafield Studio is a TRPG engine developed by **sortie**. Start with a sample,
 
 ## Guide baseline
 
-The guides were reviewed on **{{ site.data.review.date }}** against the source and capabilities of **public demo {{ site.data.review.demo_version }}**. Pages marked **Planned features and designs** describe plan **{{ site.data.review.plan_version }}**. A feature appearing in a document or concept does not mean it is included in the demo.
+The guides were reviewed on **{{ site.data.review.date }}** against the source and capabilities of **public demo {{ site.data.review.demo_version }}**. Pages marked **In development** describe plan **{{ site.data.review.plan_version }}**. They include features that are not yet available in the demo.
 
 [Download demo](DEMO.md) · [Current editor menus](EDITOR.md) · [Latest workspace concept](DESIGN.md)
 
@@ -27,11 +27,11 @@ The guides were reviewed on **{{ site.data.review.date }}** against the source a
 | Extensions | Restricted WASM, pinned versions, permissions, runtime bindings, content packs, and configured hub access | [Plugins](TOOLS.md) |
 | Translation | Paired Korean/English fields, JSON exchange, source-change tracking, review, and glossary | [Translation](LOCALIZATION.md) |
 
-Automated checks do not certify production quality or every possible rule. Online play requires a separate server and external connection setup. Connecting to a configured hub does not imply that an official public catalog is operating.
+The demo is still an alpha. It has passed automated checks, but real play environments need more testing. Online play requires a separate server and external connection setup. Connecting to a configured hub does not imply that an official public catalog is operating.
 
-## Experiences in the latest plan
+## Features we are working on
 
-Plan **{{ site.data.review.plan_version }}** adopts the following development goals. **First-release essentials and later goals are separate; adoption does not mean implementation is complete.**
+The features below are in development. The following section explains what comes in the first release and what will follow later.
 
 | Experience | Planned journey | Details |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ Plan **{{ site.data.review.plan_version }}** adopts the following development go
 | Shared conversation | Character speech, action descriptions, OOC, GM narration, confirmed results, speakers and recipients | [Roleplay chat](ROLEPLAY_CHAT.md) |
 | Continuing play | Lobby preparation, session endings, chapters, campaign completion, migration, and recovery | [Campaign continuity](CAMPAIGN_FLOW.md) |
 | Rules and publishing | Source-aware packs, game identity, credits, permitted formats, and separate game store profiles | [Rule packs](RULE_PACKS.md) · [Publishing](PUBLISHING_GAME.md) |
-| Complete-journey testing | Follow one version through creation, play, saving, translation, team changes, and release | [Test and release](TEST_AND_RELEASE.md) |
+| Testing from creation to release | Follow one version through creation, play, saving, translation, team changes, and release | [Test and release](TEST_AND_RELEASE.md) |
 
 ## Current demo, first release, and later stages
 
@@ -59,9 +59,9 @@ The first release includes verification of existing creation, play, and export c
 | Later R2 | World laws, relationships, story checks, richer editing, and advanced chat presentation, communication, channels, and search |
 | Later R3 | Integration testing and refinement across creation, play, long campaigns, updates, and publishing |
 
-R1–R3 describe development and verification stages, not announced release dates or shipped versions. Features may span stages. Advanced chat, action requests, summaries, and operations tools are adopted later goals. Basic chat should work without an LLM or optional operations module.
+R1–R3 describe development and verification stages, not announced release dates or shipped versions. Features may span stages. Advanced chat, action requests, summaries, and operations tools are planned for later releases. Basic chat should work without an LLM or optional operations module.
 
-The 20 original images and their usage terms are ready. Installer bundling, catalog integration, project import, and runtime verification remain separate work. The four reviewed UI concepts illustrate screen direction, not a product implementing the entire plan.
+The 20 original images and their usage terms are ready. Installer bundling, catalog integration, project import, and runtime verification remain separate work. The four UI concepts show the proposed layouts; they are not screenshots of a finished product.
 
 ## Broader creation goals
 
@@ -70,15 +70,15 @@ The 20 original images and their usage terms are ready. Installer bundling, cata
 - **Reuse creative work:** reusable events, prototypes, bulk editing, visuals, audio, accessibility, public extension tools, and restricted plugin execution.
 - **Explain and recover play:** rule traces, reproducible tests, performance checks, campaign saves and migration, and optional reviewed LLM proposals.
 
-Existing foundations are distinct from complete workflows. A first project need not enable every option; worldbuilding alone is a valid starting point.
+Some of these features already have a foundation, but the complete workflows are still being built. You do not need every option for a first project. Start by organizing your world if that is what you need.
 
 ## Free content-service preparation
 
-Plan 1.31 connects free plugins, templates, and assets through one library and a shared service independent of the editor and game servers. Common foundations → discovery/application → publishing/review → external-creator, channel, failure, and recovery verification are all conditions for the first store release. Existing plugin foundations are distinct from official public operation. Paid content operation and a paid transition roadmap are outside this scope. [Content-store details](CONTENT_STORES.md)
+We are preparing stores for free plugins, templates, and assets with one shared library. The service will run separately from the editor and game servers. Before opening it, we will test finding and applying content, publishing and review, use by external creators, distribution, and recovery from outages. There are no plans for paid content or a transition to it. See [Free content stores](CONTENT_STORES.md).
 
 ## Product use and consent
 
-Plan 1.30 adopts preservation of one-time purchase rights, separate general and game-specific agreements, regional documents, explicit consent, and offline copies. [Product use and game agreements](PRODUCT_TERMS.md) explains planned royalties and the distinction between creators and players. Documents for seven regions remain review drafts; sales, effective terms, consent UI, and contract services are not complete.
+The planned policy preserves rights to a version bought with a one-time purchase and keeps product consent separate from agreements for individual commercial games. Regional documents, explicit acceptance, and offline copies are also planned. [Product use and game agreements](PRODUCT_TERMS.md) explains planned royalties and the distinction between creators and players. Documents for seven regions remain review drafts; sales, effective terms, consent UI, and contract services are not complete.
 
 Sales readiness and future subscription requirements are separate release conditions. This plan alone does not restrict current demo use, free tests, or project backups.
 

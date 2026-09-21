@@ -5,7 +5,7 @@ description: Author nations and guilds with organizations, members, diplomacy, p
 
 # Factions
 
-**Factions** describes nations, guilds, and secret societies. Extend their world names and descriptions with organizational structure and reputation or goals that change during play. This guide follows the runtime {{ site.data.review.demo_version }} development alpha.
+**Factions** lets you build nations, guilds, and secret societies. Write a name and description, then add members, ranks, reputation, and goals. This guide covers demo {{ site.data.review.demo_version }}.
 
 ## Create a first faction
 
@@ -33,7 +33,7 @@ A named empty faction is a valid starting point. You do not need to fill every o
 
 ## Reuse existing membership lore
 
-If [Relations](RELATIONS.md) contains a generic membership relation, choose **Convert existing relation** in the members view. Conversion is explicit and preserves the description. It does not invent ranks or reputation.
+If [Relations](RELATIONS.md) contains a generic membership relation, choose **Convert existing relation** in the members view. The relation changes only when you choose to convert it, and its description is preserved. It does not invent ranks or reputation.
 
 ## Connect reputation and goals to a story
 
@@ -58,6 +58,6 @@ Territory polygons and automatic war, economy, or diplomacy simulation are outsi
 
 **Related:** [World building](WORLD_BUILDING.md) · [Relations](RELATIONS.md) · [Game data](GAME_DATA.md)
 
-## Later goals for relationships and shared worlds
+## Coming later
 
-[World stories](WORLD_STORIES.md) distinguish personal and party reputation while connecting promises, conflicts, and faction changes to later scenes. [Campaign continuity](CAMPAIGN_FLOW.md) covers single application of shared events and persistence between sessions.
+Promises, conflicts, and changes within factions will be able to affect later scenes, with separate reputation for individuals and parties. See examples in [A world that remembers](WORLD_STORIES.md), and learn how changes will persist between sessions in [Campaign continuity](CAMPAIGN_FLOW.md).

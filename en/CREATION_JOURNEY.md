@@ -1,12 +1,12 @@
 ---
 title: Build your first story from one world detail
-description: The planned creation journey, three recommended configurations, and distinct learning and validation samples.
+description: Turn one world detail into a choice, then build a small game with the planned starter configurations.
 content_status: planned
 ---
 
 # Build your first story from one world detail
 
-The central creation task is to **turn one world detail into an action rule, then finish a short game whose choices change the next scene**. Starting from an empty project and editing a template should lead to the same capabilities. Dice, combat, characters, and LLM assistance are optional choices for the game.
+Start with one detail about a place or character. Connect it to a choice, then let that choice change the next scene. That is enough for a small game. Begin with a blank project or adapt a template, and add dice, combat, characters, or AI assistance when you need them.
 
 ## Change one thing and play it through
 
@@ -16,7 +16,7 @@ The central creation task is to **turn one world detail into an action rule, the
 4. Make the choice in preview and inspect how the next scene's people, places, or actions change.
 5. Check the required screens and Korean/English content, export a standalone game, and play the same path again.
 
-Worldbuilding without a playable game remains a valid activity. A mandatory wizard or completion score should not dictate the creator's working order.
+You can also use the editor just to organize a world. You do not have to follow a setup wizard or work toward a completion score.
 
 ## Recommended configurations
 
@@ -30,7 +30,7 @@ These configurations are planned inside the [single starter-template catalog](ST
 
 An automated party must not wait for an approval only a GM can supply. Shared world proposals use registered candidates, constrained inputs, and agreement. A majority vote cannot replace individual consent to a promise or sacrifice. [Parties and decision rights](PARTY_PLAY.md)
 
-Changing configurations should compare current values, recommendations, creator overrides, and affected features before selective application. It should preserve advanced edits and active campaigns. Moving an existing game to another content version requires a separate migration process.
+When changing configurations, you will be able to compare your settings with the recommendations and apply only what you need. Advanced edits and active campaigns will be preserved. Moving a game already in progress to a new version requires a separate migration step.
 
 ## Each sample has a distinct purpose
 
@@ -39,9 +39,9 @@ Changing configurations should compare current values, recommendations, creator 
 | A Small Errand | Learn by changing one detail, line, or condition and seeing it in the next scene; playable without images |
 | A Lighthouse Lit by Memories | Validate world laws, relationships, promises, and lasting consequences through choices and epilogues |
 | Noncombat mystery, tactical adventure, long faction campaign | Validate the full engine's expressive range and standalone exports |
-| Existing The Unlit Lighthouse | The alpha's checks, combat, and branching sample; separate from the new basic story template |
+| Existing The Dark Lighthouse | The alpha's checks, combat, and branching sample; separate from the new basic story template |
 
-A named sample and its design do not mean a finished sample is available to download. Numbers, rewards, and enjoyment still require playtesting.
+The new samples are still being made and are not available to download. Playtesting will help us adjust values and rewards and see whether the stories are enjoyable.
 
 ## Start with the current demo
 

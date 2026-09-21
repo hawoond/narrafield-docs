@@ -9,7 +9,7 @@ layout: base
   <div class="wiki-main">
     <details class="wiki-mobile-nav"><summary>{{ ui.wiki_nav }}</summary><nav aria-label="{{ ui.mobile_nav }}">{% include wiki-nav.html %}</nav></details>
     <nav class="breadcrumbs" aria-label="{{ ui.location }}"><a href="{{ ui.prefix | append: '/' | relative_url }}">{{ ui.introduction }}</a><span aria-hidden="true">/</span><a href="{{ wiki_url | relative_url }}">{{ ui.wiki }}</a>{% unless page.url == wiki_url %}<span aria-hidden="true">/</span><span>{{ page.title | escape }}</span>{% endunless %}</nav>
-    {% if page.content_status == 'planned' %}{% include plan-note.html %}{% else %}<p class="guide-basis">{% if language == 'en' %}Guide baseline: demo {{ site.data.review.demo_version }} · Reviewed {{ site.data.review.date }}{% else %}가이드 기준: 데모 {{ site.data.review.demo_version }} · {{ site.data.review.date }} 검토{% endif %}</p>{% endif %}
+    {% if page.content_status == 'planned' %}{% include plan-note.html %}{% else %}<p class="guide-basis">{% if language == 'en' %}For demo {{ site.data.review.demo_version }} · Reviewed {{ site.data.review.date }}{% else %}데모 사용 안내: {{ site.data.review.demo_version }} · {{ site.data.review.date }} 검토{% endif %}</p>{% endif %}
     {% include page-toc.html %}
     <article class="wiki-article">{{ content }}</article>
     <p class="wiki-return"><a href="{{ wiki_url | relative_url }}">← {{ ui.all_guides }}</a><a href="{{ ui.prefix | append: '/' | relative_url }}">{{ ui.about }} →</a></p>

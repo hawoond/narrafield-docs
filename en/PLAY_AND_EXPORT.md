@@ -16,7 +16,7 @@ For an online game, also obtain the server address and player token from the cre
 
 ## Validate and preview while creating
 
-**Apply** form changes, **Save** the project, and check **Validate** results. Resolve starting-scene, reference, and branching errors, then use **Preview** to play each choice and ending.
+**Apply** form changes, **Save** the project, and check **Validate** results. Resolve starting-scene, reference, and branching errors, then use **Play** to play each choice and ending.
 
 Check backgrounds, portraits, conditional choices, successful and failed checks, and branches after combat. Passing automatic validation does not mean every route has been played through.
 
@@ -50,10 +50,8 @@ The online demo assigns characters to personal invitations and checks control on
 - [Online sessions](ONLINE.md): manage servers and access credentials.
 - [Troubleshooting](TROUBLESHOOTING.md): resolve launch, export, and save problems.
 
-## Planned game screens and publishing
+## Coming later
 
-[Scene-focused screens and customization](GAME_SCREENS.md), [Title, New game, and character creation](PLAYER_START.md), and [Creator identity, credits, and store profiles](PUBLISHING_GAME.md) are planned beyond the current player interface. Their complete workflows are not included in the demo.
+We are working on [scene-focused game screens](GAME_SCREENS.md), [title screens and character creation](PLAYER_START.md), and [session endings and campaign recovery](CAMPAIGN_FLOW.md). These features are not all available in the demo.
 
-## Planned creation and long-term play
-
-The instructions above cover current demo play, saves, and ZIP exports. [Title and New game](PLAYER_START.md), [session endings and recovery](CAMPAIGN_FLOW.md), and [test and release](TEST_AND_RELEASE.md) are separate development goals. [Game identity and output formats](PUBLISHING_GAME.md) also distinguish plans from available capabilities.
+See [Test and release](TEST_AND_RELEASE.md) for planned pre-release checks, and [Publishing your game](PUBLISHING_GAME.md) for game identity, credits, and additional export formats.

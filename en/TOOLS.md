@@ -24,7 +24,7 @@ Saving writes project files, committing records Git history, and pushing shares 
 
 ## LLM — generate a proposal from selected context
 
-This feature uses a compatible API endpoint and model you configure. Real-provider integration must be checked in your environment.
+This feature uses a compatible API endpoint and model you configure. Check that your chosen service responds correctly before using it.
 
 1. Enter the **Endpoint**, model, and any required API key.
 2. Specify only the world or scene IDs to include in **Context IDs**.
@@ -42,12 +42,12 @@ Demo 0.6 includes **Project extensions**, **Common hub**, **Dependencies / trans
 1. Choose a local archive in **Project extensions** and use **Inspect package / permissions / activate**.
 2. Review the source, hash, exact version, dependencies, and requested permissions, then activate only the permissions you approve.
 3. Open **Components** to inspect available templates, editor commands, settings, or validators. Review proposed edits before applying them.
-4. For a supported runtime extension, configure **Runtime binding** and check where the scene or rule invokes it. Installation alone does not wire every action into a game.
+4. For a supported runtime extension, configure **Runtime binding** and check where the scene or rule invokes it. Installing an extension does not make every action use it.
 5. Validate and preview, save the project, then inspect the exported game with the same pinned modules and required notices.
 
-The runtime executes restricted WASM extensions. Supported declared effects and state use the shared engine; this is not unrestricted native code or a complete arbitrary-widget editor. Changes, dependency updates, removal, and save migration require review. Available migration tools write a separate copy under their exact compatibility requirements, not a universal engine-version conversion.
+Runtime extensions use restricted WASM execution and supported effects and state. They cannot run arbitrary native code or create every kind of screen widget. Changes, dependency updates, removal, and save migration require review. Available migration tools write a separate copy under their exact compatibility requirements, not a universal engine-version conversion.
 
-Content packs can select supported definitions and managed images with license information. The **Common hub** interface uses a configured service. A runnable self-hosted hub is separate from an officially operated public catalog. Real Steam Workshop subscription and Steam/STOVE/Epic service integration are not verified as complete. Official store pages remain [coming soon](DEVELOPMENT.md#stores).
+Content packs can select supported definitions and managed images with license information. The **Common hub** interface uses a configured service. You can configure a self-hosted hub, but an official public catalog is not operating yet. Real Steam Workshop subscription and Steam/STOVE/Epic service integration are not verified as complete. Official store pages remain [coming soon](DEVELOPMENT.md#stores).
 
 ## Planned workspace location
 
@@ -57,15 +57,13 @@ Project plugin policy and Git will move into [Project settings](DESIGN.md); crea
 
 - Only intended files are staged for sharing.
 - AI proposal targets and changes match your intent.
-- Extension test results are not treated as full game compatibility or release support.
+- Play the game with the extension enabled. Passing an extension test does not mean every part of the game works.
 - After applying team changes or proposals, preview the affected play routes.
 
 **Related:** [Git collaboration](COLLABORATION.md) · [Translation](LOCALIZATION.md) · [Development](DEVELOPMENT.md)
 
-## Multiple ways to change the same source
+## Coming later
 
-The planned [creation and testing journey](TEST_AND_RELEASE.md) keeps direct edits, templates, LLM proposals, and Git merges on the same source and references, with revalidation after partial application. LLMs remain optional; proposals do not automatically change world truth or confirmed game results.
+The planned [Test and release](TEST_AND_RELEASE.md) tools will check changes made by hand, through templates, from AI proposals, or through Git merges. Checks will run again even when only part of a proposal is accepted. LLMs remain optional, and generating a proposal does not change established world facts or confirmed play results.
 
-## Planned free content stores
-
-[Free content stores](CONTENT_STORES.md) connect plugins, templates, and assets through one discovery experience and library. Downloading remains separate from project application and execution permissions. Current hub capabilities above do not mean an official public store is operating.
+The [Free content stores](CONTENT_STORES.md) will bring plugins, templates, and assets into one library. Downloading a file, applying it to a project, and allowing it to run will be separate steps. The current demo's hub features do not mean an official public store is already operating.

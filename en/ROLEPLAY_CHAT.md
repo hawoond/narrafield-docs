@@ -1,12 +1,12 @@
 ---
 title: Roleplay together through conversation
-description: Planned text RP, speakers and recipients, speech delegation, records and protection, followed by action proposals and richer communication.
+description: Speak as a character, describe actions, and keep track of conversations with the planned roleplay chat.
 content_status: planned
 ---
 
 # Roleplay together through conversation
 
-The goal is for a GM and players to complete a session through text. **Basic RP chat is a first-release goal**; action proposals, presentation, special communications, and advanced record tools are adopted later goals. Public demo {{ site.data.review.demo_version }} does not provide this integrated chat workflow.
+We are building chat that lets a GM and players run a session through dialogue and written actions. **Basic RP chat is planned for the first release.** Action proposals, dialogue effects, special communications, and advanced record tools will follow. Integrated chat is not yet available in demo {{ site.data.review.demo_version }}.
 
 ## Who is speaking, and to whom?
 
@@ -18,15 +18,15 @@ The goal is for a GM and players to complete a session through text. **Basic RP 
 | GM narration / NPC dialogue | Narrate events or speak for an authorized NPC using its public identity or alias |
 | Checks / game results | Engine-confirmed events, visually distinct from ordinary messages |
 
-The composer should always show **message mode, speaker, and recipients**. Current-scene, party, all-participant, individual whisper, and GM recipients are separate. Spectator speech follows the game's policy. Games without characters can use OOC conversation and GM narration.
+The message box will always show **how you are speaking, who you are speaking as, and who will receive the message**. Current-scene, party, all-participant, individual whisper, and GM recipients are separate. Spectator speech follows the game's policy. Games without characters can use OOC conversation and GM narration.
 
 If a configuration allows GMs to read whispers, it should disclose that before sending. A GM channel identifies which GMs receive it. Joining later or changing roles must not automatically reveal earlier private messages.
 
 ## Separate control, speech, and consent
 
-Delegated combat or movement control does not automatically grant RP speech rights. Speech delegation specifies the character, recipient, allowed modes, duration, and revocation. Consent to relationships, promises, and sacrifices remains separate.
+Delegated combat or movement control does not automatically grant RP speech rights. When delegating speech, choose the character, who may speak for them, what is allowed, how long it lasts, and how to revoke it. Consent to relationships, promises, and sacrifices remains separate.
 
-A dialogue choice that changes rules checks decision authority; free dialogue checks speech permission. A choice combining both requires both. Changing character or scene should not silently replace a draft's speaker or recipients. Submission rechecks changed permissions.
+A dialogue choice that changes rules checks decision authority; free dialogue checks speech permission. A choice combining both requires both. Changing character or scene should not silently replace a draft's speaker or recipients. Permissions are checked again when the message is sent.
 
 ## A chat layout for the game
 
@@ -44,7 +44,7 @@ Personal blocking/muting and room speech limits are basic online protections. Th
 
 A player reading a clue and a character acquiring it are different. Only an explicitly connected knowledge-transfer action changes character knowledge. Search, quotations, summaries, and exports use the same visibility rules. [Facts, rumors, and knowledge](WORLD_STORIES.md)
 
-## Adopted later extensions
+## Features planned for later
 
 | Feature | Planned experience |
 | --- | --- |
@@ -57,8 +57,8 @@ A player reading a clue and a character acquiring it are different. Only an expl
 | Source-linked summaries | Build return summaries from messages and confirmed events; review optional LLM drafts against originals |
 | Optional reporting / operations | Preview selected messages and context, then manage role-based review, actions, appeals, and retention |
 
-Free text does not execute rules. Without a GM, proposals connect only to creator-registered actions. Editing, deleting, or resending a message must not reroll a check or duplicate a reward. Reference rolls remain distinct from confirmed checks. Special communications preserve the original recipients and costs and recheck delivery permissions.
+Writing an action in chat does not execute a game rule. Without a GM, proposals connect only to creator-registered actions. Editing, deleting, or resending a message must not reroll a check or duplicate a reward. Reference rolls remain distinct from confirmed checks. Special communications preserve the original recipients and costs and recheck delivery permissions.
 
-Edited session records and summaries do not turn false dialogue or OOC remarks into world facts. LLM summaries follow authorized content and transmission policies, with record-based guidance available on failure. Actual conversations, private drafts, and participant identities are not automatically included in creation projects or public game packages. Voice, video, and asynchronous services remain separate longer-term goals.
+Edited session records and summaries do not turn false dialogue or OOC remarks into world facts. LLM summaries use only content permitted for transmission. If generation fails, players can still catch up using the original records. Actual conversations, private drafts, and participant identities are not automatically included in creation projects or public game packages. Voice, video, and asynchronous services remain separate longer-term goals.
 
 [Parties and permissions](PARTY_PLAY.md) · [Lobbies, sessions, and return](CAMPAIGN_FLOW.md) · [Screen concepts](GAME_SCREENS.md) · [Current online guide](ONLINE.md)

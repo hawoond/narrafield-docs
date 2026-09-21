@@ -6,7 +6,7 @@ content_status: planned
 
 # Online parties and campaigns
 
-Different games need different ways to share a world. The latest design lets creators combine party structure, control, action order, and exploration rules.
+Different games need different ways to share a world. We are building tools for creators to choose how parties form, who controls each character, and how turns and exploration work.
 
 ## Starting party templates
 
@@ -25,7 +25,7 @@ Planned rules cover roster and active-party limits, formation changes, shared st
 
 Planned combat templates include **character turns, player turns, side turns, and simultaneous planning followed by resolution**. In simultaneous planning, game rules should determine resolution order rather than network arrival time.
 
-Exploration can use **shared travel, individual exploration, or party splitting and reunion**. Separate scenes must respect information visibility, shared world time, and single execution of common events.
+Exploration can use **shared travel, individual exploration, or party splitting and reunion**. Each scene will show only the information its participants may see. Shared world time stays consistent, and common events are applied once.
 
 ## From joining to the next session
 
@@ -39,7 +39,7 @@ Basic access and command checks should remain active when optional operations mo
 
 ## Check control, speech, and consent separately
 
-Permission to move a character, speak as that character, and spend another player's resources or share their information are distinct. Delegation has a subject, scope, duration, and revocation conditions. Leadership or majority voting cannot replace personal consent. [Roleplay chat](ROLEPLAY_CHAT.md) follows the same rules for speaker selection.
+Permission to move a character, speak as that character, and spend another player's resources or share their information are distinct. When delegating, choose the character, the person taking over, what they may do, how long it lasts, and how to end it. Leadership or majority voting cannot replace personal consent. [Roleplay chat](ROLEPLAY_CHAT.md) follows the same rules for speaker selection.
 
 GM-free shared proposals follow the game's proposal, voting, and execution rules, with cancellation or reselection for ties, refusal, timeouts, or absence. Shared pauses and session endings also need explicit policies. See [Campaign continuity](CAMPAIGN_FLOW.md).
 
@@ -47,7 +47,7 @@ Party information, each character's knowledge and beliefs, and what a player has
 
 ## Test the time spent waiting
 
-Mixed character counts, split scenes, and GM approval queues need checks for waiting and participation opportunities. Optional turn reminders, time limits, and return summaries should help without forcing quieter players to speak. These belong to [multi-participant testing](TEST_AND_RELEASE.md).
+Mixed character counts, split scenes, and GM approval queues need checks for waiting and participation opportunities. Optional turn reminders, time limits, and return summaries should help without forcing quieter players to speak. The planned [Test and release](TEST_AND_RELEASE.md) tools will help check these situations from each participant’s point of view.
 
 ## Compare with the current demo
 
