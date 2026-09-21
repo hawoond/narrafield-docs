@@ -22,17 +22,17 @@ After changing a theme, screen pack, or module, **choices, approvals, cost confi
 
 ## Seven situations to test from start to finish
 
-| Test | Experience to verify end to end |
+| Situation | What to check |
 | --- | --- |
-| First work without characters | Empty/starter project → edit details and choices → select images → Korean/English checks → standalone export → two new games and loading |
-| World-law consequences | Pay with a memory → promise/faction reactions → another route → session ending → return and epilogue |
-| GM text session | Lobby → candidates and approval → RP/whispers → proposed action and temporary clue → private sharing → disconnect/return → ending |
-| Automated party without a GM | Personal characters → shared proposal → tie/absence → refused personal cost → alternative progress → shared ending |
-| Split parties and special communication | Parallel combat/investigation → delayed, costly communication → speech delegation revoked → disconnect/pause → time agreement and reunion |
-| Shared creation to release | Pack/LLM draft → selective application and Git merge → module/screen change → source/language checks → client/server packages and each release format |
-| Updates and long campaigns | Save pending work → new version → failed/successful copy migration → server recovery → branches and inherited consequences |
+| A first game without characters | Start from a blank project or starter template, change details and choices, and add images. Test Korean and English, export the game, start two new games, and load a save. |
+| A choice that lasts into another session | Give up a memory and check the effects on promises and factions. Take another route, end the session, and see whether the consequences remain in the next session and epilogue. |
+| Text play with a GM | Choose and approve characters in the lobby, then exchange dialogue, whispers, and action proposals. Share a GM-created clue privately, disconnect and return, then end the session. |
+| A party without a GM | Make a shared proposal with individual characters. Test tied votes, absent players, and refused personal costs, then follow another route and end the session together. |
+| Split parties and special communication | Run combat and investigation at the same time while using communication with costs and delays. Revoke speech delegation, disconnect, pause, then agree on world time and reunite. |
+| A game made and released together | Accept part of a pack or AI draft and merge team changes through Git. Change modules and screens, check sources and translations, and export client/server packages and each release format. |
+| Updating a long campaign | Save with decisions still pending, then move to a new version. Test both failed and successful migration on a copy, server recovery, story branches, and inherited consequences. |
 
-These are not all forced into one giant introductory sample. Tests follow the game's configuration and development stage. Excluding later functionality cannot count as passing its complete journey.
+These tests do not need to fit into one giant introductory sample. Choose tests for the game's configuration and development stage, and do not mark untested features as passed.
 
 ## Check the pace of participation
 

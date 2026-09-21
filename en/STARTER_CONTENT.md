@@ -1,10 +1,10 @@
 ---
-title: Starter images and one template catalog
+title: Starter images and templates
 description: Explore 20 starter images, their usage terms, and planned tools for choosing, removing, and restoring templates.
 content_status: planned
 ---
 
-# Starter images and one template catalog
+# Starter images and templates
 
 We have prepared artwork to help you make a first story without searching for images. **The Small Adventure pack contains 20 AI-generated images.** The originals and usage terms are ready, but installer bundling, editor integration, and templates are still in development. The current demo does not include this pack or the new catalog.
 
