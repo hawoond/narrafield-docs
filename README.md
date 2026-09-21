@@ -9,6 +9,8 @@
 - [한국어 제작 가이드](https://narrafield.com/WIKI.html)
 - [English creator guide](https://narrafield.com/en/WIKI.html)
 - [새 기획과 화면 시안](https://narrafield.com/DESIGN.html)
+- [첫 이야기부터 플레이까지](https://narrafield.com/CREATION_JOURNEY.html)
+- [롤플레이 채팅 개발 목표](https://narrafield.com/ROLEPLAY_CHAT.html)
 - [현재 지원 범위](DEVELOPMENT.md)
 
 사용법은 검토한 공개 데모를 기준으로 하며, `content_status: planned` 문서는 개발 목표와 시안을 설명합니다. `_data/review.yml`에 검토일·기획 버전·검증한 데모 버전을 기록합니다. 모든 가이드는 한국어와 영어로 제공하고 언어 탭으로 같은 문서를 전환합니다.

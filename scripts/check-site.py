@@ -44,6 +44,9 @@ def main():
                 "COLLABORATION.html", "LOCALIZATION.html", "TROUBLESHOOTING.html",
                 "DEVELOPMENT.html", "DEMO.html", "DESIGN.html", "GAME_SCREENS.html",
                 "PLAYER_START.html", "PARTY_PLAY.html", "PUBLISHING_GAME.html", "RULE_PACKS.html",
+                "CREATION_JOURNEY.html", "WORLD_STORIES.html", "ROLEPLAY_CHAT.html",
+                "STARTER_CONTENT.html", "CAMPAIGN_FLOW.html", "TEST_AND_RELEASE.html",
+                "PRODUCT_TERMS.html",
                 "EXPERIENCE.html", "EDITOR.html", "PROJECT.html", "RELATIONS.html", "MAPS.html", "TIMELINE.html", "SCENES.html", "GAME_DATA.html", "FACTION_GUIDE.html", "TOOLS.html"}
     expected |= {"en/" + name for name in list(expected)}
     pages = {path.resolve(): Page(path.read_text(encoding="utf-8"))
@@ -61,9 +64,14 @@ def main():
                 errors.append(f"Expected one main heading: {name}")
             if page.language != language:
                 errors.append(f"Wrong document language: {name}")
-            planned = {"DESIGN.html", "GAME_SCREENS.html", "PLAYER_START.html", "PARTY_PLAY.html", "PUBLISHING_GAME.html", "RULE_PACKS.html"}
+            planned = {"DESIGN.html", "GAME_SCREENS.html", "PLAYER_START.html", "PARTY_PLAY.html",
+                       "PUBLISHING_GAME.html", "RULE_PACKS.html", "CREATION_JOURNEY.html",
+                       "WORLD_STORIES.html", "ROLEPLAY_CHAT.html", "STARTER_CONTENT.html",
+                       "CAMPAIGN_FLOW.html", "TEST_AND_RELEASE.html", "PRODUCT_TERMS.html"}
             if name.removeprefix("en/") in planned and 'class="plan-note"' not in page.source:
                 errors.append(f"Missing planned-feature disclosure: {name}")
+            if name.removeprefix("en/") in planned and re.search(r"(?:FLOW|CHAT|EXP)-\d{2}", page.source):
+                errors.append(f"Internal acceptance identifier in public guide: {name}")
             if re.search(r"런타임 0\.4|runtime 0\.4|하나의 파티 캐릭터를 함께|Every player controls the same party", page.source):
                 errors.append(f"Outdated demo claim: {name}")
             for anchor in page.anchors:

@@ -72,3 +72,7 @@ Check sufficient and insufficient resources, success and failure, and unavailabl
 ## Planned player creation and party rules
 
 Shared character definitions are distinct from runtime character instances. Two instances can have separate equipment, resources, and progress. See [Online sessions](ONLINE.md) for current GM assignment, and [Starting a game](PLAYER_START.md) and [Online parties](PARTY_PLAY.md) for planned creation steps and personal parties.
+
+## Planned connections through shared data
+
+Character creation, personal/shared parties, speaking rights, consent, and costs should connect while retaining separate scopes. See [Starting a game](PLAYER_START.md), [Parties](PARTY_PLAY.md), and [World stories](WORLD_STORIES.md) for planned flows beyond the current capabilities.

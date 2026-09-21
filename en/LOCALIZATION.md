@@ -15,3 +15,11 @@ Translation content remains in the existing project, world, scene, and game-data
 The glossary editor accepts an array such as `[{"source":"마라","target":"Mara","locked":true}]`. Locked terms use literal case-sensitive containment. Empty or duplicate source terms are rejected. Empty translations remain missing and are allowed for incremental work. Placeholder checking supports named `{actor}` and typed `{amount:int}` tokens, including repeated occurrences. Translation import is a trusted-authoring action, not an automatic runtime update.
 
 Current limitations: the source column assumes Korean and targets English; bidirectional authoring, locale catalogs replacing inline fields, automatic plural rules, language completeness export gates and full Unicode/IME/font accessibility QA remain separate work. Supported UI languages do not imply all game content has been translated. Source-hash review history is local to this authoring metadata file; it is not a translation service or machine translation API.
+
+## Later goals for translation and release checks
+
+[Product use and game agreements](PRODUCT_TERMS.md) describes planned region, language, and accepted-document version handling for Korea, the United States, the United Kingdom, Germany, France, Japan, and mainland China. Regional texts remain review drafts; effective terms and consent features are not provided yet.
+
+Contract documents are separate from the game translation workspace and runtime LLM translation. An English interface does not remove the applicable regional terms. Approved originals and supporting translations remain distinct. Preparing these documents does not add German, French, Japanese, or Chinese support to the entire application UI.
+
+[Test and release](TEST_AND_RELEASE.md) connects choices, screens, notices, and private visibility across languages for one game revision. An old translation review should not certify a new revision after source or rule changes.

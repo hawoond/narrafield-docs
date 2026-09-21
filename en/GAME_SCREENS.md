@@ -36,6 +36,16 @@ The planned editor lives in **Game screens**, including title, character creatio
 
 Creators define the game's layout and theme. Players use the text, input, audio, and motion preferences that the game provides. Display preferences do not change game rules or grant access to hidden information.
 
+## Text RP puts conversation at the center
+
+Scene-led play is one template. Text RP puts **conversation history and composition** at the center; cinematic play uses a conversation panel and tactical play a side panel. The image above illustrates cinematic play, not an implemented new chat screen.
+
+Basic chat is a first-release goal, with clear speakers, speech/action/OOC modes, recipients, and delivery state. Bubbles, dialogue effects, speaker styles, special communication, detailed channels, search, and summaries are adopted later goals. See [Roleplay chat](ROLEPLAY_CHAT.md).
+
+## Keep essential actions reachable
+
+Changing widgets or modules should preserve routes to choices, approvals, cost review, chat, saving, and required notices. Combinations without a usable fallback should be blocked with an explanation. [Screen verification](TEST_AND_RELEASE.md) also covers large text, keyboards, IME input, and the reader's position in conversation history.
+
 ## Difference from the current demo
 
 The demo supports scene backgrounds, portraits, choices, abilities, items, and saves. Its current menu and information-panel interface is covered in [Play and export](PLAY_AND_EXPORT.md). The scene-focused design and general screen composer above remain planned features.

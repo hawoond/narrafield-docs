@@ -53,3 +53,7 @@ The online demo assigns characters to personal invitations and checks control on
 ## Planned game screens and publishing
 
 [Scene-focused screens and customization](GAME_SCREENS.md), [Title, New game, and character creation](PLAYER_START.md), and [Creator identity, credits, and store profiles](PUBLISHING_GAME.md) are planned beyond the current player interface. Their complete workflows are not included in the demo.
+
+## Planned creation and long-term play
+
+The instructions above cover current demo play, saves, and ZIP exports. [Title and New game](PLAYER_START.md), [session endings and recovery](CAMPAIGN_FLOW.md), and [test and release](TEST_AND_RELEASE.md) are separate development goals. [Game identity and output formats](PUBLISHING_GAME.md) also distinguish plans from available capabilities.

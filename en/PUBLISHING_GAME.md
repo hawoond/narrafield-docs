@@ -32,7 +32,15 @@ Creating a ZIP does not mean a store upload or review has succeeded. Actual plat
 
 Track sources and conditions for the images, music, fonts, plugins, and rule content actually included. Collecting rule-pack notices into exported files and an offline in-game view is part of the [rule-pack design](RULE_PACKS.md).
 
-Pricing, royalties, runtime redistribution terms, and mandatory engine attribution will be announced separately. This page does not promise free, unrestricted commercial use or store approval.
+The latest plan makes `Made with Narrafield Studio` optional and separates product use from agreements for specific commercial works. [Product use and game agreements](PRODUCT_TERMS.md) explains the planned digital and physical royalty bases, preservation of one-time purchase rights, and explicit consent. Effective terms, local review, and contract screens are not complete; this guide does not conclude an agreement.
+
+## Check the output format and tested revision
+
+Standalone games, online servers, PDF/print documents, target VTT modules, character tools, and content packs are different outputs. The latest plan adopts paths to check permitted formats and required notices; this does not mean every exporter is available. Current demo ZIP export is distinct from later output adapters.
+
+Removing unused image files from a build is separate from determining the work-level disclosure and notice scope of a rule license. The 20 starter images have [finalized separate usage terms](STARTER_CONTENT.md), which do not replace engine or external rule-content terms.
+
+A release should connect its output files to tests of the same project revision, plugins, languages, and player roles. Past checks or achievement completion do not certify a changed release. See [Test and release](TEST_AND_RELEASE.md). Private session conversations and account information should not be automatically included in source projects or release packages.
 
 ## In the current demo
 

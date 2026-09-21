@@ -43,3 +43,7 @@ Pages marked **In development** show planned workflows, including the new worksp
 ## I can join but cannot act
 
 An invitation without a character assignment joins as a spectator. Ask the GM to review the participant assignment and current turn. See [Online sessions](ONLINE.md).
+
+## Features described only in development plans
+
+If the new sidebar, unified template catalog, starter image pack, or integrated RP chat is absent from your demo, check [current, first-release, and later stages](DEVELOPMENT.md). A planned-feature guide does not mean those features ship in the demo.

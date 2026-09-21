@@ -54,3 +54,7 @@ The product is currently a development alpha. See [Development](DEVELOPMENT.md) 
 ## Preview the next creation experience
 
 Explore the [new workspace](DESIGN.md) that separates creative work from project management, and [game screens](GAME_SCREENS.md) focused on scenes and choices. Compare planned title flows, character creation, online parties, and publishing with the demo in [Current capabilities](DEVELOPMENT.md).
+
+## The next creation experience
+
+[Your first story](CREATION_JOURNEY.md) describes planned solo narrative, GM cooperation, and automated-party configurations, connecting one world detail to a consequential choice. [Starter images](STARTER_CONTENT.md), [world stories](WORLD_STORIES.md), and [test and release](TEST_AND_RELEASE.md) describe further goals.

@@ -48,3 +48,7 @@ Use **Open** and select a project folder to load an existing project. Use **Save
 ## Find instructions by menu
 
 Use the [editor menu guide](EDITOR.md) to find each menu's role. Choose a starting point in [Project settings](PROJECT.md), then build your first choice in [Scenes and actions](SCENES.md).
+
+## Planned starting experience
+
+The steps above describe the current demo. A new basic story without mandatory dice or combat and recommended configurations are planned in [Your first story](CREATION_JOURNEY.md). See [Starter content](STARTER_CONTENT.md) for the unified catalog and 20 images.

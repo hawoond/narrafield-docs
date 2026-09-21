@@ -54,3 +54,7 @@ Narrafield Studio는 **sortie**가 만드는 TRPG 엔진입니다. 인물과 장
 ## 다음 제작 경험을 미리 봅니다
 
 세계관 작업과 프로젝트 관리를 나누는 [새 작업 공간](DESIGN.md), 플레이어가 장면과 선택에 집중하는 [게임 화면](GAME_SCREENS.md)을 준비하고 있습니다. 타이틀·캐릭터 생성·온라인 파티·작품별 출시까지의 목표는 [현재 지원 범위와 개발 계획](DEVELOPMENT.md)에서 함께 비교할 수 있습니다.
+
+## 다음 제작 경험
+
+[첫 이야기 만들기](CREATION_JOURNEY.md)에서는 솔로 서사·GM 협동·자동 진행 파티를 고르고 세계관 한 줄부터 선택의 결과까지 이어가는 개발 목표를 설명합니다. [기본 이미지](STARTER_CONTENT.md)와 [세계가 기억하는 선택](WORLD_STORIES.md), [시험과 출시](TEST_AND_RELEASE.md)는 후속 흐름입니다.

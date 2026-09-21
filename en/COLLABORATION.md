@@ -42,3 +42,7 @@ Automated checks use a temporary bare remote and two local clones. They cover Ko
 ## Planned workspace location
 
 The new design groups GitHub connections, branches, commits, and merges under **Project settings → Version control**. The [workspace concept](DESIGN.md) is a planned layout; the demo still uses **Merge & conflicts / Tools & extensions**.
+
+## Planned checks from merged changes to play
+
+[Complete-journey testing](TEST_AND_RELEASE.md) should verify a merged revision across world content, scenes, screens, saves, and exports. Preview and export revisions stay connected; migration of an active campaign receives separate review.

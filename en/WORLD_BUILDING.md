@@ -68,3 +68,7 @@ Share team projects through Git in **Collaboration and extensions** and **Merge 
 - [Translation workspace](LOCALIZATION.md): check translation coverage and review tracking.
 - [Git collaboration](COLLABORATION.md): fetch team changes and resolve conflicts.
 - [Play and export](PLAY_AND_EXPORT.md): play your finished story.
+
+## Planned consequences for world details
+
+[A world that remembers](WORLD_STORIES.md) connects laws, promises, relationships, and legacies to actions while separating facts, rumors, beliefs, and visibility. Current document editing is distinct from the complete planned story-checking tools.

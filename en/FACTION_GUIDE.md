@@ -57,3 +57,7 @@ Check that private organizations and members remain hidden from players. A guild
 Territory polygons and automatic war, economy, or diplomacy simulation are outside the current scope.
 
 **Related:** [World building](WORLD_BUILDING.md) · [Relations](RELATIONS.md) · [Game data](GAME_DATA.md)
+
+## Later goals for relationships and shared worlds
+
+[World stories](WORLD_STORIES.md) distinguish personal and party reputation while connecting promises, conflicts, and faction changes to later scenes. [Campaign continuity](CAMPAIGN_FLOW.md) covers single application of shared events and persistence between sessions.

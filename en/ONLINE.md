@@ -68,3 +68,7 @@ In **GM actors & AI**, use **Refresh actors & definitions**, select an actor, th
 Local automated tests cover ownership, private views, persistence, duplicate commands, WebSocket reconnect, and credential revocation. These checks do not certify external multi-player networks or production operation. External connectivity, latency, load, accessibility, integrated lobbies, multiple personal parties, split exploration, identity recovery, and server transfer require further work.
 
 [Play and export](PLAY_AND_EXPORT.md) · [Troubleshooting](TROUBLESHOOTING.md) · [Planned parties and campaigns](PARTY_PLAY.md)
+
+## Planned conversation and session management
+
+The instructions above cover current demo connections, assignments, and persistence. Basic [roleplay chat](ROLEPLAY_CHAT.md) is a first-release goal. Lobby preparation, session endings, chapters, campaign completion, and update recovery are described in [Campaign continuity](CAMPAIGN_FLOW.md).

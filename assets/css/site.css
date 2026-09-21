@@ -219,4 +219,13 @@ body:has(.hero) { overflow-x: clip; }
 .preview-figure figcaption { margin-top: 16px; font-size: 14px; }
 .preview-figure strong { display: block; font-size: 20px; margin-bottom: 5px; }
 .preview-links { display: flex; flex-wrap: wrap; gap: 12px 26px; margin-top: 24px; }
+.future-experience { padding-top: 80px; }
+.future-experience h2 { font-size: clamp(30px, 3.2vw, 44px); line-height: 1.55; margin: 8px 0 20px; }
+.future-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 32px 0 24px; }
+.future-grid article { border-top: 1px solid var(--line); padding-top: 20px; }
+.future-grid h3 { font-size: 21px; margin: 0 0 12px; }
+.future-grid p { color: var(--muted); }
+.future-grid .text-link { display: block; width: fit-content; margin-top: 12px; font-size: 15px; }
+.future-status { max-width: 850px; color: var(--muted); font-size: 14px; }
+@media (max-width: 760px) { .future-grid { grid-template-columns: 1fr; gap: 24px; } .future-experience { padding-top: 54px; } }
 @media (max-width: 760px) { .preview-grid { grid-template-columns: 1fr; gap: 32px; } .design-preview { padding-top: 54px; } .plan-note { padding: 16px; } }

@@ -59,6 +59,13 @@ Use the sidebar to change topics. On smaller screens, expand **Wiki contents**. 
 
 ## Planned features and screen designs
 
-[New creation workspace](DESIGN.md) · [Game screens](GAME_SCREENS.md) · [Starting a game and character creation](PLAYER_START.md) · [Online parties and campaigns](PARTY_PLAY.md) · [Publishing your game](PUBLISHING_GAME.md) · [Optional rule packs](RULE_PACKS.md)
+Explore development goals from plan **{{ site.data.review.plan_version }}** and reviewed concepts. See [current, first-release, and later stages](DEVELOPMENT.md). **In development** does not mean the feature is available in the demo.
 
-These pages cover plan 1.22 and reviewed concepts. Their **In development** labels distinguish planned workflows from features available in the demo.
+| Topic | Detailed guides |
+| --- | --- |
+| Your first project | [Your first story](CREATION_JOURNEY.md) · [Starter images and templates](STARTER_CONTENT.md) |
+| Creation and screens | [New workspace](DESIGN.md) · [Game screens and customization](GAME_SCREENS.md) |
+| Consequential worlds | [A world that remembers](WORLD_STORIES.md) |
+| Starting together | [Starting a game](PLAYER_START.md) · [Online parties](PARTY_PLAY.md) |
+| Continuing together | [Roleplay chat](ROLEPLAY_CHAT.md) · [Campaign continuity](CAMPAIGN_FLOW.md) |
+| Finishing and sharing | [Test and release](TEST_AND_RELEASE.md) · [Publishing your game](PUBLISHING_GAME.md) · [Optional rule packs](RULE_PACKS.md) · [Product use and agreements](PRODUCT_TERMS.md) |

@@ -31,16 +31,49 @@ Automated checks do not certify production quality or every possible rule. Onlin
 
 ## Experiences in the latest plan
 
-| Goal | Beyond the current demo | Details |
-| --- | --- | --- |
-| New workspace | Separate creative navigation, project settings, and personal app settings | [Workspace](DESIGN.md) |
-| Game-specific screens | Scene-led play with templates, layouts, themes, and data binding | [Game screens](GAME_SCREENS.md) |
-| Starting and creation | Title, New game, Load, and creator-defined character creation | [Starting a game](PLAYER_START.md) |
-| Parties and campaigns | Personal/shared parties, delegation, action order, split exploration, lobbies, and recovery | [Online parties](PARTY_PLAY.md) |
-| Independent publishing | Public creator identity, credits, and general/Steam/STOVE/Epic game profiles | [Publishing](PUBLISHING_GAME.md) |
-| Optional rule packs | No default d20 activation, source-identified packs, and notice collection/export | [Rule packs](RULE_PACKS.md) |
+Plan **{{ site.data.review.plan_version }}** adopts the following development goals. **First-release essentials and later goals are separate; adoption does not mean implementation is complete.**
 
-Broader engine goals include richer outcomes and reactions, GM improvisation, campaign continuity, optional spatial/economy rules, reusable stories, extension APIs, rule tracing, and save migration. Existing foundations are distinct from complete workflows. Release dates are not announced.
+| Experience | Planned journey | Details |
+| --- | --- | --- |
+| A first story | One world detail → an action → a consequential choice → testing and export; dice, combat, characters, and LLMs are optional | [Your first story](CREATION_JOURNEY.md) |
+| Starting content | 20 starter images, a blank project and one template catalog, removal and restoration | [Starter content](STARTER_CONTENT.md) |
+| Creation workspace | Separate creative navigation, project settings, and personal preferences; multiple views of the same source | [Workspace concept](DESIGN.md) |
+| World and story | World laws, relationships, promises, chosen costs, and legacies affect later scenes and campaigns | [A world that remembers](WORLD_STORIES.md) |
+| Game-specific screens | Text RP, scene-led, and tactical layouts, themes and bindings with essential controls preserved | [Game screens](GAME_SCREENS.md) |
+| Starting and parties | Title, New game, Load, character preparation, personal/shared parties, delegation, and split exploration | [Starting a game](PLAYER_START.md) · [Parties](PARTY_PLAY.md) |
+| Shared conversation | Character speech, action descriptions, OOC, GM narration, confirmed results, speakers and recipients | [Roleplay chat](ROLEPLAY_CHAT.md) |
+| Continuing play | Lobby preparation, session endings, chapters, campaign completion, migration, and recovery | [Campaign continuity](CAMPAIGN_FLOW.md) |
+| Rules and publishing | Source-aware packs, game identity, credits, permitted formats, and separate game store profiles | [Rule packs](RULE_PACKS.md) · [Publishing](PUBLISHING_GAME.md) |
+| Complete-journey testing | Follow one version through creation, play, saving, translation, team changes, and release | [Test and release](TEST_AND_RELEASE.md) |
+
+## Current demo, first release, and later stages
+
+| Stage | Scope |
+| --- | --- |
+| Current public demo 0.6.0 | The capability table above and current demo guides; the integrated workspace and basic RP chat are not already included |
+| First-release essentials · P0 | New project, title, New game, Load and save protection; editor slots for 20 starter images; one default template catalog with removal/restoration; basic roleplay chat |
+| Later R1 | Recommended configurations and change impact; consistent world, party, permissions, and cost handling; foundations for later experiences such as action requests |
+| Later R2 | World laws, relationships, story checks, richer editing, and advanced chat presentation, communication, channels, and search |
+| Later R3 | Integration testing and refinement across creation, play, long campaigns, updates, and publishing |
+
+R1–R3 describe development and verification stages, not announced release dates or shipped versions. Features may span stages. Advanced chat, action requests, summaries, and operations tools are adopted later goals. Basic chat should work without an LLM or optional operations module.
+
+The 20 original images and their usage terms are ready. Installer bundling, catalog integration, project import, and runtime verification remain separate work. The four reviewed UI concepts illustrate screen direction, not a product implementing the entire plan.
+
+## Broader creation goals
+
+- **Choose needed rules:** different checks and graded outcomes, reactions and waiting, GM free actions, growth, equipment, resources, and economies.
+- **Choose suitable spaces:** narrative, zones, grids, or free maps, with decks, tables, handouts, and progress clocks.
+- **Reuse creative work:** reusable events, prototypes, bulk editing, visuals, audio, accessibility, public extension tools, and restricted plugin execution.
+- **Explain and recover play:** rule traces, reproducible tests, performance checks, campaign saves and migration, and optional reviewed LLM proposals.
+
+Existing foundations are distinct from complete workflows. A first project need not enable every option; worldbuilding alone is a valid starting point.
+
+## Product use and consent
+
+Plan 1.30 adopts preservation of one-time purchase rights, separate general and game-specific agreements, regional documents, explicit consent, and offline copies. [Product use and game agreements](PRODUCT_TERMS.md) explains planned royalties and the distinction between creators and players. Documents for seven regions remain review drafts; sales, effective terms, consent UI, and contract services are not complete.
+
+Sales readiness and future subscription requirements are separate release conditions. This plan alone does not restrict current demo use, free tests, or project backups.
 
 ## Remaining release checks
 

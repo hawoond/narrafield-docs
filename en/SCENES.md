@@ -56,3 +56,7 @@ Use **Advanced · translations · combat** and the combat settings in [Game data
 - Endings are reachable, and item and quest changes are correct.
 
 **Next:** [Rules and expressions](RULES.md) · [Play and export](PLAY_AND_EXPORT.md)
+
+## Planned checks for blocked stories and costs
+
+[Story-checking goals](WORLD_STORIES.md) include routes after every check fails, every cost is declined, or an essential character is absent, with costs shown before confirmation. These are later goals beyond the current scene-editing instructions.

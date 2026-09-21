@@ -40,6 +40,12 @@ Saving, committing, and sharing remotely remain distinct actions. The planned me
 
 These are editing approaches, not separate project formats. LLM assistance remains optional, with proposals reviewed before application.
 
+## One starting catalog, reviewable changes
+
+Begin with **New project / Default templates / Open project**. Blank projects and template starts have equal entry points. Recommended configurations, starter images, removal, and restoration use [the same catalog](STARTER_CONTENT.md). [Three recommended configurations](CREATION_JOURNEY.md)—solo narrative, GM cooperation, and automated parties—propose related settings together.
+
+Direct edits, template additions, LLM proposals, and Git merges should use the same project source and references. Partial application still requires renewed impact, source, and conflict checks. Previews identify current edits or a saved revision; export freezes the chosen revision in the planned [test and release journey](TEST_AND_RELEASE.md).
+
 ## Where to work in the current demo
 
 The demo uses top-level tabs. World, Relations, Maps, and Timeline have separate tabs; Git lives in **Tools & extensions / Merge & conflicts**, and display preferences live in **App settings**. The new sidebar and unified project settings are planned.

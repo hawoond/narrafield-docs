@@ -36,6 +36,12 @@ An example sequence is **Identity → Background → Attributes → Abilities �
 
 Online games may require GM approval. Drafts and approval state should persist until confirmation. Returning to an earlier screen or retrying a request should not generate extra rolls or duplicate equipment.
 
+## Separate first-release essentials from later preparation
+
+The basic title, New game, Load, and protection of existing saves are first-release essentials. Detailed creation editing, complex parties, and complete approval flows connect to later stages. Selecting a prepared character does not automatically grant control, speaking rights, or another player's consent.
+
+Lobby preparation conversations should link into campaign history without resending messages or widening private audiences. GM-free games need creator-defined approval, tie, and absence rules. See [conversation and permissions](ROLEPLAY_CHAT.md) and [session preparation and continuation](CAMPAIGN_FLOW.md).
+
 ## What the current demo supports
 
 Creators can define shared characters and initial state, and a GM can assign characters to personal invitations. The integrated title flow, creation-step editor, and player-authored creation journey described above are planned. Use [Play and export](PLAY_AND_EXPORT.md) for current launch instructions and [Online sessions](ONLINE.md) for assignment.

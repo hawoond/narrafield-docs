@@ -59,6 +59,13 @@ Narrafield Studio는 **sortie**가 만드는 TRPG 엔진입니다. 예제로 시
 
 ## 새 기획과 화면 시안
 
-[새 제작 작업 공간](DESIGN.md) · [게임 화면과 커스터마이징](GAME_SCREENS.md) · [플레이 시작·캐릭터 생성](PLAYER_START.md) · [온라인 파티와 캠페인](PARTY_PLAY.md) · [내 작품의 이름으로 배포](PUBLISHING_GAME.md) · [필요한 규칙만 선택하기](RULE_PACKS.md)
+기획 **{{ site.data.review.plan_version }}**의 개발 목표와 검토한 화면 시안을 소개합니다. [현재·첫 출시·후속 단계](DEVELOPMENT.md)를 먼저 확인하세요. 각 페이지의 **개발 중** 표시는 데모에서 이미 사용할 수 있다는 뜻이 아닙니다.
 
-기획 1.22의 목표와 검토한 화면 시안을 소개합니다. 각 페이지의 **개발 중** 표시는 데모에서 이미 사용할 수 있다는 뜻이 아닙니다.
+| 주제 | 상세 안내 |
+| --- | --- |
+| 첫 작품 | [첫 이야기 만들기](CREATION_JOURNEY.md) · [기본 이미지와 템플릿](STARTER_CONTENT.md) |
+| 제작과 화면 | [새 제작 작업 공간](DESIGN.md) · [게임 화면과 커스터마이징](GAME_SCREENS.md) |
+| 선택이 남는 세계 | [세계가 기억하는 선택](WORLD_STORIES.md) |
+| 함께 시작하기 | [플레이 시작·캐릭터 생성](PLAYER_START.md) · [온라인 파티와 캠페인](PARTY_PLAY.md) |
+| 함께 이어가기 | [롤플레이 채팅](ROLEPLAY_CHAT.md) · [캠페인 이어가기](CAMPAIGN_FLOW.md) |
+| 완성해서 공개하기 | [시험과 출시](TEST_AND_RELEASE.md) · [내 작품의 이름으로 배포](PUBLISHING_GAME.md) · [필요한 규칙만 선택하기](RULE_PACKS.md) · [제품 이용과 작품별 계약](PRODUCT_TERMS.md) |

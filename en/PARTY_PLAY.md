@@ -37,6 +37,18 @@ Exploration can use **shared travel, individual exploration, or party splitting 
 
 Basic access and command checks should remain active when optional operations modules are disabled. Room owner, host, GM, and operator have distinct responsibilities.
 
+## Check control, speech, and consent separately
+
+Permission to move a character, speak as that character, and spend another player's resources or share their information are distinct. Delegation has a subject, scope, duration, and revocation conditions. Leadership or majority voting cannot replace personal consent. [Roleplay chat](ROLEPLAY_CHAT.md) follows the same rules for speaker selection.
+
+GM-free shared proposals follow the game's proposal, voting, and execution rules, with cancellation or reselection for ties, refusal, timeouts, or absence. Shared pauses and session endings also need explicit policies. See [Campaign continuity](CAMPAIGN_FLOW.md).
+
+Party information, each character's knowledge and beliefs, and what a player has read remain distinct. Events in another party are not automatically known, and personal reputation is not silently merged into party reputation. See [world information](WORLD_STORIES.md).
+
+## Test the time spent waiting
+
+Mixed character counts, split scenes, and GM approval queues need checks for waiting and participation opportunities. Optional turn reminders, time limits, and return summaries should help without forcing quieter players to speak. These belong to [multi-participant testing](TEST_AND_RELEASE.md).
+
 ## Compare with the current demo
 
 The demo includes personal invitations and character assignment, private notes and lore visibility, GM NPC control and AI pause, WebSocket state synchronization and reconnect, and persisted server state. Multiple personal parties, unrestricted split scenes, integrated lobbies, chat, and complete server-transfer and recovery flows are not finished.

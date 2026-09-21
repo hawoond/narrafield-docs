@@ -61,3 +61,7 @@ Project plugin policy and Git will move into [Project settings](DESIGN.md); crea
 - After applying team changes or proposals, preview the affected play routes.
 
 **Related:** [Git collaboration](COLLABORATION.md) · [Translation](LOCALIZATION.md) · [Development](DEVELOPMENT.md)
+
+## Multiple ways to change the same source
+
+The planned [creation and testing journey](TEST_AND_RELEASE.md) keeps direct edits, templates, LLM proposals, and Git merges on the same source and references, with revalidation after partial application. LLMs remain optional; proposals do not automatically change world truth or confirmed game results.

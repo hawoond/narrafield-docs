@@ -18,6 +18,12 @@ Every instance uses a deterministic unused `tpl_<component>_<number>_` namespace
 
 Scope: these are bundled components, not an arbitrary third-party template importer. They have no external assets or scripts. Template updates do not modify previously added content. The current editor supports additive composition; it does not synchronize edited instances back to a shared template definition.
 
+## Planned unified templates and starter images
+
+Plan {{ site.data.review.plan_version }} uses one **Default templates** entry. Story, combat, and sample entries are filtered within that catalog; **New project → Start from template** opens the same list. Built-in templates can be removed without changing existing projects. Removal persists through updates; selected defaults can be restored. Copied project content can be edited, replaced, or deleted after checking references.
+
+The plan bundles 20 map, background, portrait, creature, item, ability, and status images with the editor, adding only chosen copies to a project. Original images and usage terms are ready, while installer and catalog integration remain separate development work. See [Starter images and templates](STARTER_CONTENT.md). This does not change the current alpha instructions above.
+
 ## Basic stories and optional rule packs
 
 The d20 check is an optional component. The latest plan uses a basic quick-start story without automatically adding d20 or SRD content. [Choose only the rules you need](RULE_PACKS.md) describes planned official packs and source/notice management. The demo samples and components have not been replaced by that catalog.
