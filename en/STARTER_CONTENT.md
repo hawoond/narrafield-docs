@@ -59,3 +59,7 @@ The attribution file bundled with a game must preserve pack ID `narrafield.start
 The terms do not grant permission to resell the original pack by itself as an image product, guarantee third-party rights involving external brands or people, or certify exclusive rights. Image permissions are separate from engine, SDK, and external rule-pack terms. Finalizing these terms does not complete installer or store distribution verification.
 
 [Current components guide](TEMPLATES.md) · [New workspace](DESIGN.md) · [Rule packs and sources](RULE_PACKS.md)
+
+## Discover more content
+
+[Free content stores](CONTENT_STORES.md) add external discovery to the same catalog. Bundled offline originals and removal/restoration choices remain. A download alone does not change project content or execution permissions.

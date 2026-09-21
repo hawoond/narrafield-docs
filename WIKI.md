@@ -63,7 +63,7 @@ Narrafield Studio는 **sortie**가 만드는 TRPG 엔진입니다. 예제로 시
 
 | 주제 | 상세 안내 |
 | --- | --- |
-| 첫 작품 | [첫 이야기 만들기](CREATION_JOURNEY.md) · [기본 이미지와 템플릿](STARTER_CONTENT.md) |
+| 첫 작품 | [첫 이야기 만들기](CREATION_JOURNEY.md) · [기본 이미지와 템플릿](STARTER_CONTENT.md) · [무료 콘텐츠 스토어](CONTENT_STORES.md) |
 | 제작과 화면 | [새 제작 작업 공간](DESIGN.md) · [게임 화면과 커스터마이징](GAME_SCREENS.md) |
 | 선택이 남는 세계 | [세계가 기억하는 선택](WORLD_STORIES.md) |
 | 함께 시작하기 | [플레이 시작·캐릭터 생성](PLAYER_START.md) · [온라인 파티와 캠페인](PARTY_PLAY.md) |

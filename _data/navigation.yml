@@ -52,6 +52,8 @@
       url: /DESIGN.html
     - title: { ko: 기본 이미지와 템플릿, en: Starter images and templates }
       url: /STARTER_CONTENT.html
+    - title: { ko: 무료 콘텐츠 스토어, en: Free content stores }
+      url: /CONTENT_STORES.html
     - title: { ko: 세계가 기억하는 선택, en: A world that remembers }
       url: /WORLD_STORIES.html
     - title: { ko: 게임 화면과 커스터마이징, en: Game screens }

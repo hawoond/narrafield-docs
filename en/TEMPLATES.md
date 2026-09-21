@@ -27,3 +27,7 @@ The plan bundles 20 map, background, portrait, creature, item, ability, and stat
 ## Basic stories and optional rule packs
 
 The d20 check is an optional component. The latest plan uses a basic quick-start story without automatically adding d20 or SRD content. [Choose only the rules you need](RULE_PACKS.md) describes planned official packs and source/notice management. The demo samples and components have not been replaced by that catalog.
+
+## Planned external templates
+
+[Free content stores](CONTENT_STORES.md) distinguish creating a new project from a whole template and adding components to the current project. Download, review, application, editable copies, and update policies are development goals, not current demo support for external templates.

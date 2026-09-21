@@ -63,7 +63,7 @@ Explore development goals from plan **{{ site.data.review.plan_version }}** and 
 
 | Topic | Detailed guides |
 | --- | --- |
-| Your first project | [Your first story](CREATION_JOURNEY.md) · [Starter images and templates](STARTER_CONTENT.md) |
+| Your first project | [Your first story](CREATION_JOURNEY.md) · [Starter images and templates](STARTER_CONTENT.md) · [Free content stores](CONTENT_STORES.md) |
 | Creation and screens | [New workspace](DESIGN.md) · [Game screens and customization](GAME_SCREENS.md) |
 | Consequential worlds | [A world that remembers](WORLD_STORIES.md) |
 | Starting together | [Starting a game](PLAYER_START.md) · [Online parties](PARTY_PLAY.md) |

@@ -37,6 +37,7 @@ Plan **{{ site.data.review.plan_version }}** adopts the following development go
 | --- | --- | --- |
 | A first story | One world detail → an action → a consequential choice → testing and export; dice, combat, characters, and LLMs are optional | [Your first story](CREATION_JOURNEY.md) |
 | Starting content | 20 starter images, a blank project and one template catalog, removal and restoration | [Starter content](STARTER_CONTENT.md) |
+| Free creation content | Shared discovery, library, type-specific application, and reviewed publication for plugins, templates, and assets | [Free content stores](CONTENT_STORES.md) |
 | Creation workspace | Separate creative navigation, project settings, and personal preferences; multiple views of the same source | [Workspace concept](DESIGN.md) |
 | World and story | World laws, relationships, promises, chosen costs, and legacies affect later scenes and campaigns | [A world that remembers](WORLD_STORIES.md) |
 | Game-specific screens | Text RP, scene-led, and tactical layouts, themes and bindings with essential controls preserved | [Game screens](GAME_SCREENS.md) |
@@ -47,6 +48,8 @@ Plan **{{ site.data.review.plan_version }}** adopts the following development go
 | Complete-journey testing | Follow one version through creation, play, saving, translation, team changes, and release | [Test and release](TEST_AND_RELEASE.md) |
 
 ## Current demo, first release, and later stages
+
+The first release includes verification of existing creation, play, and export capabilities alongside the essential experiences below.
 
 | Stage | Scope |
 | --- | --- |
@@ -68,6 +71,10 @@ The 20 original images and their usage terms are ready. Installer bundling, cata
 - **Explain and recover play:** rule traces, reproducible tests, performance checks, campaign saves and migration, and optional reviewed LLM proposals.
 
 Existing foundations are distinct from complete workflows. A first project need not enable every option; worldbuilding alone is a valid starting point.
+
+## Free content-service preparation
+
+Plan 1.31 connects free plugins, templates, and assets through one library and a shared service independent of the editor and game servers. Common foundations → discovery/application → publishing/review → external-creator, channel, failure, and recovery verification are all conditions for the first store release. Existing plugin foundations are distinct from official public operation. Paid content operation and a paid transition roadmap are outside this scope. [Content-store details](CONTENT_STORES.md)
 
 ## Product use and consent
 

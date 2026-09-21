@@ -51,3 +51,7 @@ Direct edits, template additions, LLM proposals, and Git merges should use the s
 The demo uses top-level tabs. World, Relations, Maps, and Timeline have separate tabs; Git lives in **Tools & extensions / Merge & conflicts**, and display preferences live in **App settings**. The new sidebar and unified project settings are planned.
 
 [Current editor menus](EDITOR.md) · [Game-screen design](GAME_SCREENS.md) · [Git collaboration](COLLABORATION.md)
+
+## Find content while creating
+
+The planned app opens template, asset, and plugin tabs with a shared library. Image selection, component addition, and project plugin settings lead to suitable content, then return to the original editing context. [Free content stores](CONTENT_STORES.md)

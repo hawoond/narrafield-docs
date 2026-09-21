@@ -65,3 +65,7 @@ Project plugin policy and Git will move into [Project settings](DESIGN.md); crea
 ## Multiple ways to change the same source
 
 The planned [creation and testing journey](TEST_AND_RELEASE.md) keeps direct edits, templates, LLM proposals, and Git merges on the same source and references, with revalidation after partial application. LLMs remain optional; proposals do not automatically change world truth or confirmed game results.
+
+## Planned free content stores
+
+[Free content stores](CONTENT_STORES.md) connect plugins, templates, and assets through one discovery experience and library. Downloading remains separate from project application and execution permissions. Current hub capabilities above do not mean an official public store is operating.
