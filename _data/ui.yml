@@ -23,7 +23,6 @@ ko:
   support: 현재 지원 범위
   footer_line: 상상에서 시작해, 이야기로 연결되는 세계.
   footer_nav: 하단 탐색
-  repository: 문서 저장소
   stores: 공식 스토어
   store_pending: 스토어 공개 예정
   store_note: 출시 후 이곳에서 공식 스토어로 안내합니다. 구매와 설치는 해당 스토어에서 진행합니다.
@@ -52,7 +51,6 @@ en:
   support: Current capabilities
   footer_line: Worlds born from imagination, connected through stories.
   footer_nav: Footer navigation
-  repository: Docs repository
   stores: Official stores
   store_pending: Store pages coming soon
   store_note: Official store links will appear here when available. Purchases and installation will take place through those stores.
