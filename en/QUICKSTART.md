@@ -8,7 +8,7 @@ Open the sample, play through a short story, and then create your own project.
 
 ## Before you start
 
-Purchases and installation will be handled through official stores. See [store availability](DEVELOPMENT.md#stores) for the current status. This website does not distribute executable files.
+Get the current demo and launch instructions from [Download the demo](DEMO.md). Purchases and installation of the full product will be handled through official stores. See [store availability](DEVELOPMENT.md#stores) for the current status.
 
 If you have a development build, follow its launch instructions. The current build uses names such as `maker.exe`; keep the matching `player.exe` beside it to export games. Check your build's instructions for supported operating systems and executable names. You do not need Go or a C compiler to run the editor or an exported game.
 

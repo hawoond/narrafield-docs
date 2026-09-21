@@ -1,5 +1,7 @@
 - title: { ko: 시작하기, en: Get started }
   pages:
+    - title: { ko: 데모 다운로드, en: Download demo }
+      url: /DEMO.html
     - title: { ko: 만드는 경험, en: Creation workflow }
       url: /EXPERIENCE.html
     - title: { ko: 시작 가이드, en: Quick start }

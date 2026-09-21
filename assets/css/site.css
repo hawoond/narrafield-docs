@@ -198,3 +198,10 @@ body:has(.hero) { overflow-x: clip; }
   .wiki-return { font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } .button:hover { transform: none; } }
+
+.demo-download { margin: 28px 0 36px; padding: 24px; background: var(--sage); border: 1px solid var(--line); border-radius: 3px; }
+.demo-version { font-weight: 700; font-size: 20px; }
+.demo-date { color: var(--muted); font-size: 14px; }
+.demo-integrity { margin-top: 20px; border-top: 1px solid var(--line); padding-top: 16px; }
+.demo-integrity summary { cursor: pointer; }
+.demo-checksum { display: block; overflow-wrap: anywhere; white-space: normal; }

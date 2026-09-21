@@ -7,7 +7,7 @@ description: Features, online limitations, compatibility, and store availability
 
 Narrafield Studio is a **TRPG engine developed by sortie**. It is currently a development alpha. Samples and guides help you build worlds, scenes, and choices step by step.
 
-This website provides product information and complete Korean and English guides. It does not distribute executable files. Purchases and installation will be handled through official stores.
+This website provides product information and complete Korean and English guides. Try the current development alpha from [Download the demo](DEMO.md). Purchases and installation of the full product will be handled through official stores.
 
 {% include stores.html %}
 
@@ -30,7 +30,7 @@ The detailed guides follow the **runtime 0.4 development-alpha** menu structure.
 
 ## Online and translation scope
 
-Online play currently **shares one party character**. Individual invitations, revocation, and session persistence are supported, but per-player character ownership and the complete multiplayer feature set are not finished. External connections require a separate HTTPS server setup.
+Online features are a development alpha that requires a separate server. Individual invitations, revocation, and session persistence are supported. A player’s control depends on the server’s character assignments and permissions. External connections require a separate HTTPS server setup.
 
 The translation workspace handles Korean source and English translations for world names and bodies, scene titles and bodies, and action labels. It does not cover every content type or language.
 
@@ -38,7 +38,7 @@ The translation workspace handles Korean source and English translations for wor
 
 Multi-platform support remains a development goal. Supported operating systems and installation requirements will be listed on official store product pages at release. A store release date has not been announced. Development features and test results are not a guarantee of final release quality. Display scaling, input, networking, and other real-world environments need further validation.
 
-The current runtime compatibility version is **0.4.0**. Game packages, saves, and server sessions from earlier runtimes are incompatible. Export again from the source project using the new runtime. See [Troubleshooting](TROUBLESHOOTING.md).
+The current demo uses runtime compatibility version **{{ site.data.demo.version }}**. Game packages, saves, and server sessions from earlier runtimes are incompatible. Export again from the source project using the new runtime. See [Troubleshooting](TROUBLESHOOTING.md).
 
 The harbor image is conceptual world art. The editor image is an actual development-alpha screenshot; its layout may differ from the current build.
 

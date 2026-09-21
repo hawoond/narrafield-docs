@@ -5,10 +5,11 @@
   <nav class="header-nav" aria-label="{{ ui.site_nav }}">
     {% assign experience_url = ui.prefix | append: '/EXPERIENCE.html' %}
     {% assign development_url = ui.prefix | append: '/DEVELOPMENT.html' %}
+    {% assign demo_url = ui.prefix | append: '/DEMO.html' %}
     <a href="{{ experience_url | relative_url }}"{% if page.url == experience_url %} aria-current="page"{% endif %}>{{ ui.experience }}</a>
-    <a href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}"{% if page.layout == 'guide' and page.url != experience_url and page.url != development_url %} aria-current="page"{% endif %}>{{ ui.guide }}</a>
+    <a href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}"{% if page.layout == 'guide' and page.url != experience_url and page.url != development_url and page.url != demo_url %} aria-current="page"{% endif %}>{{ ui.guide }}</a>
     <a href="{{ development_url | relative_url }}"{% if page.url == development_url %} aria-current="page"{% endif %}>{{ ui.development }}</a>
   </nav>
-  <a class="button button-outline header-cta" href="{{ ui.prefix | append: '/WIKI.html' | relative_url }}">{{ ui.open_wiki }} <span aria-hidden="true">↗</span></a>
+  <a class="button button-outline header-cta" href="{{ demo_url | relative_url }}"{% if page.url == demo_url %} aria-current="page"{% endif %}>{{ ui.demo }} <span aria-hidden="true">↗</span></a>
   {% include language-nav.html %}
 </header>

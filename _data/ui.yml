@@ -12,6 +12,7 @@ ko:
   guide: 사용 가이드
   development: 개발 상태
   open_wiki: 위키 열기
+  demo: 데모 다운로드
   language: 언어 선택
   wiki: 사용자 위키
   wiki_nav: 위키 목차
@@ -40,6 +41,7 @@ en:
   guide: User guide
   development: Development
   open_wiki: Open wiki
+  demo: Download demo
   language: Choose language
   wiki: User wiki
   wiki_nav: Wiki contents

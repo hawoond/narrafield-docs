@@ -15,6 +15,8 @@ These guides describe the **runtime 0.4 development alpha**. This is not a final
 
 ## Getting started
 
+Get the current demo from [Download the demo](DEMO.md).
+
 | Guide | Topics |
 | --- | --- |
 | [Quick start](QUICKSTART.md) | Launch preparation, the sample, new projects, applying and saving |

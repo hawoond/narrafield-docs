@@ -24,13 +24,13 @@ Deletion is rejected while scene conditions, effects, expressions, or characters
 
 ## An older game or save will not open
 
-The current runtime compatibility version is **0.4.0**. Game packages, saves, and server session snapshots from earlier runtimes are incompatible. Schema 1 source projects can still be opened; export them again with the new player. Play progress is not migrated automatically.
+The current demo uses runtime compatibility version **{{ site.data.demo.version }}**. Game packages, saves, and server session snapshots from earlier runtimes are incompatible. Schema 1 source projects can still be opened; export them again with the new player. Play progress is not migrated automatically.
 
 When changing online content or runtime versions, preserve the existing state file and give `--state` a new path outside the project. See [Online sessions](ONLINE.md) for restart and state-file restrictions.
 
 ## Can each online player own a separate character?
 
-The current online alpha shares one party character. Individual invitation tokens control access; they do not provide individual character ownership.
+Individual invitations and character assignment are separate. Player control depends on the server’s character assignments and permissions. An invitation alone does not automatically create a new player character.
 
 ## A translation cannot be applied
 

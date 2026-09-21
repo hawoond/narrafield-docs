@@ -42,7 +42,7 @@ def main():
     expected = {"index.html", "WIKI.html", "QUICKSTART.html", "WORLD_BUILDING.html",
                 "TEMPLATES.html", "RULES.html", "PLAY_AND_EXPORT.html", "ONLINE.html",
                 "COLLABORATION.html", "LOCALIZATION.html", "TROUBLESHOOTING.html",
-                "DEVELOPMENT.html",
+                "DEVELOPMENT.html", "DEMO.html",
                 "EXPERIENCE.html", "EDITOR.html", "PROJECT.html", "RELATIONS.html", "MAPS.html", "TIMELINE.html", "SCENES.html", "GAME_DATA.html", "FACTION_GUIDE.html", "TOOLS.html"}
     expected |= {"en/" + name for name in list(expected)}
     pages = {path.resolve(): Page(path.read_text(encoding="utf-8"))
@@ -70,7 +70,7 @@ def main():
                     errors.append(f"Wrong {lang} language switch: {name}")
                 elif (matching[0].get("aria-current") == "page") != (lang == language):
                     errors.append(f"Wrong active language tab: {name}")
-            if re.search(r"Windows|윈도우|\(영문\)", page.source, re.IGNORECASE):
+            if re.search(r"\(영문\)", page.source) or (name not in {"DEMO.html", "en/DEMO.html"} and re.search(r"Windows|윈도우", page.source, re.IGNORECASE)):
                 errors.append(f"Outdated platform or translation copy: {name}")
             for anchor in page.anchors:
                 url = urlsplit(anchor.get("href", ""))
