@@ -48,7 +48,7 @@ Use **Advanced · translations · combat** and the combat settings in [Game data
 
 ## Check through play
 
-{% include screenshot.html file="player.png" width="1120" height="800" alt="Player showing a persuasion check and character attributes" caption="Read the scene and select actions to verify the actual flow." %}
+{% include screenshot.html file="b4887255d494fd132f37.png" width="1120" height="800" alt="Player showing a persuasion check and character attributes" caption="Read the scene and select actions to verify the actual flow." %}
 
 - The correct scene starts, and its text and images appear as intended.
 - Choices behave correctly when conditions are met and unmet.

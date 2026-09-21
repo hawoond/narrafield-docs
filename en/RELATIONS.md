@@ -7,7 +7,7 @@ description: Create relationships between people, places and organizations, then
 
 **Relations** connects world entries: a person belongs to a guild, lives at a place, or witnesses an event.
 
-{% include screenshot.html file="relations.png" alt="Membership, residence and event relations between Mara, the keepers' guild and places" caption="Read connections through their direction and relationship type." %}
+{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="Membership, residence and event relations between Mara, the keepers' guild and places" caption="Read connections through their direction and relationship type." %}
 
 ## Create a relationship
 

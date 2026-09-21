@@ -7,7 +7,7 @@ description: Arrange historical events by era, date label and order, and connect
 
 **Timeline** organizes historical world events. It explains chronology; it is not a timer that advances the game automatically.
 
-{% include screenshot.html file="timeline.png" alt="A timeline with the lighthouse extinguishing event placed seven days before the story" caption="A historical event linked to its place in time." %}
+{% include screenshot.html file="dbf2d3ff8eec7ef2f198.png" alt="A timeline with the lighthouse extinguishing event placed seven days before the story" caption="A historical event linked to its place in time." %}
 
 ## Place an event
 

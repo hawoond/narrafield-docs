@@ -7,7 +7,7 @@ description: 역사 사건의 시대와 시점, 정렬 순서와 관련 설정�
 
 **연표**는 세계관의 역사 사건을 순서대로 정리하는 메뉴입니다. 사건의 시간적 맥락을 보여주며, 게임 진행 시간을 자동으로 흐르게 하는 타이머는 아닙니다.
 
-{% include screenshot.html file="timeline.png" alt="꺼진 빛의 기록 연표에 7일 전 등대 소등 사건이 배치된 화면" caption="역사 사건과 시점을 연결한 연표 예시입니다." %}
+{% include screenshot.html file="dbf2d3ff8eec7ef2f198.png" alt="꺼진 빛의 기록 연표에 7일 전 등대 소등 사건이 배치된 화면" caption="역사 사건과 시점을 연결한 연표 예시입니다." %}
 
 ## 사건 배치하기
 

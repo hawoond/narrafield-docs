@@ -48,7 +48,7 @@ description: 장면 본문과 선택지를 만들고 조건, 판정, 효과와 �
 
 ## 플레이로 확인할 것
 
-{% include screenshot.html file="player.png" width="1120" height="800" alt="설득 판정 행동과 캐릭터 능력치를 보여주는 플레이 화면" caption="장면을 읽고 선택지를 누르며 실제 진행을 확인합니다." %}
+{% include screenshot.html file="b4887255d494fd132f37.png" width="1120" height="800" alt="설득 판정 행동과 캐릭터 능력치를 보여주는 플레이 화면" caption="장면을 읽고 선택지를 누르며 실제 진행을 확인합니다." %}
 
 - 시작 장면이 맞고 본문·이미지가 의도대로 표시됩니다.
 - 조건을 만족할 때와 만족하지 않을 때 선택지가 올바르게 동작합니다.

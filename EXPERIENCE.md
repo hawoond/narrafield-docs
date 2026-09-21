@@ -15,7 +15,7 @@ Narrafield Studio는 개발팀 **sortie**가 만드는 TRPG 엔진입니다. 인
 
 예를 들어 “등대의 불이 꺼졌다”는 사건에서 항구, 등대지기, 길드를 만들고 서로 연결합니다. 공개할 설정과 GM만 볼 설정도 구분할 수 있습니다.
 
-{% include screenshot.html file="relations.png" alt="인물과 장소, 길드의 관계를 연결한 개발 알파 관계도" caption="관계도에서 이야기의 연결을 살펴봅니다." %}
+{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="인물과 장소, 길드의 관계를 연결한 개발 알파 관계도" caption="관계도에서 이야기의 연결을 살펴봅니다." %}
 
 [세계관 작성](WORLD_BUILDING.md) · [관계도](RELATIONS.md) · [지도](MAPS.md) · [연표](TIMELINE.md)
 
@@ -39,7 +39,7 @@ Narrafield Studio는 개발팀 **sortie**가 만드는 TRPG 엔진입니다. 인
 
 **검사**로 잘못된 참조를 찾고, **미리보기**에서 성공·실패·엔딩 경로를 플레이합니다. 완성한 프로젝트는 독립 실행형 게임으로 내보낼 수 있습니다. 온라인 플레이에는 별도의 서버 준비가 필요합니다.
 
-{% include screenshot.html file="player.png" width="1120" height="800" alt="장면 본문과 설득 선택지, 캐릭터 능력치가 표시된 개발 알파 플레이 화면" caption="미리보기에서 플레이어에게 보이는 장면과 행동을 확인합니다." %}
+{% include screenshot.html file="b4887255d494fd132f37.png" width="1120" height="800" alt="장면 본문과 설득 선택지, 캐릭터 능력치가 표시된 개발 알파 플레이 화면" caption="미리보기에서 플레이어에게 보이는 장면과 행동을 확인합니다." %}
 
 [플레이와 게임 배포](PLAY_AND_EXPORT.md) · [온라인 세션](ONLINE.md)
 

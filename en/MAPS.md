@@ -7,7 +7,7 @@ description: Add backgrounds and place pins, connect submaps, and prepare a sepa
 
 **Maps** places locations in space. Pins point to world places; adding a pin does not automatically create a playable scene or travel action.
 
-{% include screenshot.html file="maps.png" alt="Map pins marking the harbor, old channel and last lighthouse" caption="An example of place pins. Backgrounds and individual controls may differ by build." %}
+{% include screenshot.html file="f8d737be47ae1b95c634.png" alt="Map pins marking the harbor, old channel and last lighthouse" caption="An example of place pins. Backgrounds and individual controls may differ by build." %}
 
 ## Create the first map
 

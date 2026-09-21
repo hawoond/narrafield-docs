@@ -15,7 +15,7 @@ Use **World** for names, summaries, and descriptions. Connect people and organiz
 
 For a story about an extinguished lighthouse, create the harbor, lighthouse keeper, and guild, then connect them. Separate public lore from information reserved for the GM.
 
-{% include screenshot.html file="relations.png" alt="Development-alpha relation graph connecting people, places and a guild" caption="Read the connections between world entries in the relation graph." %}
+{% include screenshot.html file="a6e61b82caf0337fa95c.png" alt="Development-alpha relation graph connecting people, places and a guild" caption="Read the connections between world entries in the relation graph." %}
 
 [World building](WORLD_BUILDING.md) · [Relations](RELATIONS.md) · [Maps](MAPS.md) · [Timeline](TIMELINE.md)
 
@@ -39,7 +39,7 @@ Use **Game data** to define and assign items, quests, resources, skills, spells,
 
 Use **Validate** to find invalid references and **Play** to test success, failure, and ending routes. Export the completed project as a standalone game. Online play requires a separate server setup.
 
-{% include screenshot.html file="player.png" width="1120" height="800" alt="Development-alpha player displaying scene text, a persuasion action and character attributes" caption="Preview what players will read and select." %}
+{% include screenshot.html file="b4887255d494fd132f37.png" width="1120" height="800" alt="Development-alpha player displaying scene text, a persuasion action and character attributes" caption="Preview what players will read and select." %}
 
 [Play and export](PLAY_AND_EXPORT.md) · [Online sessions](ONLINE.md)
 

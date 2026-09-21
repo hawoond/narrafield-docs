@@ -7,7 +7,7 @@ description: Find each Narrafield Studio editor menu, its purpose, and the detai
 
 Find the right menu for your task. This guide follows the **runtime 0.4 development-alpha menu structure**. Older builds may show some Game data features separately as **Items & quests** or **Rules & character**.
 
-{% include screenshot.html file="editor.png" alt="Editor with toolbar, menu tabs, world entries and an editing area" caption="The world editor illustrates the shared screen structure." %}
+{% include screenshot.html file="422400efb855c8236a05.png" alt="Editor with toolbar, menu tabs, world entries and an editing area" caption="The world editor illustrates the shared screen structure." %}
 
 ## Read the screen
 
