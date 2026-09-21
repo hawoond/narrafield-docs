@@ -12,7 +12,7 @@ A **scene** is a passage the player reads. An **action** is a choice they select
 
 ## Create a first scene
 
-1. Choose **Scenes & actions → + New scene**.
+1. Choose **Story → + New scene**.
 2. Enter a title, type, and body.
 3. Link relevant lore through **World IDs**, separated by commas.
 4. Select **Apply**, then **Set as start** if this is the opening scene.
@@ -51,7 +51,7 @@ Use **Advanced · translations · combat** and the combat settings in [Game data
 
 ## Check through play
 
-{% include screenshot.html file="1ad766a77d7ad3ce3afe.png" alt="Current player showing scene text and persuasion and exploration choices" caption="Read the scene and select actions to verify the actual flow." width="1120" height="800" %}
+{% include screenshot.html file="1ad766a77d7ad3ce3afe.png" alt="Current player showing scene text and a choice" caption="Read the scene and select actions to verify the actual flow." width="1120" height="800" %}
 
 - The correct scene starts, and its text and images appear as intended.
 - Choices behave correctly when conditions are met and unmet.

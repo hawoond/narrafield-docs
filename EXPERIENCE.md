@@ -39,7 +39,7 @@ Narrafield Studio는 **sortie**가 만드는 TRPG 엔진입니다. 인물과 장
 
 **검사**로 사라진 장면이나 잘못 연결된 항목을 찾고, **미리보기**에서 성공·실패·엔딩 경로를 플레이합니다. 완성한 프로젝트는 독립 실행형 게임으로 내보낼 수 있습니다. 온라인 플레이에는 별도의 서버 준비가 필요합니다.
 
-{% include screenshot.html file="d3fcf91c3817464e6e80.png" alt="장면 본문과 설득·탐색 선택지가 표시된 현재 플레이 화면" caption="미리보기에서 플레이어에게 보이는 장면과 행동을 확인합니다." width="1120" height="800" %}
+{% include screenshot.html file="d3fcf91c3817464e6e80.png" alt="장면 본문과 선택지가 표시된 현재 플레이 화면" caption="미리보기에서 플레이어에게 보이는 장면과 행동을 확인합니다." width="1120" height="800" %}
 
 [플레이와 게임 배포](PLAY_AND_EXPORT.md) · [온라인 세션](ONLINE.md)
 

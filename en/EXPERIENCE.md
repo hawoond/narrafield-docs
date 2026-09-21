@@ -39,7 +39,7 @@ Use **Game data** to define and assign items, quests, resources, skills, spells,
 
 Use **Validate** to find invalid references and **Preview** to test success, failure, and ending routes. Export the completed project as a standalone game. Online play requires a separate server setup.
 
-{% include screenshot.html file="1ad766a77d7ad3ce3afe.png" alt="Current player displaying scene text, persuasion and exploration choices" caption="Preview what players will read and select." width="1120" height="800" %}
+{% include screenshot.html file="1ad766a77d7ad3ce3afe.png" alt="Current player displaying scene text and a choice" caption="Preview what players will read and select." width="1120" height="800" %}
 
 [Play and export](PLAY_AND_EXPORT.md) · [Online sessions](ONLINE.md)
 
